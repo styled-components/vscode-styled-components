@@ -7,8 +7,14 @@ const SomeComponent = styled.div`
 
 const mixin = css`
     height: 20px;
-    padding: 5px;
+    padding: 5px;        
 `
+
+const arrowFun = (...args) => css`
+    height: 12px;
+`
+
+const test = "broken" /* Highlighting is broken after a styled-component is returned from an arrow function*/
 
 class Test extends Reat.Component {
     render () {

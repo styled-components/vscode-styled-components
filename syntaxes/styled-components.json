@@ -1,11 +1,9 @@
 {
 	"fileTypes": ["js", "jsx", "ts", "tsx"],
 	"injectionSelector": "L:source",
-	"name": "styled-component",
 	"patterns": [
 		{
-			"name": "styled-component",
-			"begin": "(styled|css)((\\.[-_$\\w\\d]+)|(\\([-_$\\w\\d]+\\)))?(`)",
+			"begin": "(styled|css)((\\.[_$[:alpha:]][_$[:alnum:]]*)|(\\([_$[:alpha:]][_$[:alnum:]]*\\)))?(`)",
 			"beginCaptures": {
 				"1": {
 					"name": "entity.name.function.tagged-template.js"
