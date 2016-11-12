@@ -8,7 +8,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/julienp/vscode-styled-components.git"
+        "url": "https://github.com/styled-components/vscode-styled-components.git"
     },
     "engines": {
         "vscode": "^1.5.0"
