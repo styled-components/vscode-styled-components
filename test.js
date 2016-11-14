@@ -1,8 +1,16 @@
-const SomeComponent = styled.div`
+const DotTag = styled.div`
     color: #ebebeb;
     font-size: ${props => props.theme.fontSize};
     font-family: Helvetica;
     ${mixin}
+`
+
+const StringTagname = styled('div')`
+    color: #ff0000;
+`
+
+const Component = styled(Component)`
+    color: #ebebeb;
 `
 
 const mixin = css`
@@ -16,7 +24,7 @@ const arrowFun = (...args) => css`
 
 const test = "broken" /* Highlighting is broken after a styled-component is returned from an arrow function*/
 
-class Test extends Reat.Component {
+class InsideMethod extends React.Component {
     render () {
         return styled(Component)`
             line-height: 21px;
@@ -24,11 +32,13 @@ class Test extends Reat.Component {
     }
 }
 
-let abc
+let variableAssignment
 
-abc = css(cake)`
+variableAssignment = css(cake)`
     height: 1px;
 `
+
+/* expression */
 styled`
     height: 12px;
 `
@@ -37,11 +47,11 @@ styled`
     height: 12px;
 `)
 
-export default styled(Thumbnail)`
+export default styled(ExportComponent)`
 	max-width: 100%;
 `
 
-function block() {
+function insideFunction() {
     return styled.div`
         height: 15px;
     `
