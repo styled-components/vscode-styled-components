@@ -3,15 +3,26 @@
 	"injectionSelector": "L:source",
 	"patterns": [
 		{
-			"begin": "(styled|css)((\\.[_$[:alpha:]][_$[:alnum:]]*)|(\\([_$[:alpha:]][_$[:alnum:]]*\\)))?(`)",
+			"begin": "(?:(?:(styled)(?:(?:\\.([_$[:alpha:]][_$[:alnum:]]*))|(?:\\((['\"][_$[:alpha:]][_$[:alnum:]]*['\"])\\))|(?:\\(([_$[:alpha:]][_$[:alnum:]]*)\\)))?)|(css|keyframes|injectGlobal))(`)",
 			"beginCaptures": {
 				"1": {
 					"name": "entity.name.function.tagged-template.js"
 				},
+				"2": {
+					"name": "js"
+				},
+				"3": {
+					"name": "string.js"
+				},
+				"4": {
+					"name": "js"
+				},
 				"5": {
+					"name": "entity.name.function.tagged-template.js"
+				},
+				"6": {
 					"name": "punctuation.definition.string.template.begin.js"
 				}
-
 			},
 			"end": "`",
 			"endCaptures": {
