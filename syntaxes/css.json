@@ -177,43 +177,43 @@
     "css-<angle>": {
       "match": "(?i)(turn|rad|grad|deg)\\b",
       "captures": {
-        "1": { "name": "constant.angle.units.css"}
+        "1": { "name": "constant.angle.units.css.keyword"}
       }
     },
     "css-<frequency>": {
       "match": "(?i)(kHz|Hz)\\b",
       "captures": {
-        "1": { "name": "constant.freq.units.css"}
+        "1": { "name": "constant.freq.units.css.keyword"}
       }
     },
     "css-<length>": {
       "match": "(?i)(vw|vmin|vmax|vh|rem|q|px|pt|pc|mozmm|mm|in|ex|em|cm|ch)\\b",
       "captures": {
-        "1": { "name": "constant.length.units.css"}
+        "1": { "name": "constant.length.units.css.keyword"}
       }
     },
     "css-<percentage>": {
       "match": "(?i)(%)",
       "captures": {
-        "1": { "name": "constant.percentage.units.css"}
+        "1": { "name": "constant.percentage.units.css.keyword"}
       }
     },
     "css-<resolution>": {
       "match": "(?i)(dppx|dpi|dpcm)\\b",
       "captures": {
-        "1": { "name": "constant.resolution.units.css"}
+        "1": { "name": "constant.resolution.units.css.keyword"}
       }
     },
     "css-<time>": {
       "match": "(?i)(s|ms)\\b",
       "captures": {
-        "1": { "name": "constant.time.units.css"}
+        "1": { "name": "constant.time.units.css.keyword"}
       }
     },
     "css-hex": {
       "match": "(?<=^|[^a-z])\\s*+(#\\h{1,8})(?!0-9a-fA-F)\\b",
       "captures": {
-        "1": { "name": "constant.hex.css"}
+        "1": { "name": "constant.hex.css.numeric"}
       }
     },
     "css-key-values": {
