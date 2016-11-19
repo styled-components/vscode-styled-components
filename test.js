@@ -15,8 +15,13 @@ const Component = styled(Component)`
 
 const mixin = css`
     height: 20px;
-    padding: 5px;        
+    padding: 5px;
 `
+
+// const comment = css`
+//     height: 20px;
+//     padding: 5px;
+// `
 
 const arrowFun = (...args) => css`
     height: 12px;
