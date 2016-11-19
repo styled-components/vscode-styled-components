@@ -17,11 +17,23 @@
         "Languages"
     ],
     "contributes": {
+        "languages": [
+            {
+                "id": "source.css.styled",
+                "aliases": ["CSS (Styled Components)"],
+                "configuration": "./css-styled.configuration.json"
+            }
+        ],
         "grammars": [
             {
-                "scopeName": "styled-component",
-                "path": "./syntaxes/styled-components.json",
-                "injectTo": ["source.js", "source.ts", "source.jsx", "source.tsx"]
+                "language": "source.css.styled",
+                "scopeName": "source.css.styled",
+                "path": "./syntaxes/css.json"
+            },
+            {
+                "injectTo": ["source.js", "source.ts", "source.jsx", "source.tsx"],
+                "scopeName": "styled",
+                "path": "./syntaxes/styled-components.json"
             }
         ]
     }

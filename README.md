@@ -4,8 +4,7 @@ Syntax highlighting for [styled-components](https://github.com/styled-components
 
 ![Syntax highlighting in action](demo.png)
 
-Currently the grammar is a copy of the SCSS grammar, using the contents of the SCSS `property_list` rule as starting point.
-The javascript `#template-substitution-element` rule is added as a possible pattern and is also added to the SCSS `property_values` rule.
+Uses the CSS grammar from the Atom [language-babel](https://github.com/gandm/language-babel).
 
 ## Features
 
