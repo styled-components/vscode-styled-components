@@ -13,6 +13,10 @@ const Component = styled(Component)`
     color: #ebebeb;
 `
 
+const SegmentedComponent = styled(Segmented.Component)`
+    padding: 3px;
+`
+
 const mixin = css`
     height: 20px;
     padding: 5px;
