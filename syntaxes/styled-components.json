@@ -1,6 +1,6 @@
 {
 	"fileTypes": ["js", "jsx", "ts", "tsx"],
-	"injectionSelector": "L:source",
+	"injectionSelector": "L:source -comment",
 	"patterns": [
 		{
 			"name": "styled",
