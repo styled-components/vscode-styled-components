@@ -43,7 +43,7 @@ class InsideMethod extends React.Component {
 
 let variableAssignment
 
-variableAssignment = css(cake)`
+variableAssignment = css`
     height: 1px;
 `
 
