@@ -177,43 +177,43 @@
     "css-<angle>": {
       "match": "(?i)(turn|rad|grad|deg)\\b",
       "captures": {
-        "1": { "name": "constant.angle.units.css.keyword"}
+        "1": { "name": "constant.angle.units.css"}
       }
     },
     "css-<frequency>": {
       "match": "(?i)(kHz|Hz)\\b",
       "captures": {
-        "1": { "name": "constant.freq.units.css.keyword"}
+        "1": { "name": "constant.freq.units.css"}
       }
     },
     "css-<length>": {
       "match": "(?i)(vw|vmin|vmax|vh|rem|q|px|pt|pc|mozmm|mm|in|ex|em|cm|ch)\\b",
       "captures": {
-        "1": { "name": "constant.length.units.css.keyword"}
+        "1": { "name": "constant.length.units.css"}
       }
     },
     "css-<percentage>": {
       "match": "(?i)(%)",
       "captures": {
-        "1": { "name": "constant.percentage.units.css.keyword"}
+        "1": { "name": "constant.percentage.units.css"}
       }
     },
     "css-<resolution>": {
       "match": "(?i)(dppx|dpi|dpcm)\\b",
       "captures": {
-        "1": { "name": "constant.resolution.units.css.keyword"}
+        "1": { "name": "constant.resolution.units.css"}
       }
     },
     "css-<time>": {
       "match": "(?i)(s|ms)\\b",
       "captures": {
-        "1": { "name": "constant.time.units.css.keyword"}
+        "1": { "name": "constant.time.units.css"}
       }
     },
     "css-hex": {
       "match": "(?<=^|[^a-z])\\s*+(#\\h{1,8})(?!0-9a-fA-F)\\b",
       "captures": {
-        "1": { "name": "constant.hex.css.numeric"}
+        "1": { "name": "constant.hex.css"}
       }
     },
     "css-key-values": {
@@ -223,454 +223,489 @@
       ]
     },
     "css-properties": {
-    	"patterns": [
-    		{
-    			"begin": "(?i)(?<=^|[^a-z])\\s*+((-(webkit|moz|o|ms)-)?(align-(self|items|content)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(animation(-(timing-function|play-state|name|iteration-count|fill-mode|duration|direction|delay))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(background(-(size|repeat|position|origin|image|color|clip|blend-mode|attachment))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(border(-(width|top-width|top-style|top-right-radius|top-left-radius|top-color|top|style|spacing|right-width|right-style|right-color|right|radius|left-width|left-style|left-color|left|inline-start-width|inline-start-style|inline-start-color|inline-start|inline-end-width|inline-end-style|inline-end-color|inline-end|image-width|image-source|image-slice|image-repeat|image-outset|image|color|collapse|bottom-width|bottom-style|bottom-right-radius|bottom-left-radius|bottom-color|bottom|block-start-width|block-start-style|block-start-color|block-start|block-end-width|block-end-style|block-end-color|block-end))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(box-(sizing|shadow|decoration-break)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(break-(inside|before|after)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(column-(width|span|rule-width|rule-style|rule-color|rule|gap|fill|count)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(counter-(reset|increment)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(flex(-(wrap|shrink|grow|flow|direction|basis))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(font(-(weight|variant-position|variant-numeric|variant-ligatures||variant-east-asian||variant-caps||variant-alternates|variant|synthesis|style|stretch|size-adjust|size|language-override|kerning|feature-settings|family))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(grid(-(template-rows|template-columns|template-areas|template|row-start|row-gap|row-end|row|gap|column-start|column-gap|column-end|column|auto-rows|auto-flow|auto-columns|area))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(image(-(resolution|rendering|orientation))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(list-(style-type|style-position|style-image|style)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(margin(-(top|right|left|inline-start|inline-end|bottom|block-start|block-end))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(mask(-(type|size|repeat|position|origin|mode|image|composite|clip))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(max-|min-)?(zoom|width|inline-size|height|block-size))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(nav-(up|right|left|index|down)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(object-(position|fit)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(offset-(inline-start|inline-end|block-start|block-end)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(outline(-(width|style|offset|color))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(overflow(-(y|x|wrap))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(padding(-(top|right|left|inline-start|inline-end|bottom|block-start|block-end))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(page-break-(inside|before|after)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(perspective(-(origin))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(ruby-(position|merge|align)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(scroll-(snap-type|snap-destination|snap-coordinate|behavior)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(shape-(outside|margin|image-threshold)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(text-(underline-position|transform|shadow|size-adjust|rendering|overflow|orientation|justify|indent|emphasis-style|emphasis-position|emphasis-color|emphasis|decoration-style|decoration-line|decoration-color|decoration|combine-upright|align-last|align)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(transform(-(style|origin|box))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(transition(-(timing-function|property|duration|delay))?))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(word-(wrap|spacing|break)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(unicode-(range|bidi)))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-    			"patterns": [
-    				{"include": "#css-values"}
-    			]
-    		},
-    		{
-          "comment": "individual words without any sub options",
-    			"begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(z-index|writing-mode|will-change|width|widows|white-space|volume|visibility|vertical-align|user-zoom|user-select|touch-action|top|table-layout|tab-size|system|symbols|suffix|src|speak-as|size|right|revert|resize|range|prefix|quotes|position|pointer-events|pad|orphans|orientation|order|opacity|negative|mix-blend-mode|marks|line-height|line-break|letter-spacing|left|justify-content|isolation|inline-size|hyphens|height|float|filter|fallback|empty-cells|display|direction|cursor|content|columns|color|clip-path|clip|clear|caption-side|bottom|block-size|bleed|backface-visibility|appearance|all|additive-symbols))\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-          "patterns": [
-            {"include": "#css-values"}
-          ]
-    		},
-    		{
-          "comment": "custom properties --*",
-    			"begin": "(?<=^|[\\W])\\s*+(--[-_a-zA-Z0-9]*)\\s*+(:)",
-    			"end": "(;)|(?=[`})\\]])",
-    			"beginCaptures": {
-    				"1": {"name": "support.type.property-name.custom.css"}
-    			},
-    			"endCaptures": {
-    				"1": {"name": "punctuation.semi-colon.css"}
-    			},
-          "patterns": [
-            {"include": "#css-values"}
-          ]
-    		},
+      "patterns": [
         {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[^a-z])\\s*+((-(webkit|moz|o|ms)-)?(align-(self|items|content)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        { 
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(animation(-(timing-function|play-state|name|iteration-count|fill-mode|duration|direction|delay))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(background(-(size|repeat|position|origin|image|color|clip|blend-mode|attachment))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(border(-(width|top-width|top-style|top-right-radius|top-left-radius|top-color|top|style|spacing|right-width|right-style|right-color|right|radius|left-width|left-style|left-color|left|inline-start-width|inline-start-style|inline-start-color|inline-start|inline-end-width|inline-end-style|inline-end-color|inline-end|image-width|image-source|image-slice|image-repeat|image-outset|image|color|collapse|bottom-width|bottom-style|bottom-right-radius|bottom-left-radius|bottom-color|bottom|block-start-width|block-start-style|block-start-color|block-start|block-end-width|block-end-style|block-end-color|block-end))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(box-(sizing|shadow|decoration-break)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(break-(inside|before|after)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(column-(width|span|rule-width|rule-style|rule-color|rule|gap|fill|count)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(counter-(reset|increment)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(flex(-(wrap|shrink|grow|flow|direction|basis))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(font(-(weight|variant-position|variant-numeric|variant-ligatures||variant-east-asian||variant-caps||variant-alternates|variant|synthesis|style|stretch|size-adjust|size|language-override|kerning|feature-settings|family))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(grid(-(template-rows|template-columns|template-areas|template|row-start|row-gap|row-end|row|gap|column-start|column-gap|column-end|column|auto-rows|auto-flow|auto-columns|area))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(image(-(resolution|rendering|orientation))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(list-(style-type|style-position|style-image|style)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(margin(-(top|right|left|inline-start|inline-end|bottom|block-start|block-end))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(mask(-(type|size|repeat|position|origin|mode|image|composite|clip))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(max-|min-)?(zoom|width|inline-size|height|block-size))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(nav-(up|right|left|index|down)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(object-(position|fit)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(offset-(inline-start|inline-end|block-start|block-end)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(outline(-(width|style|offset|color))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(overflow(-(y|x|wrap))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(padding(-(top|right|left|inline-start|inline-end|bottom|block-start|block-end))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(page-break-(inside|before|after)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(perspective(-(origin))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(ruby-(position|merge|align)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(scroll-(snap-type|snap-destination|snap-coordinate|behavior)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(shape-(outside|margin|image-threshold)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(text-(underline-position|transform|shadow|size-adjust|rendering|overflow|orientation|justify|indent|emphasis-style|emphasis-position|emphasis-color|emphasis|decoration-style|decoration-line|decoration-color|decoration|combine-upright|align-last|align)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(transform(-(style|origin|box))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(transition(-(timing-function|property|duration|delay))?))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(word-(wrap|spacing|break)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(unicode-(range|bidi)))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "comment": "individual words without any sub options",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(z-index|writing-mode|will-change|width|widows|white-space|volume|visibility|vertical-align|user-zoom|user-select|touch-action|top|table-layout|tab-size|system|symbols|suffix|src|speak-as|size|right|revert|resize|range|prefix|quotes|position|pointer-events|pad|orphans|orientation|order|opacity|negative|mix-blend-mode|marks|line-height|line-break|letter-spacing|left|justify-content|isolation|inline-size|hyphens|height|float|filter|fallback|empty-cells|display|direction|cursor|content|columns|color|clip-path|clip|clear|caption-side|bottom|block-size|bleed|backface-visibility|appearance|all|additive-symbols))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
+          "comment": "custom properties --*",
+          "begin": "(?<=^|[\\W])\\s*+(--[-_a-zA-Z0-9]*)\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.custom.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
           "comment": "unknown properties --*",
-          "begin": "(?<=^|[\\W])\\s*+([-_a-zA-Z0-9]*)\\s*+(:)",
+          "begin": "(?<=^|[\\W])\\s*+([-_a-zA-Z0-9]+)\\s*+(:)",
           "end": "(;)|(?=[`})\\]])",
           "beginCaptures": {
             "1": {"name": "support.type.property-name.unknown.css"}
@@ -682,7 +717,7 @@
             {"include": "#css-values"}
           ]
         }
-    	]
+      ]
     },
     "css-property-values":
     {
@@ -1183,6 +1218,14 @@
         {
           "comment": "psuedo selectors for browser prefixes",
           "match": "(?i)((:{1,2})((-(webkit|moz|o|ms)-)[_a-zA-Z][-_a-zA-Z0-9]*))\\b",
+            "captures": {
+              "2": { "name": "keyword.operator.pseudo.css" },
+              "3": { "name": "constant.language.pseudo.prefixed.css" }
+            }
+        },
+        {
+          "comment": "psuedo selectors to trigger auto-complete",
+          "match": "((:{1,2})([_a-zA-Z]??[-_a-zA-Z0-9]*))",
             "captures": {
               "2": { "name": "keyword.operator.pseudo.css" },
               "3": { "name": "constant.language.pseudo.prefixed.css" }
