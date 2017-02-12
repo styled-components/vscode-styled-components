@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.0.4
+
+- Update CSS grammar to latest version from https://github.com/gandm/language-babel
+- Make styled-components default export matching case insensitive, fixes #10
+
 ## 0.0.3
 
 Don't highlight inside comments, thanks to @wmertens and @alpyre
