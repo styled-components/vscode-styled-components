@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.0.5
+
+- Fix `styled` regex
+
 ## 0.0.4
 
 - Update CSS grammar to latest version from https://github.com/gandm/language-babel
