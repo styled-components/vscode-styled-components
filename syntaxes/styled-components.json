@@ -4,7 +4,7 @@
 	"patterns": [
 		{
 			"name": "styled",
-			"begin": "(?:(?:([sS][tT][yY][lL][eD][dD])(?:(?:\\.([_$[:alpha:]][_$[:alnum:]]*))|(?:\\((['\"][_$[:alpha:]][_$[:alnum:]]*['\"])\\))|(?:\\(([_$[:alpha:]][_$\\.[:alnum:]]*)\\)))?)|(css|keyframes|injectGlobal))(`)",
+			"begin": "(?:(?:([sS][tT][yY][lL][eE][dD])(?:(?:\\.([_$[:alpha:]][_$[:alnum:]]*))|(?:\\((['\"][_$[:alpha:]][_$[:alnum:]]*['\"])\\))|(?:\\(([_$[:alpha:]][_$\\.[:alnum:]]*)\\)))?)|(css|keyframes|injectGlobal))(`)",
 			"beginCaptures": {
 				"1": {
 					"name": "entity.name.function.tagged-template.js"
