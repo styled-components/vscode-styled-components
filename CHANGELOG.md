@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.0.6
+
+- Allow space before ` in the styled regex`
+
 ## 0.0.5
 
 - Fix `styled` regex
