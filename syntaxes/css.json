@@ -105,6 +105,7 @@
     },
     "css-comment-and-interpolate": {
       "patterns": [
+        { "include": "source.js#string-content"},
         { "include": "#css-comment"},
         { "include": "#css-interpolate"}
       ]
@@ -140,7 +141,18 @@
         "1": { "name": "meta.brace.round.css"}
       },
       "patterns": [
+        { "include": "#css-comment-and-interpolate"},
         { "include": "#string"}
+      ]
+    },
+    "css-line-names": {
+      "begin": "\\[",
+      "end": "\\]",
+      "captures": {
+        "0": { "name": "meta.brace.square.css" }
+      },
+      "patterns": [
+        { "include": "#identifier"}
       ]
     },
     "css-math": {
@@ -187,7 +199,7 @@
       }
     },
     "css-<length>": {
-      "match": "(?i)(vw|vmin|vmax|vh|rem|q|px|pt|pc|mozmm|mm|in|ex|em|cm|ch)\\b",
+      "match": "(?i)(vw|vmin|vmax|vh|rem|q|px|pt|pc|mozmm|mm|in|fr|ex|em|cm|ch)\\b",
       "captures": {
         "1": { "name": "constant.length.units.css"}
       }
@@ -238,7 +250,7 @@
             {"include": "#css-values"}
           ]
         },
-        { 
+        {
           "contentName": "meta.property-values.css",
           "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(animation(-(timing-function|play-state|name|iteration-count|fill-mode|duration|direction|delay))?))\\s*+(:)",
           "end": "(;)|(?=[`})\\]])",
@@ -689,6 +701,21 @@
         },
         {
           "contentName": "meta.property-values.css",
+          "comment": "svg attributes which can be used as css properties",
+          "begin": "(?i)(?<=^|[\\W])\\s*+((-(webkit|moz|o|ms)-)?(writing-mode|word-spacing|visibility|unicode-bidi|text-rendering|text-decoration|text-anchor|stroke-width|stroke-opacity|stroke-miterlimit|stroke-linejoin|stroke-linecap|stroke-dashoffset|stroke-dasharray|stroke|stop-opacity|stop-color|shape-rendering|pointer-events|overflow|opacity|mask|marker-start|marker-mid|marker-end|marker|lighting-color|letter-spacing|kerning|image-rendering|glyph-orientation-vertical|glyph-orientation-horizontal|font-weight|font-variant|font-style|font-stretch|font-size-adjust|font-size|font-family|font|flood-opacity|flood-color|filter|fill-rule|fill-opacity|fill|enable-background|dominant-baseline|display|direction|cursor|color-rendering|color-profile|color-interpolation-filters|color-interpolation|color|clip-rule|clip-path|clip|baseline-shift|alignment-baseline))\\s*+(:)",
+          "end": "(;)|(?=[`})\\]])",
+          "beginCaptures": {
+            "1": {"name": "support.type.property-name.css"}
+          },
+          "endCaptures": {
+            "1": {"name": "punctuation.semi-colon.css"}
+          },
+          "patterns": [
+            {"include": "#css-values"}
+          ]
+        },
+        {
+          "contentName": "meta.property-values.css",
           "comment": "custom properties --*",
           "begin": "(?<=^|[\\W])\\s*+(--[-_a-zA-Z0-9]*)\\s*+(:)",
           "end": "(;)|(?=[`})\\]])",
@@ -730,6 +757,7 @@
       "patterns": [
         { "include": "#css-comment-and-interpolate"},
         { "include": "#important"},
+        { "include": "#css-line-names"},
         { "include": "#css-functions"},
         { "include": "#css-property-values"},
         { "include": "#css-color"},
