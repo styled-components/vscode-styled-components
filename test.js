@@ -75,3 +75,20 @@ const ObjectLiteral = {
         ${props => 'border'}: 1px solid #000000;
     `
 }
+
+const rotate360 = keyframes`
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+`
+
+// .extend
+
+const Comp = styled.div`color: red;`
+
+const NewComp = Comp.extend`
+  color: green;
+`

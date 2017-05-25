@@ -1,5 +1,9 @@
 # Release Notes
 
+## Unreleased
+
+- Add support for `.extend`
+
 ## 0.0.6
 
 - Allow space before ` in the styled regex`
