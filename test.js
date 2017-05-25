@@ -92,3 +92,19 @@ const Comp = styled.div`color: red;`
 const NewComp = Comp.extend`
   color: green;
 `
+
+// .extendWith()
+
+const CompExtendWith = styled.div`color: red;`
+
+const NewCompExtendWith = CompExtendWith.extendWith('span')`
+  color: green;
+`
+
+// SC.attrs({})
+
+const Link = styled.a.attrs({
+  target: '_blank'
+})`
+  color: red;
+`
