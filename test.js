@@ -93,13 +93,18 @@ const NewComp = Comp.extend`
   color: green;
 `
 
-// .extendWith()
+// .withComponent()
 
-const CompExtendWith = styled.div`color: red;`
-
-const NewCompExtendWith = CompExtendWith.extendWith('span')`
+const NewCompWithString = CompWithComponent.withComponent('span')`
   color: green;
 `
+
+const NewCompWithStringOneLine = CompWithComponent.withComponent('span')`color: green;`
+
+const NewCompWithComponent = CompWithComponent.withComponent(OtherComp)`
+  color: green;
+`
+
 
 // SC.attrs({})
 

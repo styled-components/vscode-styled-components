@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Add support for `.withComponent()`
 - Add support for `.extend`
 
 ## 0.0.6
