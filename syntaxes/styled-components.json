@@ -59,6 +59,47 @@
 					"include": "source.css.styled"
 				}
 			]
+		},
+		{
+			"name": "styled.withComponent",
+			"begin": "(?:(?:([_$[:alpha:]][_$[:alnum:]]*)(\\.)(withComponent)(?:(?:\\.([_$[:alpha:]][_$[:alnum:]]*))|(?:\\((['\"][_$[:alpha:]][_$[:alnum:]]*['\"])\\))|(?:\\(([_$[:alpha:]][_$\\.[:alnum:]]*)\\)))?))\\s{0,1}(`)",
+			"beginCaptures": {
+				"1": {
+					"name": "variable.other.object.js"
+				},
+				"2": {
+					"name": "punctuation.accessor.js"
+				},
+				"3": {
+					"name": "entity.name.function.tagged-template.js"
+				},
+				"4": {
+					"name": "js"
+				},
+				"5": {
+					"name": "string.js"
+				},
+				"6": {
+					"name": "js"
+				},
+				"7": {
+					"name": "entity.name.function.tagged-template.js"
+				},
+				"8": {
+					"name": "punctuation.definition.string.template.begin.js"
+				}
+			},
+			"end": "`",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.template.end.js"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.css.styled"
+				}
+			]
 		}
 	],
 	"scopeName": "styled"
