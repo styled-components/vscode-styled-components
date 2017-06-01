@@ -1,8 +1,8 @@
 # Release Notes
 
-## Unreleased
+## 0.0.7
 
-- Add support for `.withComponent()`
+- Add support for `.withComponent()`, thanks to @bessey
 - Add support for `.extend`
 
 ## 0.0.6
