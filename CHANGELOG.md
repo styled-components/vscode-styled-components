@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.0.8
+
+- Add support for Typescript, thanks to @misantronic
+
 ## 0.0.7
 
 - Add support for `.withComponent()`, thanks to @bessey
