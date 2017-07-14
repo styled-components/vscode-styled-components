@@ -106,6 +106,11 @@ const NewCompWithComponent = CompWithComponent.withComponent(OtherComp)`
 `
 
 
+// Typescript
+const Root = styled<RootProps>('div')`
+  height: ${(props) => props.label ? 72 : 48}px;
+`
+
 // SC.attrs({})
 
 const Link = styled.a.attrs({
