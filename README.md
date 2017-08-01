@@ -6,6 +6,18 @@ Syntax highlighting for [styled-components](https://github.com/styled-components
 
 Uses the CSS grammar from the Atom [language-babel](https://github.com/gandm/language-babel).
 
+## Install
+
+Inside VSCode, press `Ctrl+P`, and enter:
+
+```
+ext install vscode-styled-components
+```
+
+It should be the top result.
+
+[[Source](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)]
+
 ## Features
 
 ## Known Issues
