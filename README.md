@@ -22,6 +22,8 @@ It should be the top result.
 
 ## Known Issues
 
+Conflict with vscode-babel-coloring extension breaks highlighting.
+
 Highlighting is broken immediately after a styled-component is returned from an arrow function:
 
     const arrowFun = (...args) => css`
