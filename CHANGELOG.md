@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.0.9
+
+- Styled string contents are now marked as CSS embeddedLanguage, enabling proper CSS comments and better bracket matching, thanks to @mjbvz
+
 ## 0.0.8
 
 - Add support for Typescript, thanks to @misantronic
