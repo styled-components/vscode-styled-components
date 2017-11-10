@@ -31,7 +31,7 @@
                 "path": "./syntaxes/css.json"
             },
             {
-                "injectTo": ["source.js", "source.ts", "source.jsx", "source.tsx"],
+                "injectTo": ["source.js", "source.ts", "source.jsx", "source.js.jsx", "source.tsx"],
                 "scopeName": "styled",
                 "path": "./syntaxes/styled-components.json",
                 "embeddedLanguages": {
