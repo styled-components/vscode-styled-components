@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.0.10
+
+- Fix highlighting in VS Code 1.18, thanks to @mbjvz
+- Fix highlighting of display: flex, thanks to @chinclubi
+
 ## 0.0.9
 
 - Styled string contents are now marked as CSS embeddedLanguage, enabling proper CSS comments and better bracket matching, thanks to @mjbvz
