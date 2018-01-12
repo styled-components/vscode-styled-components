@@ -20,7 +20,9 @@
         "languages": [
             {
                 "id": "source.css.styled",
-                "aliases": ["CSS (Styled Components)"],
+                "aliases": [
+                    "CSS (Styled Components)"
+                ],
                 "configuration": "./css-styled.configuration.json"
             }
         ],
@@ -31,13 +33,27 @@
                 "path": "./syntaxes/css.json"
             },
             {
-                "injectTo": ["source.js", "source.ts", "source.jsx", "source.js.jsx", "source.tsx"],
+                "injectTo": [
+                    "source.js",
+                    "source.ts",
+                    "source.jsx",
+                    "source.js.jsx",
+                    "source.tsx"
+                ],
                 "scopeName": "styled",
                 "path": "./syntaxes/styled-components.json",
                 "embeddedLanguages": {
                     "styled": "css"
                 }
             }
+        ],
+        "typescriptServerPlugins": [
+            {
+                "name": "typescript-styled-plugin"
+            }
         ]
+    },
+    "dependencies": {
+        "typescript-styled-plugin": "^0.3.1"
     }
 }
