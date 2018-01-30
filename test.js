@@ -137,10 +137,6 @@ const media = Object.keys(sizes).reduce((acc, label) => {
 const mediaQuery = styled.div`
   background: palevioletred;
 
-  ${media`
-    background: papayawhip;
-  `}
-
   ${media.desktop`
     background: red;
   `};
