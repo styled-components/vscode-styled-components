@@ -100,7 +100,43 @@
 					"include": "source.css.styled"
 				}
 			]
-		}
+		},
+		{
+      "name": "media-functions",
+      "begin":
+        "([mM][eE][dD][iI][aA])\\.([[:alpha:]][[:alnum:]]*)(?:(?:\\(([`'\"].*[`'\"])\\))|(?:\\(([[:alnum:]]*)\\))|(?:\\(\\))|(?:\\((.*)\\))){0,1}\\s{0,1}(`)",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.function.tagged-template.js"
+        },
+        "2": {
+          "name": "js"
+        },
+        "3": {
+          "name": "string.js"
+        },
+        "4": {
+          "name": "constant.numeric.js"
+        },
+        "5": {
+          "name": "variable.other.object.js"
+        },
+        "6": {
+          "name": "punctuation.definition.string.template.begin.js"
+        }
+      },
+      "end": "`",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.template.end.js"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.css.styled"
+        }
+      ]
+    }
 	],
 	"scopeName": "styled"
 }
