@@ -1,26 +1,27 @@
 const DotTag = styled.div`
-    color: #ebebeb;
-    font-size: ${props => props.theme.fontSize};
-    font-family: Helvetica;
-    ${mixin}
-`
+  color: #ebebeb;
+  font-size: ${props => props.theme.fontSize};
+  font-family: Helvetica;
+  ${mixin};
+`;
 
-const StringTagname = styled('div')`
-    color: #ff0000;
-`
+
+const StringTagname = styled("div")`
+  color: #ff0000;
+`;
 
 const Component = styled(Component)`
-    color: #ebebeb;
-`
+  color: #ebebeb;
+`;
 
 const SegmentedComponent = styled(Segmented.Component)`
-    padding: 3px;
-`
+  padding: 3px;
+`;
 
 const mixin = css`
-    height: 20px;
-    padding: 5px;
-`
+  height: 20px;
+  padding: 5px;
+`;
 
 // const comment = css`
 //     height: 20px;
@@ -28,53 +29,52 @@ const mixin = css`
 // `
 
 const arrowFun = (...args) => css`
-    height: 12px;
-`
+  height: 12px;
+`;
 
-const test = "broken" /* Highlighting is broken after a styled-component is returned from an arrow function*/
+const test =
+  "broken"; /* Highlighting is broken after a styled-component is returned from an arrow function*/
 
 class InsideMethod extends React.Component {
-    render () {
-        return styled(Component)`
-            line-height: 21px;
-        `
-    }
+  render() {
+    return styled(Component)`
+      line-height: 21px;
+    `;
+  }
 }
 
-let variableAssignment
+let variableAssignment;
 
 variableAssignment = css`
-    height: 1px;
-`
+  height: 1px;
+`;
 
 /* expression */
 styled`
     height: 12px;
-`
-
- (styled.div`
-    height: 12px;
-`)
+`(styled.div`
+  height: 12px;
+`);
 
 export default styled(ExportComponent)`
-	max-width: 100%;
-`
+  max-width: 100%;
+`;
 
 function insideFunction() {
-    return styled.div`
-        height: 15px;
-    `
+  return styled.div`
+    height: 15px;
+  `;
 }
 
 const ObjectLiteral = {
-    styles: styled`
+  styles: styled`
         height: 12px;
         color: #000000;
-        font: ${props => 'lol'};
-        ${props => 'padding: 5px'}
-        ${props => 'border'}: 1px solid #000000;
+        font: ${props => "lol"};
+        ${props => "padding: 5px"}
+        ${props => "border"}: 1px solid #000000;
     `
-}
+};
 
 const rotate360 = keyframes`
     from {
@@ -83,38 +83,63 @@ const rotate360 = keyframes`
     to {
         transform: rotate(1turn);
     }
-`
+`;
 
 // .extend
 
-const Comp = styled.div`color: red;`
+const Comp = styled.div`
+  color: red;
+`;
 
 const NewComp = Comp.extend`
   color: green;
-`
+`;
 
 // .withComponent()
 
-const NewCompWithString = CompWithComponent.withComponent('span')`
+const NewCompWithString = CompWithComponent.withComponent("span")`
   color: green;
-`
+`;
 
-const NewCompWithStringOneLine = CompWithComponent.withComponent('span')`color: green;`
+const NewCompWithStringOneLine = CompWithComponent.withComponent(
+  "span"
+)`color: green;
+`
 
 const NewCompWithComponent = CompWithComponent.withComponent(OtherComp)`
   color: green;
-`
-
+`;
 
 // Typescript
-const Root = styled<RootProps>('div')`
-  height: ${(props) => props.label ? 72 : 48}px;
-`
+const Root =
+  styled <
+  RootProps >
+  "div"`
+  height: ${props => (props.label ? 72 : 48)}px;
+`;
 
 // SC.attrs({})
 
-const Link = styled.a.attrs({
-  target: '_blank'
+
+const Input = styled.input.attrs({
+  // we can define static props
+  type: 'password',
+
+  // or we can define dynamic ones
+  margin: props => props.size || "1em",
+  padding: props => props.size || '1em' 
 })`
-  color: red;
+  color: palevioletred;
+  font-size: 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px;
+
+  /* here we use the dynamically computed props */
+  margin: ${props => props.margin};
+  padding: ${props => props.padding};
 `
+
+
+const Input = styled.input.attrs({ type: 'password'})`
+  color: red;
+  `
