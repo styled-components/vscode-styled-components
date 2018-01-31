@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.0.12
+
+- Support highlighting in media templates, thanks to @trevorwright
+
 ## 0.0.11
 
 - Detailed CSS IntelliSense while working in styled strings and syntax error reporting, thanks to @matb. Note that this requires VSCode 1.20+
