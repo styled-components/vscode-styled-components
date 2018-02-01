@@ -138,7 +138,7 @@
             ]
         },
         {
-            "name": "styled.attrs.object",
+            "name": "styled.attrs.all",
             "begin": "([sS][tT][yY][lL][eE][dD])\\.([[:alpha:]]+)\\.(attrs)\\(",
             "beginCaptures": {
                 "1": {
@@ -159,95 +159,94 @@
             },
             "patterns": [
                 {
-                    "name": "styled.attrs.objc",
+                    "name": "styled.attrs.object",
                     "begin": "(\\{)",
-                        "end": "(\\})",
-                        "captures": {
-                            "1": {
-                                "name": "punctuation.definition.objc.start.js"
-                            },
-                            "2": {
-                                "name": "punctuation.definition.objc.start.js"
+                    "end": "(\\})",
+                    "captures": {
+                        "1": {
+                            "name": "punctuation.definition.objc.start.js"
+                        },
+                        "2": {
+                            "name": "punctuation.definition.objc.start.js"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "name": "styled.attrs.object.property",
+                            "match": "\\s*([$_[:alpha]]*[$_[:alnum:]]*):",
+                            "captures": {
+                                "1": {
+                                    "name": "variable.parameter.object.property.js"
+                                }
                             }
                         },
-                        "patterns": [
-                            {
-                                "name": "styled.attrs.object.property",
-                                "match": "\\s*([$_[:alpha]]*[$_[:alnum:]]*):",
-                                "captures": {
-                                    "1": {
-                                        "name": "variable.parameter.object.property.js"
-                                    }
+                        {
+                            "name": "styled.attrs.object.props",
+                            "match": "(props)",
+                            "captures": {
+                                "1": {
+                                    "name": "keyword.other.props.js"
                                 }
-                            },
-                            {
-                                "name": "attrs.object.props",
-                                "match": "(props)",
-                                "captures": {
-                                    "1": {
-                                        "name": "keyword.other.props.js"
-                                    }
-                                }
-                            },
-                            {
-                                "name": "attrs.object.or-operator",
-                                "match": "(\\|)",
-                                "captures": {
-                                    "1": {
-                                        "name": "keyword.operator.or.js"
-                                    }
-                                }
-                            },
-                            {
-                                "name": "attrs.object.string.double",
-                                "begin": "(\")",
-                                "end": "(\")",
-                                "captures": {
-                                    "1": {
-                                        "name": "string.quoted.double.start.js"
-                                    },
-                                    "2": {
-                                        "name": "string.quoted.double.end.js"
-                                    }
-                                },
-                                "contentName": "string.quoted.double.content.js"
-                            },
-                            {
-                                "name": "attrs.object.string.single",
-                                "begin": "(')",
-                                "end": "(')",
-                                "captures": {
-                                    "1": {
-                                        "name": "string.quoted.single.start.js"
-                                    },
-                                    "2": {
-                                        "name": "string.quoted.single.end.js"
-                                    }
-                                },
-                                "contentName": "string.quoted.double.content.js"
-                            },
-                            {
-                                "name": "attrs.object.comment.single",
-                                "begin": "(//)",
-                                "end": "\\n",
-                                "captures": {
-                                    "1": {
-                                        "name": "comment.line.double-slash.js"
-                                    }
-                                },
-                                "contentName": "comment.line.double-slash.js"
-                            },
-                            {
-                                "include": "$self"
                             }
-                        ]
-                    },
-                    {
-                        "include": "source.css.styled"
-                    }
-                ]
-            }   
-        ],
-        "scopeName": "styled"
-    }
-    
+                        },
+                        {
+                            "name": "styled.attrs.object.or-operator",
+                            "match": "(\\|)",
+                            "captures": {
+                                "1": {
+                                    "name": "keyword.operator.or.js"
+                                }
+                            }
+                        },
+                        {
+                            "name": "styled.attrs.object.string.double",
+                            "begin": "(\")",
+                            "end": "(\")",
+                            "captures": {
+                                "1": {
+                                    "name": "string.quoted.double.start.js"
+                                },
+                                "2": {
+                                    "name": "string.quoted.double.end.js"
+                                }
+                            },
+                            "contentName": "string.quoted.double.content.js"
+                        },
+                        {
+                            "name": "styled.attrs.object.string.single",
+                            "begin": "(')",
+                            "end": "(')",
+                            "captures": {
+                                "1": {
+                                    "name": "string.quoted.single.start.js"
+                                },
+                                "2": {
+                                    "name": "string.quoted.single.end.js"
+                                }
+                            },
+                            "contentName": "string.quoted.single.content.js"
+                        },
+                        {
+                            "name": "styled.attrs.object.comment.single",
+                            "begin": "(//)",
+                            "end": "\\n",
+                            "captures": {
+                                "1": {
+                                    "name": "comment.line.double-slash.js"
+                                }
+                            },
+                            "contentName": "comment.line.double-slash.js"
+                        },
+                        {
+                            "include": "$self"
+                        }
+                    ]
+                },
+                {
+                    "include": "source.css.styled"
+                }
+            ]
+        }   
+    ],
+    "scopeName": "styled"
+}
