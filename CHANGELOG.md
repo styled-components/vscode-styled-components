@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.0.13
+
+= Add support attrs support, thanks to @bsutt123
+
 ## 0.0.12
 
 - Support highlighting in media templates, thanks to @trevorwright
