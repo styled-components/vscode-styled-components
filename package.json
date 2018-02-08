@@ -23,14 +23,14 @@
                 "aliases": [
                     "CSS (Styled Components)"
                 ],
-                "configuration": "./css-styled.configuration.json"
+                "configuration": "./css.styled.configuration.json"
             }
         ],
         "grammars": [
             {
                 "language": "source.css.styled",
                 "scopeName": "source.css.styled",
-                "path": "./syntaxes/css.json"
+                "path": "./syntaxes/css.styled.json"
             },
             {
                 "injectTo": [
@@ -43,7 +43,7 @@
                 "scopeName": "styled",
                 "path": "./syntaxes/styled-components.json",
                 "embeddedLanguages": {
-                    "styled": "css"
+                    "source.css.scss": "css"
                 }
             }
         ],
