@@ -1,5 +1,11 @@
 # Release Notes
 
+## 0.0.14
+
+- Replace the CSS grammar by one built on language-sass and language-css to ensure syntax highlighting works as in (S)CSS files
+- Rewrites the injection grammar to utilise the built-in highlighting for the JS/TS parts
+- Only change language mode to CSS inside of a template literal
+
 ## 0.0.13
 
 = Add support attrs support, thanks to @bsutt123
