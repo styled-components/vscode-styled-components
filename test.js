@@ -213,3 +213,15 @@ const Input = styled.input.attrs({
   margin: ${props => props.margin};
   padding: ${props => props.padding};
 `;
+
+/* Definition via comment */
+const CommentStyles = /*styled*/`
+  display: none;
+  margin: ${props => props.margin};
+`;
+
+const fn = () => {};
+const CommentStyles2 = fn/* styled */`
+  display: none;
+  margin: ${props => props.margin};
+`;

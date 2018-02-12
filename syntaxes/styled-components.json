@@ -1,6 +1,6 @@
 {
 	"fileTypes": ["js", "jsx", "ts", "tsx"],
-	"injectionSelector": "L:source -comment",
+	"injectionSelector": "L:source",
 	"patterns": [
 		{
             "contentName": "source.css.scss",
@@ -37,6 +37,29 @@
 				{
 					"include": "source.css.styled"
 				}
+			]
+        },
+        {
+            "contentName": "source.css.scss",
+            "begin": "[ ]*(/\\*[ ]*[sS][tT][yY][lL][eE][dD][ ]*\\*/)(`)",
+			"beginCaptures": {
+                "1": {
+					"name": "punctuation.definition.comment.ts"
+                },
+                "2": {
+					"name": "punctuation.definition.string.template.begin.js string.template.js"
+				}
+			},
+			"end": "`",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.template.end.js string.template.js"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.css.styled"
+                }
 			]
 		},
 		{
