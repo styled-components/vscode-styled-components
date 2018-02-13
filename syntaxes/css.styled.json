@@ -15,6 +15,9 @@
 			"include": "#at_rule_media"
 		},
 		{
+			"include": "#at_rule_import"
+		},
+		{
 			"include": "#at_rule_fontface"
 		},
 		{
@@ -54,6 +57,33 @@
 							"include": "#function_attributes"
 						}
 					]
+				}
+			]
+		},
+		"at_rule_import": {
+			"begin": "\\s*((@)import\\b)\\s*",
+			"captures": {
+				"1": {
+					"name": "keyword.control.at-rule.import.scss"
+				},
+				"2": {
+					"name": "punctuation.definition.keyword.scss"
+				}
+			},
+			"end": "\\s*((?=;)|(?=}))",
+			"name": "meta.at-rule.import.scss",
+			"patterns": [
+				{
+					"include": "#interpolation"
+				},
+				{
+					"include": "#string_single"
+				},
+				{
+					"include": "#string_double"
+				},
+				{
+					"include": "#functions"
 				}
 			]
 		},
