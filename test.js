@@ -48,10 +48,6 @@ variableAssignment = css`
 `
 
 /* expression */
-styled`
-    height: 12px;
-`
-
  (styled.div`
     height: 12px;
 `)
