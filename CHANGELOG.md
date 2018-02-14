@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.0.15
+
+- Support @import rules in injectGlobal, thanks to @Cu3PO42
+- Update typescript-styled-plugin to 0.5.1, adding quick fixes for misspelled properties, thanks to @mbjvz
+
 ## 0.0.14
 
 - Replace the CSS grammar by one built on language-sass and language-css to ensure syntax highlighting works as in (S)CSS files, thanks to @Cu3PO42
