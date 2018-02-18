@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.0.16
+
+- Add Emmet CSS Suggestions, thanks to @mjbvz and @ramya-rao-a and the awesome [TypeScript Styled Plugin](https://github.com/Microsoft/typescript-styled-plugin)
+
 ## 0.0.15
 
 - Support @import rules in injectGlobal, thanks to @Cu3PO42
