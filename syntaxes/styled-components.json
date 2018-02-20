@@ -4,7 +4,7 @@
 	"patterns": [
 		{
             "contentName": "source.css.scss",
-            "begin": "(?:([sS][tT][yY][lL][eE][dD](?:<[_$[:alpha:]][_$[:alnum:]]+>)?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\([_$[:alpha:]][_$\\.[:alnum:]]*(?:\\s+as\\s+.*?)?\\)))|(css|keyframes|injectGlobal))\\s*(`)",
+            "begin": "(?:([sS][tT][yY][lL][eE][dD](?:<[_$[:alpha:]][_$[[:alnum:][, '\"]]]+>)?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\([_$[:alpha:]][_$\\.[:alnum:]]*(?:\\s+as\\s+.*?)?\\)))|(css|keyframes|injectGlobal))\\s*(`)",
 			"beginCaptures": {
                 "1": {
                     "name": "entity.name.function.tagged-template.ts",
