@@ -1,6 +1,6 @@
 {
 	"fileTypes": ["js", "jsx", "ts", "tsx"],
-	"injectionSelector": "L:source -comment",
+	"injectionSelector": "L:source -comment -string",
 	"patterns": [
 		{
             "contentName": "source.css.scss",
