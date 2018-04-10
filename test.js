@@ -91,6 +91,10 @@ const NewComp = Comp.extend`
 
 // .withComponent()
 
+const NewCompWithString = CompWithComponent.withComponent('span').extend`
+  color: green;
+`
+
 const NewCompWithString = CompWithComponent.withComponent('span')`
   color: green;
 `
