@@ -1,5 +1,12 @@
 # Release Notes
 
+## 0.0.17
+
+- Add support for emotion-style TypeScript declarations, thanks to @dstaley 
+- Fix highlighting after `withComponent`, thanks to @Cu3PO42
+- Enable highlighting after `Component.extend.attrs`, thanks to @Cu3PO42
+- Don't inject highlighting grammar into strings, thanks to @Cu3PO42
+
 ## 0.0.16
 
 - Add Emmet CSS Suggestions, thanks to @mjbvz and @ramya-rao-a and the awesome [TypeScript Styled Plugin](https://github.com/Microsoft/typescript-styled-plugin)
