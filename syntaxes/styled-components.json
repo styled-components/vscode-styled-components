@@ -67,7 +67,7 @@
 		},
 		{
             "contentName": "source.css.scss",
-			"begin": "([_$[:alpha:]][_$[:alnum:]]*\\.withComponent\\((?:['\"][_$[:alpha:]][_$[:alnum:]]*['\"]|[_$[:alpha:]][_$\\.[:alnum:]]*)\\))\\s*(`)",
+			"begin": "([_$[:alpha:]][_$[:alnum:]]*\\.withComponent\\((?:['\"][_$[:alpha:]][_$[:alnum:]]*['\"]|[_$[:alpha:]][_$\\.[:alnum:]]*)\\))\\s*(?:(\\.)(extend))?(`)",
 			"beginCaptures": {
                 "1": {
                     "name": "entity.name.function.tagged-template.ts",
@@ -77,7 +77,13 @@
                         }
                     ]
                 },
-				"2": {
+                "2": {
+                    "name": "punctuation.accessor.js"
+                },
+				"3": {
+					"name": "entity.name.function.tagged-template.js variable.other.property.js"
+				},
+				"4": {
 					"name": "punctuation.definition.string.template.begin.js string.template.js"
 				}
 			},
