@@ -107,6 +107,12 @@ const Root = styled<RootProps>('div')`
   height: ${(props) => props.label ? 72 : 48}px;
 `
 
+// Typescript, Emotion
+const Container = styled<ContainerProps, 'div'>('div')`
+  height: 50px;
+  display: ${(props) => props.display};
+`
+
 // SC.attrs({})
 
 const Link = styled.a.attrs({
