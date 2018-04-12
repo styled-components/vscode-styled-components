@@ -3,23 +3,23 @@
 	"injectionSelector": "L:source -comment -string",
 	"patterns": [
 		{
-            "contentName": "source.css.scss",
-            "begin": "(?:([sS][tT][yY][lL][eE][dD](?:<[_$[:alpha:]][_$[[:alnum:][, '\"]]]+>)?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\([_$[:alpha:]][_$\\.[:alnum:]]*(?:\\s+as\\s+.*?)?\\)))|(css|keyframes|injectGlobal))\\s*(`)",
+			"contentName": "source.css.scss",
+			"begin": "(?:([sS][tT][yY][lL][eE][dD](?:<[_$[:alpha:]][_$[[:alnum:][, '\"]]]+>)?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\([_$[:alpha:]][_$\\.[:alnum:]]*(?:\\s+as\\s+.*?)?\\)))|(css|keyframes|injectGlobal))\\s*(`)",
 			"beginCaptures": {
-                "1": {
-                    "name": "entity.name.function.tagged-template.ts",
-                    "patterns": [
-                        {
-                            "include": "source.ts#function-call"
-                        },
-                        {
-                            "match": "[sS][tT][yY][lL][eE][dD]"
-                        },
-                        {
-                            "include": "source.ts#expression"
-                        }
-                    ]
-                },
+				"1": {
+					"name": "entity.name.function.tagged-template.ts",
+					"patterns": [
+						{
+							"include": "source.ts#function-call"
+						},
+						{
+							"match": "[sS][tT][yY][lL][eE][dD]"
+						},
+						{
+							"include": "source.ts#expression"
+						}
+					]
+				},
 				"2": {
 					"name": "entity.name.function.tagged-template.js"
 				},
@@ -40,12 +40,12 @@
 			]
 		},
 		{
-            "contentName": "source.css.scss",
+			"contentName": "source.css.scss",
 			"begin": "(\\.)(extend)(`)",
 			"beginCaptures": {
-                "1": {
-                    "name": "punctuation.accessor.js"
-                },
+				"1": {
+					"name": "punctuation.accessor.js"
+				},
 				"2": {
 					"name": "entity.name.function.tagged-template.js"
 				},
@@ -66,20 +66,20 @@
 			]
 		},
 		{
-            "contentName": "source.css.scss",
+			"contentName": "source.css.scss",
 			"begin": "([_$[:alpha:]][_$[:alnum:]]*\\.withComponent\\((?:['\"][_$[:alpha:]][_$[:alnum:]]*['\"]|[_$[:alpha:]][_$\\.[:alnum:]]*)\\))\\s*(?:(\\.)(extend))?(`)",
 			"beginCaptures": {
-                "1": {
-                    "name": "entity.name.function.tagged-template.ts",
-                    "patterns": [
-                        {
-                            "include": "source.ts#expression"
-                        }
-                    ]
-                },
-                "2": {
-                    "name": "punctuation.accessor.js"
-                },
+				"1": {
+					"name": "entity.name.function.tagged-template.ts",
+					"patterns": [
+						{
+							"include": "source.ts#expression"
+						}
+					]
+				},
+				"2": {
+					"name": "punctuation.accessor.js"
+				},
 				"3": {
 					"name": "entity.name.function.tagged-template.js variable.other.property.js"
 				},
@@ -100,87 +100,87 @@
 			]
 		},
 		{
-            "contentName": "source.css.scss",
-            "begin": "([mM][eE][dD][iI][aA]\\.[[:alpha:]][[:alnum:]]*(?:\\(.*?\\))?)\\s*(`)",
-            "beginCaptures": {
-                "1": {
-                    "name": "entity.name.function.tagged-template.ts",
-                    "patterns": [
-                        {
-                            "match": "[mM][eE][dD][iI][aA]"
-                        },
-                        {
-                            "include": "source.ts#expression"
-                        }
-                    ]
-                },
-                "2": {
-                    "name": "punctuation.definition.string.template.begin.js string.template.js"
-                }
-            },
-            "end": "`",
-            "endCaptures": {
-                "0": {
-                    "name": "punctuation.definition.string.template.end.js string.template.js"
-                }
-            },
-            "patterns": [
-                {
-                    "include": "source.css.styled"
-                }
-            ]
-        },
-        {
-            "begin": "(?:([sS][tT][yY][lL][eE][dD](?:<[_$[:alpha:]][_$[:alnum:]]+>)?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\([_$[:alpha:]][_$\\.[:alnum:]]*(?:\\s+as\\s+.*?)?\\)))|(\\.)(extend))(?=\\.attrs\\s*\\()",
-            "beginCaptures": {
-                "1": {
-                    "name": "entity.name.function.tagged-template.ts",
-                    "patterns": [
-                        {
-                            "include": "source.ts#function-call"
-                        },
-                        {
-                            "match": "[sS][tT][yY][lL][eE][dD]"
-                        },
-                        {
-                            "include": "source.ts#expression"
-                        }
-                    ]
-                },
-                "2": {
-                    "name": "punctuation.accessor.js"
-                },
+			"contentName": "source.css.scss",
+			"begin": "([mM][eE][dD][iI][aA]\\.[[:alpha:]][[:alnum:]]*(?:\\(.*?\\))?)\\s*(`)",
+			"beginCaptures": {
+				"1": {
+					"name": "entity.name.function.tagged-template.ts",
+					"patterns": [
+						{
+							"match": "[mM][eE][dD][iI][aA]"
+						},
+						{
+							"include": "source.ts#expression"
+						}
+					]
+				},
+				"2": {
+					"name": "punctuation.definition.string.template.begin.js string.template.js"
+				}
+			},
+			"end": "`",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.template.end.js string.template.js"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.css.styled"
+				}
+			]
+		},
+		{
+			"begin": "(?:([sS][tT][yY][lL][eE][dD](?:<[_$[:alpha:]][_$[:alnum:]]+>)?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\([_$[:alpha:]][_$\\.[:alnum:]]*(?:\\s+as\\s+.*?)?\\)))|(\\.)(extend))(?=\\.attrs\\s*\\()",
+			"beginCaptures": {
+				"1": {
+					"name": "entity.name.function.tagged-template.ts",
+					"patterns": [
+						{
+							"include": "source.ts#function-call"
+						},
+						{
+							"match": "[sS][tT][yY][lL][eE][dD]"
+						},
+						{
+							"include": "source.ts#expression"
+						}
+					]
+				},
+				"2": {
+					"name": "punctuation.accessor.js"
+				},
 				"3": {
 					"name": "entity.name.function.tagged-template.js"
-                }
-            },
-            "end": "(?<!\\G)(?<=`)",
-            "patterns": [
-                {
-                    "contentName": "source.css.scss",
-                    "begin": "`",
-                    "beginCaptures": {
-                        "0": {
-                            "name": "punctuation.definition.string.template.begin.js string.template.js"
-                        }
-                    },
-                    "end": "`",
-                    "endCaptures": {
-                        "0": {
-                            "name": "punctuation.definition.string.template.begin.js string.template.js"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "source.css.styled"
-                        }
-                    ]
-                },
-                {
-                    "include": "source.ts#expression"
-                }
-            ]
-        }   
-    ],
-    "scopeName": "styled"
+				}
+			},
+			"end": "(?<!\\G)(?<=`)",
+			"patterns": [
+				{
+					"contentName": "source.css.scss",
+					"begin": "`",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.template.begin.js string.template.js"
+						}
+					},
+					"end": "`",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.template.begin.js string.template.js"
+						}
+					},
+					"patterns": [
+						{
+							"include": "source.css.styled"
+						}
+					]
+				},
+				{
+					"include": "source.ts#expression"
+				}
+			]
+		}   
+	],
+	"scopeName": "styled"
 }
