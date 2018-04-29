@@ -54,6 +54,6 @@
         ]
     },
     "dependencies": {
-        "typescript-styled-plugin": "^0.6.0"
+        "typescript-styled-plugin": "0.6.3"
     }
 }
