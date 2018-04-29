@@ -2,6 +2,10 @@
 
 ## 0.0.17
 
+- Update to styled plugin 0.6.3, thansk to @mjbvz
+
+## 0.0.17
+
 - Add support for emotion-style TypeScript declarations, thanks to @dstaley 
 - Fix highlighting after `withComponent`, thanks to @Cu3PO42
 - Enable highlighting after `Component.extend.attrs`, thanks to @Cu3PO42
