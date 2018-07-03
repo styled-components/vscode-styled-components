@@ -1,6 +1,10 @@
 # Release Notes
 
-## 0.0.17
+## 0.0.19
+
+- Upgrade to typescript-styled-plugin 0.8.1
+
+## 0.0.18
 
 - Update to styled plugin 0.6.3, thansk to @mjbvz
 
