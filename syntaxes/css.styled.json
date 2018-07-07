@@ -641,7 +641,7 @@
 			]
 		},
 		"interpolation": {
-			"contentName": "source.ts",
+			"contentName": "meta.embedded.line.ts",
 			"begin": "\\${",
 			"beginCaptures": {
 				"0": {

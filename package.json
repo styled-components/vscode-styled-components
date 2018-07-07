@@ -43,7 +43,8 @@
                 "scopeName": "styled",
                 "path": "./syntaxes/styled-components.json",
                 "embeddedLanguages": {
-                    "source.css.scss": "css"
+                    "source.css.scss": "css",
+                    "meta.embedded.line.ts": "typescript"
                 }
             }
         ],
