@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.0.20
+
+- Fix language mode inside js expression, thanks to @mjbvz
+
 ## 0.0.19
 
 - Upgrade to typescript-styled-plugin 0.8.1
