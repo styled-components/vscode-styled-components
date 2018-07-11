@@ -55,6 +55,6 @@
         ]
     },
     "dependencies": {
-        "typescript-styled-plugin": "0.8.1"
+        "typescript-styled-plugin": "0.10.0"
     }
 }
