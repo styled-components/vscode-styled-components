@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.0.21
+
+- Upgrade to typescript-styled-plugin 0.10.0
+- Try making highlighting of template tag more consistent with other tagged templates
+
 ## 0.0.20
 
 - Fix language mode inside js expression, thanks to @mjbvz
