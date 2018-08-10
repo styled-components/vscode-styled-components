@@ -1,5 +1,5 @@
 {
-	"fileTypes": ["js", "jsx", "ts", "tsx"],
+	"fileTypes": ["js", "jsx", "ts", "tsx", "vue"],
 	"injectionSelector": "L:source -comment -string",
 	"patterns": [
 		{
@@ -161,7 +161,7 @@
 					"include": "source.ts#expression"
 				}
 			]
-		}   
+		}
 	],
 	"scopeName": "styled"
 }

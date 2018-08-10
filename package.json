@@ -38,7 +38,8 @@
                     "source.ts",
                     "source.jsx",
                     "source.js.jsx",
-                    "source.tsx"
+                    "source.tsx",
+                    "source.vue"
                 ],
                 "scopeName": "styled",
                 "path": "./syntaxes/styled-components.json",
