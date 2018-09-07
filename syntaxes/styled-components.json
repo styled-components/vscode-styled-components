@@ -1,10 +1,15 @@
 {
-	"fileTypes": ["js", "jsx", "ts", "tsx"],
+	"fileTypes": [
+		"js",
+		"jsx",
+		"ts",
+		"tsx"
+	],
 	"injectionSelector": "L:source -comment -string",
 	"patterns": [
 		{
 			"contentName": "source.css.scss",
-			"begin": "(?:([sS][tT][yY][lL][eE][dD](?:<[_$[:alpha:]][_$[[:alnum:][, '\"]]]+>)?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\([_$[:alpha:]][_$\\.[:alnum:]]*(?:\\s+as\\s+.*?)?\\)))|(css|keyframes|injectGlobal))\\s*(`)",
+			"begin": "(?:([sS][tT][yY][lL][eE][dD](?:<[_$[:alpha:]][_$[[:alnum:][, '\"]]]+>)?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\([_$[:alpha:]][_$\\.[:alnum:]]*(?:\\s+as\\s+.*?)?\\)))|(css|keyframes|injectGlobal|createGlobalStyle))\\s*(`)",
 			"beginCaptures": {
 				"1": {
 					"patterns": [
@@ -161,7 +166,7 @@
 					"include": "source.ts#expression"
 				}
 			]
-		}   
+		}
 	],
 	"scopeName": "styled"
 }
