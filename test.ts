@@ -220,3 +220,20 @@ const Input = styled.input.attrs({
   margin: ${props => props.margin};
   padding: ${props => props.padding};
 `;
+
+injectGlobal`
+  @font-face {
+    font-family: "Operator Mono";
+    src: url("../fonts/Operator-Mono.ttf");
+  }
+
+  body {
+    margin: 0;
+  }
+`;
+
+const GlobalStyles = createGlobalStyle`
+  html {
+    color: 'red';
+  }
+`;
