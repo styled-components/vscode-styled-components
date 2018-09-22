@@ -1,5 +1,11 @@
 # Release Notes
 
+## 0.0.22
+
+- Upgrade to typescript-styled-plugin 0.11.0, thanks to @mjbvz
+- Add support for new createGlobalStyle API, thanks to @probablyup
+- Add support for .vue file extension, thanks to @jaxx2104
+
 ## 0.0.21
 
 - Upgrade to typescript-styled-plugin 0.10.0
