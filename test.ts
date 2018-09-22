@@ -1,26 +1,26 @@
 const DotTag = styled.div`
-    color: #ebebeb;
-    font-size: ${props => props.theme.fontSize};
-    font-family: Helvetica;
-    ${mixin}
-`
+  color: #ebebeb;
+  font-size: ${props => props.theme.fontSize};
+  font-family: Helvetica;
+  ${mixin};
+`;
 
-const StringTagname = styled('div')`
-    color: #ff0000;
-`
+const StringTagname = styled("div")`
+  color: #ff0000;
+`;
 
 const Component = styled(Component)`
-    color: #ebebeb;
-`
+  color: #ebebeb;
+`;
 
 const SegmentedComponent = styled(Segmented.Component)`
-    padding: 3px;
-`
+  padding: 3px;
+`;
 
 const mixin = css`
-    height: 20px;
-    padding: 5px;
-`
+  height: 20px;
+  padding: 5px;
+`;
 
 // const comment = css`
 //     height: 20px;
@@ -28,49 +28,50 @@ const mixin = css`
 // `
 
 const arrowFun = (...args) => css`
-    height: 12px;
-`
+  height: 12px;
+`;
 
-const test = "broken" /* Highlighting is broken after a styled-component is returned from an arrow function*/
+const test =
+  "broken"; /* Highlighting is broken after a styled-component is returned from an arrow function*/
 
 class InsideMethod extends React.Component {
-    render () {
-        return styled(Component)`
-            line-height: 21px;
-        `
-    }
+  render() {
+    return styled(Component)`
+      line-height: 21px;
+    `;
+  }
 }
 
-let variableAssignment
+let variableAssignment;
 
 variableAssignment = css`
-    height: 1px;
-`
-
-/* expression */
- (styled.div`
+  height: 1px;
+`(
+  /* expression */
+  styled.div`
     height: 12px;
-`)
+  `
+);
 
 export default styled(ExportComponent)`
-	max-width: 100%;
-`
+  max-width: 100%;
+`;
 
 function insideFunction() {
-    return styled.div`
-        height: 15px;
-    `
+  return styled.div`
+    height: 15px;
+  `;
 }
 
 const ObjectLiteral = {
-    styles: styled`
+  styles: styled`
         height: 12px;
         color: #000000;
-        font: ${props => 'lol'};
-        ${props => 'padding: 5px'}
-        ${props => 'border'}: 1px solid #000000;
+        font: ${props => "lol"};
+        ${props => "padding: 5px"}
+        ${props => "border"}: 1px solid #000000;
     `
-}
+};
 
 const rotate360 = keyframes`
     from {
@@ -79,39 +80,43 @@ const rotate360 = keyframes`
     to {
         transform: rotate(1turn);
     }
-`
+`;
 
 // .extend
 
-const Comp = styled.div`color: red;`
+const Comp = styled.div`
+  color: red;
+`;
 
 const NewComp = Comp.extend`
   color: green;
-`
+`;
 
 // .withComponent()
 
-const NewCompWithString = CompWithComponent.withComponent('span').extend`
+const NewCompWithString = CompWithComponent.withComponent("span").extend`
   color: green;
-`
+`;
 
-const NewCompWithString = CompWithComponent.withComponent('span')`
+const NewCompWithString = CompWithComponent.withComponent("span")`
   color: green;
-`
+`;
 
-const NewCompWithStringOneLine = CompWithComponent.withComponent('span')`color: green;`
+const NewCompWithStringOneLine = CompWithComponent.withComponent(
+  "span"
+)`color: green;`;
 
 const NewCompWithComponent = CompWithComponent.withComponent(OtherComp)`
   color: green;
-`
-
+`;
 
 // Typescript
-const Root = styled<RootProps>('div')`
-  height: ${(props) => props.label ? 72 : 48}px;
-`
+const Root = styled<RootProps>("div")`
+  height: ${props => (props.label ? 72 : 48)}px;
+`;
 
 // Typescript, Emotion
+// prettier-ignore
 const Container = styled<ContainerProps, 'div'>('div')`
   height: 50px;
   display: ${(props) => props.display};
@@ -120,32 +125,32 @@ const Container = styled<ContainerProps, 'div'>('div')`
 // SC.attrs({})
 
 const Link = styled.a.attrs({
-  target: '_blank'
+  target: "_blank"
 })`
   color: red;
-`
+`;
 
 // Functional Media Queries - https://www.styled-components.com/docs/advanced#media-templates
 const sizes = {
   desktop: 992,
   tablet: 768,
-  phone: 376,
-}
+  phone: 376
+};
 
 const media = Object.keys(sizes).reduce((acc, label) => {
   acc[label] = (...args) => css`
     @media (max-width: ${sizes[label] / 16}em) {
       ${css(...args)};
     }
-  `
-})
+  `;
+});
 const Input = styled.input.attrs({
   // we can define static props
-  type: 'password',
+  type: "password",
 
   // or we can define dynamic ones
-  margin: props => props.size || '1em',
-  padding: props => props.size || '1em'
+  margin: props => props.size || "1em",
+  padding: props => props.size || "1em"
 })`
   color: palevioletred;
   font-size: 1em;
@@ -164,21 +169,19 @@ const mediaQuery = styled.div`
     background: red;
   `};
 
-  ${media.breakAt('300px')`
+  ${media.breakAt("300px")`
     background: palevioletred;
-  `}
-
-  ${media.desktop(400)`
+  `} ${media.desktop(400)`
     background: coral;
   `};
-`
+`;
 const Input = styled.input.attrs({
   // we can define static props
-  type: 'password',
+  type: "password",
 
   // or we can define dynamic ones
-  margin: props => props.size || '1em',
-  padding: props => props.size || '1em'
+  margin: props => props.size || "1em",
+  padding: props => props.size || "1em"
 })`
   color: palevioletred;
   font-size: 1em;
@@ -192,11 +195,11 @@ const Input = styled.input.attrs({
 
 const Input = styled.input.attrs({
   // we can define static props
-  type: 'password',
+  type: "password",
 
   // or we can define dynamic ones
-  margin: props => props.size || '1em',
-  padding: props => props.size || '1em'
+  margin: props => props.size || "1em",
+  padding: props => props.size || "1em"
 })`
   color: palevioletred;
   font-size: 1em;
@@ -207,11 +210,9 @@ const Input = styled.input.attrs({
     background: red;
   `};
 
-  ${media.breakAt('300px')`
+  ${media.breakAt("300px")`
     background: palevioletred;
-  `}
-
-  ${media.desktop(400)`
+  `} ${media.desktop(400)`
     background: coral;
   `};
 
