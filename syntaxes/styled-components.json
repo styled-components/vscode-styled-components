@@ -3,7 +3,8 @@
 		"js",
 		"jsx",
 		"ts",
-		"tsx"
+		"tsx",
+		"vue"
 	],
 	"injectionSelector": "L:source -comment -string",
 	"patterns": [
