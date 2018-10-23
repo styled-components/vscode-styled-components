@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.0.23
+
+- Upgrade to typescript-styled-plugin 0.12.0, thanks to @mjbvz
+
 ## 0.0.22
 
 - Upgrade to typescript-styled-plugin 0.11.0, thanks to @mjbvz
