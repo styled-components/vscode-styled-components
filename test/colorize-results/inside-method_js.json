@@ -121,7 +121,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.class.js meta.method.declaration.js",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -187,7 +187,7 @@
 		}
 	},
 	{
-		"c": "        ",
+		"c": "    ",
 		"t": "source.js meta.class.js meta.method.declaration.js meta.block.js",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -385,7 +385,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.class.js meta.method.declaration.js meta.block.js",
 		"r": {
 			"dark_plus": "default: #D4D4D4",

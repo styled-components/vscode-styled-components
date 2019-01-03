@@ -1,5 +1,5 @@
 const ObjectLiteral = {
-    styles: styled`
+  styles: styled`
         height: 12px;
         color: #000000;
         font: ${props => "lol"};

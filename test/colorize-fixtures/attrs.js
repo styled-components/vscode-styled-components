@@ -1,5 +1,5 @@
 const Link = styled.a.attrs({
-    target: "_blank"
+  target: "_blank"
 })`
   color: red;
 `;

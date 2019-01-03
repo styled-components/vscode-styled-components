@@ -77,7 +77,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.function.js meta.block.js",
 		"r": {
 			"dark_plus": "default: #D4D4D4",

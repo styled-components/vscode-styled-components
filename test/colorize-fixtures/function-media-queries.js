@@ -1,24 +1,24 @@
 // Functional Media Queries - https://www.styled-components.com/docs/advanced#media-templates
 const sizes = {
-    desktop: 992,
-    tablet: 768,
-    phone: 376
+  desktop: 992,
+  tablet: 768,
+  phone: 376
 };
 
 const media = Object.keys(sizes).reduce((acc, label) => {
-    acc[label] = (...args) => css`
+  acc[label] = (...args) => css`
     @media (max-width: ${sizes[label] / 16}em) {
       ${css(...args)};
     }
   `;
 });
 const Input = styled.input.attrs({
-    // we can define static props
-    type: "password",
+  // we can define static props
+  type: "password",
 
-    // or we can define dynamic ones
-    margin: props => props.size || "1em",
-    padding: props => props.size || "1em"
+  // or we can define dynamic ones
+  margin: props => props.size || "1em",
+  padding: props => props.size || "1em"
 })`
   color: palevioletred;
   font-size: 1em;
@@ -44,12 +44,12 @@ const mediaQuery = styled.div`
   `};
 `;
 const Input = styled.input.attrs({
-    // we can define static props
-    type: "password",
+  // we can define static props
+  type: "password",
 
-    // or we can define dynamic ones
-    margin: props => props.size || "1em",
-    padding: props => props.size || "1em"
+  // or we can define dynamic ones
+  margin: props => props.size || "1em",
+  padding: props => props.size || "1em"
 })`
   color: palevioletred;
   font-size: 1em;
@@ -62,12 +62,12 @@ const Input = styled.input.attrs({
 `;
 
 const Input = styled.input.attrs({
-    // we can define static props
-    type: "password",
+  // we can define static props
+  type: "password",
 
-    // or we can define dynamic ones
-    margin: props => props.size || "1em",
-    padding: props => props.size || "1em"
+  // or we can define dynamic ones
+  margin: props => props.size || "1em",
+  padding: props => props.size || "1em"
 })`
   color: palevioletred;
   font-size: 1em;
@@ -88,4 +88,3 @@ const Input = styled.input.attrs({
   margin: ${props => props.margin};
   padding: ${props => props.padding};
 `;
-

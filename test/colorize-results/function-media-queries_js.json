@@ -99,7 +99,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.js",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -165,7 +165,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.js",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -231,7 +231,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.js",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -583,7 +583,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.arrow.js meta.block.js",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -1342,7 +1342,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.whitespace.comment.leading.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -1375,7 +1375,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -1463,7 +1463,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.whitespace.comment.leading.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -1496,7 +1496,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -1694,7 +1694,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -3575,7 +3575,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.whitespace.comment.leading.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -3608,7 +3608,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -3696,7 +3696,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.whitespace.comment.leading.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -3729,7 +3729,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -3927,7 +3927,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -5005,7 +5005,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.whitespace.comment.leading.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -5038,7 +5038,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -5126,7 +5126,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.whitespace.comment.leading.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -5159,7 +5159,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
@@ -5357,7 +5357,7 @@
 		}
 	},
 	{
-		"c": "    ",
+		"c": "  ",
 		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",

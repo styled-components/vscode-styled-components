@@ -1,5 +1,5 @@
 function insideFunction() {
-    return styled.div`
+  return styled.div`
     height: 15px;
   `;
 }

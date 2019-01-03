@@ -7,7 +7,7 @@ const NewCompWithString = CompWithComponent.withComponent("span")`
 `;
 
 const NewCompWithStringOneLine = CompWithComponent.withComponent(
-    "span"
+  "span"
 )`color: green;`;
 
 const NewCompWithComponent = CompWithComponent.withComponent(OtherComp)`
