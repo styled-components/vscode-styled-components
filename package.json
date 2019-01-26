@@ -17,7 +17,9 @@
     "Programming Languages"
   ],
   "scripts": {
-    "format": "prettier --write '**/*.{js,jsx,md,json,css}'"
+    "format": "prettier --write '**/*.{js,jsx,md,json,css}'",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test ./test"
   },
   "contributes": {
     "languages": [
@@ -63,6 +65,7 @@
   },
   "devDependencies": {
     "prettier": "^1.14.3",
-    "prettier-cli": "^0.1.0"
+    "prettier-cli": "^0.1.0",
+    "vscode": "^1.1.26"
   }
 }
