@@ -56,7 +56,8 @@
     ],
     "typescriptServerPlugins": [
       {
-        "name": "typescript-styled-plugin"
+        "name": "typescript-styled-plugin",
+        "enableForWorkspaceTypeScriptVersions": true
       }
     ]
   },
