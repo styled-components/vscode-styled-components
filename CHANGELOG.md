@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.0.26
+
+- Enable plugin with workspace version by default, thanks to @mjbvz 
+- Add support for TypeScript type parameters, thansk to @antoinerousseau
+
 ## 0.0.25
 
 - Fix [#137](https://github.com/styled-components/vscode-styled-components/issues/137), thanks to @jbm1991
