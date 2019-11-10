@@ -62,7 +62,7 @@
     ]
   },
   "dependencies": {
-    "typescript-styled-plugin": "0.14.0"
+    "typescript-styled-plugin": "0.15.0"
   },
   "devDependencies": {
     "prettier": "^1.14.3",
