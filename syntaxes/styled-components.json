@@ -161,6 +161,38 @@
           "include": "source.ts#expression"
         }
       ]
+    },
+    {
+      "contentName": "source.css.scss",
+      "begin": "\\s*(css)(=)(\\{)(`)",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.other.attribute-name.jsx"
+        },
+        "2": {
+          "name": "keyword.operator.assignment.jsx"
+        },
+        "3": {
+          "name": "punctuation.section.embedded.begin.jsx"
+        },
+        "4": {
+          "name": "punctuation.definition.string.template.begin.jsx string.template.js"
+        }
+      },
+      "end": "(`)(\\})\\s*",
+      "endCaptures": {
+        "1": {
+          "name": "punctuation.definition.string.template.end.jsx string.template.js"
+        },
+        "2": {
+          "name": "punctuation.section.embedded.end.jsx"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.css.styled"
+        }
+      ]
     }
   ],
   "scopeName": "styled"
