@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.0.27
+
+- Add support for css prop [#173](https://github.com/styled-components/vscode-styled-components/pull/173), thanks to @njdancer
+- Update typescript-styled-plugin [#195](https://github.com/styled-components/vscode-styled-components/pull/195), thanks to @mjbvz 
+
 ## 0.0.26
 
 - Enable plugin with workspace version by default, thanks to @mjbvz 
