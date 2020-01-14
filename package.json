@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "format": "prettier --write '**/*.{js,jsx,md,json,css}'",
-    "postinstall": "node ./node_modules/vscode/bin/install",
+    "prepare": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test ./test"
   },
   "contributes": {
