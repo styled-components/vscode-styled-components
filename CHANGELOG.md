@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.0.29
+
+- Fix release issue
+
 ## 0.0.28
 
 - fix for space before <type>, thanks to @mrGibi
