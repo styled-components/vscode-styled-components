@@ -1,13 +1,17 @@
 # Release Notes
 
+## 0.0.28
+
+- fix for space before <type>, thanks to @mrGibi
+
 ## 0.0.27
 
 - Add support for css prop [#173](https://github.com/styled-components/vscode-styled-components/pull/173), thanks to @njdancer
-- Update typescript-styled-plugin [#195](https://github.com/styled-components/vscode-styled-components/pull/195), thanks to @mjbvz 
+- Update typescript-styled-plugin [#195](https://github.com/styled-components/vscode-styled-components/pull/195), thanks to @mjbvz
 
 ## 0.0.26
 
-- Enable plugin with workspace version by default, thanks to @mjbvz 
+- Enable plugin with workspace version by default, thanks to @mjbvz
 - Add support for TypeScript type parameters, thansk to @antoinerousseau
 
 ## 0.0.25
