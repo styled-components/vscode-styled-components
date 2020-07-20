@@ -2,7 +2,7 @@
   "name": "vscode-styled-components",
   "displayName": "vscode-styled-components",
   "description": "Syntax highlighting for styled-components",
-  "version": "0.0.25",
+  "version": "0.0.29",
   "publisher": "jpoissonnier",
   "icon": "logo.png",
   "license": "MIT",
@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "format": "prettier --write '**/*.{js,jsx,md,json,css}'",
-    "postinstall": "node ./node_modules/vscode/bin/install",
+    "prepare": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test ./test"
   },
   "contributes": {
@@ -56,12 +56,13 @@
     ],
     "typescriptServerPlugins": [
       {
-        "name": "typescript-styled-plugin"
+        "name": "typescript-styled-plugin",
+        "enableForWorkspaceTypeScriptVersions": true
       }
     ]
   },
   "dependencies": {
-    "typescript-styled-plugin": "0.13.0"
+    "typescript-styled-plugin": "0.15.0"
   },
   "devDependencies": {
     "prettier": "^1.14.3",
