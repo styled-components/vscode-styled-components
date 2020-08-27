@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.0.30
+
+- support .withConfig() [225](https://github.com/styled-components/vscode-styled-components/pull/225), thanks to @auver
+
 ## 0.0.29
 
 - Fix release issue
