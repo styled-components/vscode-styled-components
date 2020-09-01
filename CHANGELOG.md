@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.0.31
+
+- support custom-at-rules [230](https://github.com/styled-components/vscode-styled-components/pull/230), thanks to @vxna
+
 ## 0.0.30
 
 - support .withConfig() [225](https://github.com/styled-components/vscode-styled-components/pull/225), thanks to @auver
