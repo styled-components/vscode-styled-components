@@ -30,6 +30,12 @@
       "include": "#at_rule_supports"
     },
     {
+      "include": "#at_rule_custom_single"
+    },
+    {
+      "include": "#at_rule_custom"
+    },
+    {
       "match": ";",
       "name": "punctuation.terminator.rule.css"
     },
@@ -323,6 +329,69 @@
         {
           "match": "\\)",
           "name": "punctuation.definition.condition.end.bracket.round.scss"
+        }
+      ]
+    },
+    "at_rule_custom_single": {
+      "begin": "(?i)(?=@[\\w-]+[^;]+;s*$)",
+      "end": "(?<=;)(?!\\G)",
+      "patterns": [
+        {
+          "begin": "(?i)\\G(@)[\\w-]+",
+          "beginCaptures": {
+            "0": {
+              "name": "keyword.control.at-rule.css"
+            },
+            "1": {
+              "name": "punctuation.definition.keyword.css"
+            }
+          },
+          "end": ";",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.terminator.rule.css"
+            }
+          },
+          "name": "meta.at-rule.header.css"
+        }
+      ]
+    },
+    "at_rule_custom": {
+      "begin": "(?i)(?=@[\\w-]+(\\s|\\(|{|/\\*|$))",
+      "end": "(?<=})(?!\\G)",
+      "patterns": [
+        {
+          "begin": "(?i)\\G(@)[\\w-]+",
+          "beginCaptures": {
+            "0": {
+              "name": "keyword.control.at-rule.css"
+            },
+            "1": {
+              "name": "punctuation.definition.keyword.css"
+            }
+          },
+          "end": "(?=\\s*[{;])",
+          "name": "meta.at-rule.header.css"
+        },
+        {
+          "begin": "{",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.section.begin.bracket.curly.css"
+            }
+          },
+          "end": "}",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.section.end.bracket.curly.css"
+            }
+          },
+          "name": "meta.at-rule.body.css",
+          "patterns": [
+            {
+              "include": "$self"
+            }
+          ]
         }
       ]
     },
