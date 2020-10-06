@@ -22,6 +22,6 @@ jobs:
           node-version: 12.x
       - run: yarn install
       - name: Run tests
-    uses: GabrielBB/xvfb-action@v1.4
-    with:
-      run: yarn test --silent
+        uses: GabrielBB/xvfb-action@v1.4
+        with:
+          run: yarn test --silent
