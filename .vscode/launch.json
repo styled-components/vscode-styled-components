@@ -11,6 +11,18 @@
       "outFiles": ["${workspaceFolder}/out/**/*.js"],
       "sourceMaps": true,
       "preLaunchTask": "npm: watch"
+    },
+    {
+      "name": "Mocha: Extension Tests",
+      "type": "extensionHost",
+      "request": "launch",
+      "runtimeExecutable": "${execPath}",
+      "args": [
+        "--disable-extensions",
+        "--extensionDevelopmentPath=${workspaceFolder}",
+        "--extensionTestsPath=${workspaceFolder}/src/tests/suite/index.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
     }
   ]
 }

@@ -7,7 +7,7 @@
 
 const assert = require("assert");
 const { commands, Uri } = require("vscode");
-const { join, basename, normalize, dirname } = require("path");
+const { join, basename, dirname } = require("path");
 const fs = require("fs");
 
 function assertUnchangedTokens(testFixurePath, done) {
@@ -15,7 +15,7 @@ function assertUnchangedTokens(testFixurePath, done) {
 
   return commands
     .executeCommand("_workbench.captureSyntaxTokens", Uri.file(testFixurePath))
-    .then(data => {
+    .then((data) => {
       try {
         let resultsFolderPath = join(
           dirname(dirname(testFixurePath)),
@@ -34,7 +34,7 @@ function assertUnchangedTokens(testFixurePath, done) {
             assert.deepEqual(data, previousData);
           } catch (e) {
             fs.writeFileSync(resultPath, JSON.stringify(data, null, "\t"), {
-              flag: "w"
+              flag: "w",
             });
             if (
               Array.isArray(data) &&
@@ -77,7 +77,7 @@ suite("colorization", () => {
   let extensionColorizeFixturePath = join(__dirname, "colorize-fixtures");
   if (fs.existsSync(extensionColorizeFixturePath)) {
     let fixturesFiles = fs.readdirSync(extensionColorizeFixturePath);
-    fixturesFiles.forEach(fixturesFile => {
+    fixturesFiles.forEach((fixturesFile) => {
       // define a test for each fixture
       test(fixturesFile, function(done) {
         assertUnchangedTokens(

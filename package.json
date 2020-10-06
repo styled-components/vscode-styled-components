@@ -12,16 +12,15 @@
   },
   "main": "dist/extension.js",
   "engines": {
-    "vscode": "^1.45.0"
+    "vscode": "^1.49.0"
   },
   "categories": [
     "Programming Languages"
   ],
   "scripts": {
     "format": "prettier --write '**/*.{js,jsx,md,json,css}'",
-    "prepare": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test ./test",
     "compile": "webpack --mode production",
+    "test": "node ./src/tests/runTests.js",
     "webpack": "webpack --mode development",
     "watch": "webpack --mode development --watch",
     "vscode:prepublish": "webpack --mode production"
@@ -74,14 +73,17 @@
   },
   "devDependencies": {
     "@types/node": "^14.10.1",
-    "@types/vscode": "^1.49.0",
+    "@types/mocha": "^8.0.3",
+    "@types/jest": "^26.0.14",
+    "@types/vscode": "^1.47.0",
     "clean-webpack-plugin": "^3.0.0",
-    "typescript": "^4.0.2",
+    "typescript": "^4.0.3",
     "webpack": "^4.44.1",
     "prettier": "^1.14.3",
+    "vscode-test": "^1.4.0",
     "prettier-cli": "^0.1.0",
-    "vscode": "^1.1.26",
     "webpack-cli": "^3.3.12",
-    "ts-loader": "^8.0.3"
+    "ts-loader": "^8.0.3",
+    "mocha": "^8.1.3"
   }
 }
