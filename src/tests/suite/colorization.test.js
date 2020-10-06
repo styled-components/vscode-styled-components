@@ -2,7 +2,6 @@
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
-// @ts-check
 "use strict";
 
 const assert = require("assert");
@@ -31,7 +30,7 @@ function assertUnchangedTokens(testFixurePath, done) {
         if (fs.existsSync(resultPath)) {
           let previousData = JSON.parse(fs.readFileSync(resultPath).toString());
           try {
-            assert.deepEqual(data, previousData);
+            assert.deepStrictEqual(data, previousData);
           } catch (e) {
             fs.writeFileSync(resultPath, JSON.stringify(data, null, "\t"), {
               flag: "w",
