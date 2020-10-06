@@ -1,5 +1,13 @@
 # Release Notes
 
+## 1.0.0
+
+- Fixing tests, moving to Github actions
+
+## 0.0.32
+
+- Addition of completion provider [232](https://github.com/styled-components/vscode-styled-components/pull/232)
+
 ## 0.0.31
 
 - support custom-at-rules [230](https://github.com/styled-components/vscode-styled-components/pull/230), thanks to @vxna

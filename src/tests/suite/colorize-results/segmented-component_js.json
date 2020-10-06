@@ -22,11 +22,11 @@
 		}
 	},
 	{
-		"c": "GlobalStyles",
+		"c": "SegmentedComponent",
 		"t": "source.js meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.constant.js",
 		"r": {
-			"dark_plus": "variable: #9CDCFE",
-			"light_plus": "variable: #001080",
+			"dark_plus": "variable.other.constant: #4FC1FF",
+			"light_plus": "variable.other.constant: #0070C1",
 			"dark_vs": "default: #D4D4D4",
 			"light_vs": "default: #000000",
 			"hc_black": "variable: #9CDCFE"
@@ -66,14 +66,69 @@
 		}
 	},
 	{
-		"c": "createGlobalStyle",
-		"t": "source.js meta.var.expr.js entity.name.function.tagged-template.js",
+		"c": "styled",
+		"t": "source.js meta.var.expr.js meta.function-call.ts entity.name.function.ts",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
 			"dark_vs": "default: #D4D4D4",
 			"light_vs": "default: #000000",
 			"hc_black": "entity.name.function: #DCDCAA"
+		}
+	},
+	{
+		"c": "(",
+		"t": "source.js meta.var.expr.js meta.brace.round.ts",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "Segmented",
+		"t": "source.js meta.var.expr.js variable.other.object.ts",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": ".",
+		"t": "source.js meta.var.expr.js punctuation.accessor.ts",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "Component",
+		"t": "source.js meta.var.expr.js variable.other.property.ts",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": ")",
+		"t": "source.js meta.var.expr.js meta.brace.round.ts",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
@@ -99,14 +154,25 @@
 		}
 	},
 	{
-		"c": "html",
-		"t": "source.js meta.var.expr.js source.css.scss entity.name.tag.css",
+		"c": "padding",
+		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
-			"dark_plus": "entity.name.tag.css: #D7BA7D",
-			"light_plus": "entity.name.tag: #800000",
-			"dark_vs": "entity.name.tag.css: #D7BA7D",
-			"light_vs": "entity.name.tag: #800000",
-			"hc_black": "entity.name.tag.css: #D7BA7D"
+			"dark_plus": "support.type.property-name: #9CDCFE",
+			"light_plus": "support.type.property-name: #FF0000",
+			"dark_vs": "support.type.property-name: #9CDCFE",
+			"light_vs": "support.type.property-name: #FF0000",
+			"hc_black": "support.type.property-name: #D4D4D4"
+		}
+	},
+	{
+		"c": ":",
+		"t": "source.js meta.var.expr.js source.css.scss punctuation.separator.key-value.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
@@ -121,118 +187,30 @@
 		}
 	},
 	{
-		"c": "{",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss punctuation.section.property-list.begin.bracket.curly.scss",
+		"c": "3",
+		"t": "source.js meta.var.expr.js source.css.scss meta.property-value.scss constant.numeric.css",
 		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
+			"dark_plus": "constant.numeric: #B5CEA8",
+			"light_plus": "constant.numeric: #098658",
+			"dark_vs": "constant.numeric: #B5CEA8",
+			"light_vs": "constant.numeric: #098658",
+			"hc_black": "constant.numeric: #B5CEA8"
 		}
 	},
 	{
-		"c": "    ",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss",
+		"c": "px",
+		"t": "source.js meta.var.expr.js source.css.scss meta.property-value.scss constant.numeric.css keyword.other.unit.px.css",
 		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
-		}
-	},
-	{
-		"c": "color",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss meta.property-name.scss support.type.property-name.css",
-		"r": {
-			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
-			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
-			"hc_black": "support.type.property-name: #D4D4D4"
-		}
-	},
-	{
-		"c": ":",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss punctuation.separator.key-value.scss",
-		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
-		}
-	},
-	{
-		"c": " ",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss",
-		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
-		}
-	},
-	{
-		"c": "'",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss meta.property-value.scss string.quoted.single.scss punctuation.definition.string.begin.scss",
-		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
-		}
-	},
-	{
-		"c": "red",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss meta.property-value.scss string.quoted.single.scss",
-		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
-		}
-	},
-	{
-		"c": "'",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss meta.property-value.scss string.quoted.single.scss punctuation.definition.string.end.scss",
-		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
+			"dark_plus": "keyword.other.unit: #B5CEA8",
+			"light_plus": "keyword.other.unit: #098658",
+			"dark_vs": "keyword.other.unit: #B5CEA8",
+			"light_vs": "keyword.other.unit: #098658",
+			"hc_black": "keyword.other.unit: #B5CEA8"
 		}
 	},
 	{
 		"c": ";",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss punctuation.terminator.rule.scss",
-		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
-		}
-	},
-	{
-		"c": "  ",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss",
-		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
-		}
-	},
-	{
-		"c": "}",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss punctuation.section.property-list.end.bracket.curly.scss",
+		"t": "source.js meta.var.expr.js source.css.scss punctuation.terminator.rule.scss",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",

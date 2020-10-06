@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es6",
+    "target": "es2019",
     "outDir": "dist",
-    "lib": ["es6"],
+    "rootDir": "src",
+    "lib": ["ES2019"],
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
@@ -13,5 +14,5 @@
     // "noFallthroughCasesInSwitch": true, /* Report errors for fallthrough cases in switch statement. */
     // "noUnusedParameters": true,  /* Report errors on unused parameters. */
   },
-  "exclude": ["node_modules", ".vscode-test", "test"]
+  "exclude": ["node_modules", ".vscode-test", "src/tests"]
 }

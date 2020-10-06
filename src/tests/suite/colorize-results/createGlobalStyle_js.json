@@ -22,11 +22,11 @@
 		}
 	},
 	{
-		"c": "StringTagname",
+		"c": "GlobalStyles",
 		"t": "source.js meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.constant.js",
 		"r": {
-			"dark_plus": "variable: #9CDCFE",
-			"light_plus": "variable: #001080",
+			"dark_plus": "variable.other.constant: #4FC1FF",
+			"light_plus": "variable.other.constant: #0070C1",
 			"dark_vs": "default: #D4D4D4",
 			"light_vs": "default: #000000",
 			"hc_black": "variable: #9CDCFE"
@@ -66,69 +66,14 @@
 		}
 	},
 	{
-		"c": "styled",
-		"t": "source.js meta.var.expr.js meta.function-call.ts entity.name.function.ts",
+		"c": "createGlobalStyle",
+		"t": "source.js meta.var.expr.js entity.name.function.tagged-template.js",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
 			"dark_vs": "default: #D4D4D4",
 			"light_vs": "default: #000000",
 			"hc_black": "entity.name.function: #DCDCAA"
-		}
-	},
-	{
-		"c": "(",
-		"t": "source.js meta.var.expr.js meta.brace.round.ts",
-		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
-		}
-	},
-	{
-		"c": "\"",
-		"t": "source.js meta.var.expr.js string.quoted.double.ts punctuation.definition.string.begin.ts",
-		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
-		}
-	},
-	{
-		"c": "div",
-		"t": "source.js meta.var.expr.js string.quoted.double.ts",
-		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
-		}
-	},
-	{
-		"c": "\"",
-		"t": "source.js meta.var.expr.js string.quoted.double.ts punctuation.definition.string.end.ts",
-		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
-		}
-	},
-	{
-		"c": ")",
-		"t": "source.js meta.var.expr.js meta.brace.round.ts",
-		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
@@ -154,25 +99,14 @@
 		}
 	},
 	{
-		"c": "color",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
+		"c": "html",
+		"t": "source.js meta.var.expr.js source.css.scss entity.name.tag.css",
 		"r": {
-			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
-			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
-			"hc_black": "support.type.property-name: #D4D4D4"
-		}
-	},
-	{
-		"c": ":",
-		"t": "source.js meta.var.expr.js source.css.scss punctuation.separator.key-value.scss",
-		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
+			"dark_plus": "entity.name.tag.css: #D7BA7D",
+			"light_plus": "entity.name.tag: #800000",
+			"dark_vs": "entity.name.tag.css: #D7BA7D",
+			"light_vs": "entity.name.tag: #800000",
+			"hc_black": "entity.name.tag.css: #D7BA7D"
 		}
 	},
 	{
@@ -187,30 +121,118 @@
 		}
 	},
 	{
-		"c": "#",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-value.scss constant.other.color.rgb-value.hex.css punctuation.definition.constant.css",
+		"c": "{",
+		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss punctuation.section.property-list.begin.bracket.curly.scss",
 		"r": {
-			"dark_plus": "constant.other.color.rgb-value: #CE9178",
-			"light_plus": "constant.other.color.rgb-value: #0451A5",
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
 			"dark_vs": "default: #D4D4D4",
-			"light_vs": "constant.other.color.rgb-value: #0451A5",
-			"hc_black": "constant.other.color.rgb-value: #CE9178"
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
-		"c": "ff0000",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-value.scss constant.other.color.rgb-value.hex.css",
+		"c": "    ",
+		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss",
 		"r": {
-			"dark_plus": "constant.other.color.rgb-value: #CE9178",
-			"light_plus": "constant.other.color.rgb-value: #0451A5",
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
 			"dark_vs": "default: #D4D4D4",
-			"light_vs": "constant.other.color.rgb-value: #0451A5",
-			"hc_black": "constant.other.color.rgb-value: #CE9178"
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "color",
+		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss meta.property-name.scss support.type.property-name.css",
+		"r": {
+			"dark_plus": "support.type.property-name: #9CDCFE",
+			"light_plus": "support.type.property-name: #FF0000",
+			"dark_vs": "support.type.property-name: #9CDCFE",
+			"light_vs": "support.type.property-name: #FF0000",
+			"hc_black": "support.type.property-name: #D4D4D4"
+		}
+	},
+	{
+		"c": ":",
+		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss punctuation.separator.key-value.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "'",
+		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss meta.property-value.scss string.quoted.single.scss punctuation.definition.string.begin.scss",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "red",
+		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss meta.property-value.scss string.quoted.single.scss",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "'",
+		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss meta.property-value.scss string.quoted.single.scss punctuation.definition.string.end.scss",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
 		}
 	},
 	{
 		"c": ";",
-		"t": "source.js meta.var.expr.js source.css.scss punctuation.terminator.rule.scss",
+		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss punctuation.terminator.rule.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "  ",
+		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "}",
+		"t": "source.js meta.var.expr.js source.css.scss meta.property-list.scss punctuation.section.property-list.end.bracket.curly.scss",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
