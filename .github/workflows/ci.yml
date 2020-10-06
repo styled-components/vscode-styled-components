@@ -10,8 +10,8 @@ jobs:
   build:
     name: Continuous Integration
     strategy:
-    matrix:
-      os: [macos-latest, ubuntu-latest, windows-latest]
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
