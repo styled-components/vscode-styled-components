@@ -5,7 +5,8 @@
 - Fixing tests, moving to Github actions
 - add support for more type parameters [236](https://github.com/styled-components/vscode-styled-components/pull/236)
 - Addition of completion provider [232](https://github.com/styled-components/vscode-styled-components/pull/232)
-- Contribution Guide added
+- Contribution Guide added [223](https://github.com/styled-components/vscode-styled-components/pull/223)
+- TS Generics support for .attr syntax
 
 ## 0.0.31
 
