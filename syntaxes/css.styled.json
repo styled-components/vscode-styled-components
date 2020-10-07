@@ -214,6 +214,9 @@
               "include": "#comment_block"
             },
             {
+              "include": "#comment_line"
+            },
+            {
               "match": "\\b(only)\\b",
               "name": "keyword.control.operator.css.scss"
             },
@@ -410,6 +413,16 @@
       },
       "name": "comment.block.scss"
     },
+		"comment_line": {
+			"begin": "//",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.comment.scss"
+				}
+			},
+			"end": "\\n",
+			"name": "comment.line.scss"
+		},
     "constant_important": {
       "match": "!important",
       "name": "keyword.other.important.scss"
@@ -706,6 +719,9 @@
         },
         {
           "include": "#comment_block"
+        },
+        {
+          "include": "#comment_line"
         }
       ]
     },

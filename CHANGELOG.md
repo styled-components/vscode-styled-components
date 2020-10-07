@@ -7,6 +7,7 @@
 - Addition of completion provider [232](https://github.com/styled-components/vscode-styled-components/pull/232)
 - Contribution Guide added [223](https://github.com/styled-components/vscode-styled-components/pull/223)
 - TS Generics support for .attr syntax
+- Support single line comments
 
 ## 0.0.31
 
