@@ -1,3 +1,6 @@
 package-lock.json
+.github
+node_modules
 .vscode-test
-test/colorize-results/
+src/tests
+dist

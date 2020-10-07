@@ -3,10 +3,9 @@
 ## 1.0.0
 
 - Fixing tests, moving to Github actions
-
-## 0.0.32
-
+- add support for more type parameters [236](https://github.com/styled-components/vscode-styled-components/pull/236)
 - Addition of completion provider [232](https://github.com/styled-components/vscode-styled-components/pull/232)
+- Contribution Guide added
 
 ## 0.0.31
 
