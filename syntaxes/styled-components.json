@@ -1,5 +1,11 @@
 {
-  "fileTypes": ["js", "jsx", "ts", "tsx", "vue"],
+  "fileTypes": [
+    "js",
+    "jsx",
+    "ts",
+    "tsx",
+    "vue"
+  ],
   "injectionSelector": "L:source -comment -string",
   "patterns": [
     {
@@ -126,7 +132,7 @@
       ]
     },
     {
-      "begin": "(?:([\\s\\S][sS][tT][yY][lL][eE][dD](?:<[_$[:alpha:]][_$[:alnum:]]+>)?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\([_$[:alpha:]][_$\\.[:alnum:]]*(?:\\s+as\\s+.*?)?\\)))|(\\.)(extend))(?=\\.(attrs|withConfig)\\s*\\()",
+      "begin": "(?:([\\s\\S][sS][tT][yY][lL][eE][dD](?:<[_$[:alpha:]][_$[:alnum:]]+>)?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\([_$[:alpha:]][_$\\.[:alnum:]]*(?:\\s+as\\s+.*?)?\\)))|(\\.)(extend))(?=\\.(attrs|withConfig)\\s*(?:<.+>)?\\s*\\()",
       "beginCaptures": {
         "1": {
           "patterns": [
