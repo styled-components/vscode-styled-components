@@ -8,6 +8,7 @@
 - Contribution Guide added [223](https://github.com/styled-components/vscode-styled-components/pull/223)
 - TS Generics support for .attr syntax
 - Support single line comments
+- Fix aspect-ratio issue [190](https://github.com/styled-components/vscode-styled-components/issues/190)
 
 ## 0.0.31
 

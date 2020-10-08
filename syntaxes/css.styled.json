@@ -777,6 +777,9 @@
           "patterns": [
             {
               "include": "source.css#property-names"
+            },
+            {
+              "include": "source.css#media-features"
             }
           ]
         },
