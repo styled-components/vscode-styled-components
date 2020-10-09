@@ -2,13 +2,16 @@
 
 ## 1.0.0
 
-- Fixing tests, moving to Github actions
-- add support for more type parameters [236](https://github.com/styled-components/vscode-styled-components/pull/236)
+- We're 1.0.0!
+- We have a more stable test system, moving to Github actions
+- Support added for more type parameters [236](https://github.com/styled-components/vscode-styled-components/pull/236)
 - Addition of completion provider [232](https://github.com/styled-components/vscode-styled-components/pull/232)
 - Contribution Guide added [223](https://github.com/styled-components/vscode-styled-components/pull/223)
-- TS Generics support for .attr syntax
-- Support single line comments
-- Fix aspect-ratio issue [190](https://github.com/styled-components/vscode-styled-components/issues/190)
+- TS Generics support for `.attr` syntax
+- Single line comments now supported
+- Fixed issue with `aspect-ratio` not working [190](https://github.com/styled-components/vscode-styled-components/issues/190)
+
+As it's Hacktoberfest we appreciate any contributions and have plenty of issues to work on, [take a look](https://github.com/styled-components/vscode-styled-components/issues)
 
 ## 0.0.31
 
