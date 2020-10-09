@@ -17,6 +17,14 @@ It can take some time to get used to the regular expressions.
 To visually test your changes click on `Launch Extension` on the left panel and open a project of your choosing.
 Something I tend to do is copy (or symlink) the fixtures fodler (colorize-fixtures) and open that with the launched window
 
+## Intellisense isues
+
+Intellisense is handled by https://github.com/microsoft/typescript-styled-plugin.
+
+The best way to debug issues with intellisense is to clone that repo, then use `yarn link` with this repository. That should allow you to inspect what's happening better.
+
+For most things `typescript-styled-plugin` is just a [pass-through](https://github.com/microsoft/typescript-styled-plugin/blob/master/src/_language-service.ts#L87-L95) to the CSS/SCSS language services. For example, looking at [getCompletionItems](https://github.com/microsoft/typescript-styled-plugin/blob/master/src/_language-service.ts#L215-L244) you can see it just calls the equivalent on the upstream language services. So if something works natively (CSS file), but not in styled-components its most likely because it's not passing the correct events through.
+
 ## Tests
 
 You can run tests simply by running `yarn test`.
