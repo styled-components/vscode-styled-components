@@ -20,14 +20,14 @@
   "scripts": {
     "format": "prettier --write .",
     "lint": "prettier --check .",
-    "compile": "webpack --mode production",
+    "compile": "webpack --mode development",
     "test": "node ./src/tests/runTests.js",
-    "webpack": "webpack --mode development",
     "watch": "webpack --mode development --watch",
     "vscode:prepublish": "webpack --mode production"
   },
   "activationEvents": [
-    "onLanguage:typescriptreact"
+    "onLanguage:typescriptreact",
+    "onLanguage:javascriptreact"
   ],
   "contributes": {
     "languages": [
