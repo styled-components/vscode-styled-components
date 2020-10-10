@@ -28,6 +28,11 @@ It should be the top result.
 
 The styled-components extension adds highlighting and IntelliSense for styled-component template strings in JavaScript and TypeScript. See [plugin configuration](https://github.com/Microsoft/typescript-styled-plugin#configuration) for information on configuring the linter and other language features.
 
+## Raising an issue
+
+Please check the issues list to see if it has already been raised. If it has you can vote on it with a thumbsUp emoji.   
+Issues with the most votes tend to be prioritised.
+
 ## Contributing
 
 see [Contributing](./CONTRIBUTING.md)
