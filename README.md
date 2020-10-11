@@ -30,7 +30,7 @@ The styled-components extension adds highlighting and IntelliSense for styled-co
 
 ## Raising an issue
 
-Please check the issues list to see if it has already been raised. If it has you can vote on it with a thumbsUp emoji.   
+Please check the issues list to see if it has already been raised. If it has you can vote on it with a thumbsUp emoji.  
 Issues with the most votes tend to be prioritised.
 
 ## Contributing
