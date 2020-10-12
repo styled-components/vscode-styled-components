@@ -5,7 +5,7 @@
 - Allows spaces before function call parenthesis (fixes ESLint `func-call-spacing`) [238](https://github.com/styled-components/vscode-styled-components/pull/238)
 - Supports function calls inside of `styled` [237](https://github.com/styled-components/vscode-styled-components/pull/237)
 
-## 1.0.0
+## 1.0.0 (09-10-2020)
 
 - We're 1.0.0!
 - We have a more stable test system, moving to Github actions
