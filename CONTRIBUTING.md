@@ -33,8 +33,8 @@ Then for the Launch config inside of `typescript-styled-plugin` i follow this ht
 - In `typescript-styled-plugin` I add a launch config [see Launch Config for styled Plugin below] (this will allow us to set breakpoints in styled-plugin)
 - In `typescript-styled-plugin` sourcemaps are off by default, so you will need to add `"sourceMap": true` under `compilerOptions` to the `tsconfig.json` fille
 - Make sure you `yarn|npm compile` the `typescript-styled-plugin` repo after making changes (you could set up a watch here)
-- Click "Launch extension"
-- Click "Debug Styled Plugin"
+- [Debug Tab] Click "Launch extension"
+- [Debug Tab] Click "Debug Styled Plugin"
 
 You should now be able to use styled-components in the guest window and set breakpoints on the plugin in the main window.
 
