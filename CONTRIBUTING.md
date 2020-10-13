@@ -25,7 +25,7 @@ The best way to debug issues with intellisense is to clone that repo, then use `
 
 For most things `typescript-styled-plugin` is just a [pass-through](https://github.com/microsoft/typescript-styled-plugin/blob/master/src/_language-service.ts#L87-L95) to the CSS/SCSS language services. For example, looking at [getCompletionItems](https://github.com/microsoft/typescript-styled-plugin/blob/master/src/_language-service.ts#L215-L244) you can see it just calls the equivalent on the upstream language services. So if something works natively (CSS file), but not in styled-components its most likely because it's not passing the correct events through.
 
-### Setting Up for development
+### Setting up for development & debugging
 
 I use VSCode's multiroot workspace for this. I have both `typescript-styled-plugin` and `vscode-styled-components` folders loaded.
 - Make sure `typescript-styled-plugin` is yarn linked into `vscode-styled-components`
