@@ -31,6 +31,8 @@ I use VSCode's multiroot workspace for this. I have both `typescript-styled-plug
 Then for the Launch config inside of `typescript-styled-plugin` i follow this https://github.com/microsoft/typescript-styled-plugin/issues/120#issuecomment-707400103 (you can skip to below). 
 - In `vscode-styled-components/.vscode/launch.json`  I add `"env": { "TSS_DEBUG": "9229" }` to the "Launch Extension". You can test this is working by going to chrome://inspect/#devices in your browser.
 - In `typescript-styled-plugin` I add a launch config [see Launch Config for styled Plugin below] (this will allow us to set breakpoints in styled-plugin)
+- In `typescript-styled-plugin` sourcemaps are off by default, so you will need to add `"sourceMap": true` under `compilerOptions` to the `tsconfig.json` fille
+- Make sure you `yarn|npm compile` the `typescript-styled-plugin` repo after making changes (you could set up a watch here)
 - Click "Launch extension"
 - Click "Debug Styled Plugin"
 
