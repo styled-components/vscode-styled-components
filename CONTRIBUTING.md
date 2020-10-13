@@ -27,8 +27,8 @@ For most things `typescript-styled-plugin` is just a [pass-through](https://gith
 
 ### Setting Up for development
 
-I use VSCode's multiroot workspace for this. I have both `typescript-styled-plugin` and `vscode-styled-components` loaded.
-Then for the Launch config inside of `typescript-styled-plugin` i follow this https://github.com/microsoft/typescript-styled-plugin/issues/120#issuecomment-707400103 (you can skip to below). 
+I use VSCode's multiroot workspace for this. I have both `typescript-styled-plugin` and `vscode-styled-components` folders loaded.
+- Make sure `typescript-styled-plugin` is yarn linked into `vscode-styled-components`
 - In `vscode-styled-components/.vscode/launch.json`  I add `"env": { "TSS_DEBUG": "9229" }` to the "Launch Extension". You can test this is working by going to chrome://inspect/#devices in your browser.
 - In `typescript-styled-plugin` I add a launch config [see Launch Config for styled Plugin below] (this will allow us to set breakpoints in styled-plugin)
 - In `typescript-styled-plugin` sourcemaps are off by default, so you will need to add `"sourceMap": true` under `compilerOptions` to the `tsconfig.json` fille
@@ -37,6 +37,10 @@ Then for the Launch config inside of `typescript-styled-plugin` i follow this ht
 - [Debug Tab] Click "Debug Styled Plugin"
 
 You should now be able to use styled-components in the guest window and set breakpoints on the plugin in the main window.
+
+More Info:
+- https://github.com/microsoft/typescript-styled-plugin/issues/120#issuecomment-707400103
+- https://github.com/microsoft/TypeScript/wiki/Writing-a-Language-Service-Plugin#testing-locally
 
 ### Logging
 If you want logging, you can set `"typescript.tsserver.log": "verbose"` in your global settings (or local guest settings) and view the output, there should be a path to a log file that's printed out. Any console.log you do from the plugin will end up in there.
