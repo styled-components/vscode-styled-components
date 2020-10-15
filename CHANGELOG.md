@@ -1,6 +1,6 @@
 # Release Notes
 
-## TBA
+## 1.1.0 (15-09-2020)
 
 - Allows spaces before function call parenthesis (fixes ESLint `func-call-spacing`) [238](https://github.com/styled-components/vscode-styled-components/pull/238)
 - Supports function calls inside of `styled` [237](https://github.com/styled-components/vscode-styled-components/pull/237)
