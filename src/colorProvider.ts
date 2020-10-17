@@ -11,15 +11,39 @@ const colorMatch = /#([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F
 // #rgb or #rgba
 const colorMatchShort = /#([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})?/;
 // #rgba(255, 0, 153, 1);
-const rgbaMatch = /rgba?\((\d+)\,\s*(\d+)\,\s*(\d+)(?:\)|\,\s*(\d+)\))[;]?/;
+const rgbaMatch = /rgba?\((\d+)\,\s*(\d+)\,\s*(\d+)(?:\)|\,\s*([\d\.]+)\))[;]?/;
 
 export const colorProvider = {
-  provideColorPresentations(color: Color, context: any) {
+  provideColorPresentations(
+    color: Color,
+    context: {
+      document: TextDocument;
+      range: Range;
+    }
+  ) {
+    if (color.alpha < 1) {
+      return [
+        new ColorPresentation(
+          `#${padHex(color.red * 255)}${padHex(color.green * 255)}${padHex(
+            color.blue * 255
+          )}${padHex(color.alpha * 255)}`
+        ),
+        new ColorPresentation(
+          `rgba(${color.red * 255}, ${color.green * 255}, ${
+            color.blue * 255
+          }, ${color.alpha.toFixed(2)})`
+        ),
+      ];
+    }
+
     return [
       new ColorPresentation(
         `#${padHex(color.red * 255)}${padHex(color.green * 255)}${padHex(
           color.blue * 255
         )}`
+      ),
+      new ColorPresentation(
+        `rgb(${color.red * 255}, ${color.green * 255}, ${color.blue * 255})`
       ),
     ];
   },
@@ -56,7 +80,6 @@ const padHex = (i: number): string => {
 };
 
 const colorFromString = (str: string): Color | undefined => {
-  // #rrggbb or #rrggbbaa
   let matches: RegExpMatchArray | null;
   matches = str.match(colorMatch);
   if (matches) {

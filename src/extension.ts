@@ -1,6 +1,6 @@
 import { ExtensionContext, languages, DocumentSelector } from "vscode";
 import { colorProvider } from "./colorProvider";
-import { registerCompletionProvider } from "./completionItemProvider";
+import { provideCompletionItems } from "./completionItemProvider";
 
 export const documentSelector: DocumentSelector = [
   { scheme: "file", language: "typescriptreact" },
@@ -8,8 +8,17 @@ export const documentSelector: DocumentSelector = [
 ];
 
 function activate(context: ExtensionContext) {
-  registerCompletionProvider(context);
-  languages.registerColorProvider(documentSelector, colorProvider);
+  // Handle Completions in this extension
+  context.subscriptions.push(
+    languages.registerCompletionItemProvider(documentSelector, {
+      provideCompletionItems,
+    })
+  );
+
+  // Handle colors
+  context.subscriptions.push(
+    languages.registerColorProvider(documentSelector, colorProvider)
+  );
 }
 
 module.exports = {
