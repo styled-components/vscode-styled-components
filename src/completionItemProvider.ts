@@ -9,13 +9,10 @@ import {
   CompletionItemKind,
   ExtensionContext,
 } from "vscode";
+import { documentSelector } from "./extension";
 
 export const registerCompletionProvider = (context: ExtensionContext) => {
   // Only provide completions for files that match the language type
-  const documentSelector: DocumentSelector = [
-    { scheme: "file", language: "typescriptreact" },
-    { scheme: "file", language: "javascriptreact" },
-  ];
 
   const provider = languages.registerCompletionItemProvider(
     documentSelector,
