@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.2.0
+
+- Addition of color picker
+
 ## 1.1.0 (15-09-2020)
 
 - Allows spaces before function call parenthesis (fixes ESLint `func-call-spacing`) [238](https://github.com/styled-components/vscode-styled-components/pull/238)
