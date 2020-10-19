@@ -2,7 +2,7 @@
   "name": "vscode-styled-components",
   "displayName": "vscode-styled-components",
   "description": "Syntax highlighting for styled-components",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "publisher": "jpoissonnier",
   "icon": "logo.png",
   "license": "MIT",
