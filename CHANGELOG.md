@@ -1,10 +1,11 @@
 # Release Notes
 
-## 1.2.0
+## 1.2.0 (19-10-2020)
 
-- Addition of color picker
+- Addition of the color picker [239](https://github.com/styled-components/vscode-styled-components/pull/239)
+- Fix `.extend` grammar [240](https://github.com/styled-components/vscode-styled-components/pull/240)
 
-## 1.1.0 (15-09-2020)
+## 1.1.0 (15-10-2020)
 
 - Allows spaces before function call parenthesis (fixes ESLint `func-call-spacing`) [238](https://github.com/styled-components/vscode-styled-components/pull/238)
 - Supports function calls inside of `styled` [237](https://github.com/styled-components/vscode-styled-components/pull/237)
