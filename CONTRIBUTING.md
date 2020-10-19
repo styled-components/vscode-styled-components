@@ -17,7 +17,11 @@ It can take some time to get used to the regular expressions.
 To visually test your changes click on `Launch Extension` on the left panel and open a project of your choosing.
 Something I tend to do is copy (or symlink) the fixtures fodler (colorize-fixtures) and open that with the launched window
 
-## Intellisense isues
+Refer to JS/TS tokens syntax at https://github.com/microsoft/vscode/tree/master/extensions under `<language>/syntaxes/<lang>.tmLanguage.json`.
+
+To check how tokens are being matched, select "Developer: Inspect Editor Tokens and Scope" under Command Palette.
+
+## Intellisense issues
 
 Intellisense is handled by https://github.com/microsoft/typescript-styled-plugin.
 
