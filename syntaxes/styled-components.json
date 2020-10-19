@@ -48,15 +48,28 @@
     },
     {
       "contentName": "source.css.scss",
-      "begin": "(\\.)(extend)(`)",
+      "begin": "(.+)(\\.)(extend)(`)",
       "beginCaptures": {
         "1": {
-          "name": "punctuation.accessor.js"
+          "patterns": [
+            {
+              "include": "source.ts#var-expr"
+            },
+            {
+              "include": "source.ts#object-literal"
+            },
+            {
+              "include": "source.ts#object-member"
+            }
+          ]
         },
         "2": {
-          "name": "entity.name.function.tagged-template.js"
+          "name": "punctuation.accessor.js"
         },
         "3": {
+          "name": "entity.name.function.tagged-template.js variable.other.property.js"
+        },
+        "4": {
           "name": "punctuation.definition.string.template.begin.js string.template.js"
         }
       },

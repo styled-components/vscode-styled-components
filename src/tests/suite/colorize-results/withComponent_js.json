@@ -1,7 +1,7 @@
 [
 	{
 		"c": "const",
-		"t": "source.js meta.var.expr.js storage.type.js",
+		"t": "source.js meta.var.expr.ts storage.type.ts",
 		"r": {
 			"dark_plus": "storage.type: #569CD6",
 			"light_plus": "storage.type: #0000FF",
@@ -12,7 +12,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js",
+		"t": "source.js meta.var.expr.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -23,7 +23,7 @@
 	},
 	{
 		"c": "NewCompWithString",
-		"t": "source.js meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.constant.js",
+		"t": "source.js meta.var.expr.ts meta.var-single-variable.expr.ts meta.definition.variable.ts variable.other.constant.ts",
 		"r": {
 			"dark_plus": "variable.other.constant: #4FC1FF",
 			"light_plus": "variable.other.constant: #0070C1",
@@ -34,7 +34,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.var-single-variable.expr.js",
+		"t": "source.js meta.var.expr.ts meta.var-single-variable.expr.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -45,7 +45,7 @@
 	},
 	{
 		"c": "=",
-		"t": "source.js meta.var.expr.js keyword.operator.assignment.js",
+		"t": "source.js meta.var.expr.ts keyword.operator.assignment.ts",
 		"r": {
 			"dark_plus": "keyword.operator: #D4D4D4",
 			"light_plus": "keyword.operator: #000000",
@@ -56,7 +56,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js",
+		"t": "source.js meta.var.expr.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -67,7 +67,7 @@
 	},
 	{
 		"c": "CompWithComponent",
-		"t": "source.js meta.var.expr.js meta.function-call.ts variable.other.object.ts",
+		"t": "source.js meta.var.expr.ts meta.function-call.ts variable.other.object.ts",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -78,7 +78,7 @@
 	},
 	{
 		"c": ".",
-		"t": "source.js meta.var.expr.js meta.function-call.ts punctuation.accessor.ts",
+		"t": "source.js meta.var.expr.ts meta.function-call.ts punctuation.accessor.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -89,7 +89,7 @@
 	},
 	{
 		"c": "withComponent",
-		"t": "source.js meta.var.expr.js meta.function-call.ts entity.name.function.ts",
+		"t": "source.js meta.var.expr.ts meta.function-call.ts entity.name.function.ts",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -100,7 +100,7 @@
 	},
 	{
 		"c": "(",
-		"t": "source.js meta.var.expr.js meta.brace.round.ts",
+		"t": "source.js meta.var.expr.ts meta.brace.round.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -111,7 +111,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js string.quoted.double.ts punctuation.definition.string.begin.ts",
+		"t": "source.js meta.var.expr.ts string.quoted.double.ts punctuation.definition.string.begin.ts",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -122,7 +122,7 @@
 	},
 	{
 		"c": "span",
-		"t": "source.js meta.var.expr.js string.quoted.double.ts",
+		"t": "source.js meta.var.expr.ts string.quoted.double.ts",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -133,7 +133,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js string.quoted.double.ts punctuation.definition.string.end.ts",
+		"t": "source.js meta.var.expr.ts string.quoted.double.ts punctuation.definition.string.end.ts",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -144,7 +144,7 @@
 	},
 	{
 		"c": ")",
-		"t": "source.js meta.var.expr.js meta.brace.round.ts",
+		"t": "source.js meta.var.expr.ts meta.brace.round.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -155,7 +155,7 @@
 	},
 	{
 		"c": ".",
-		"t": "source.js meta.var.expr.js punctuation.accessor.js",
+		"t": "source.js punctuation.accessor.js",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -166,7 +166,7 @@
 	},
 	{
 		"c": "extend",
-		"t": "source.js meta.var.expr.js entity.name.function.tagged-template.js variable.other.property.js",
+		"t": "source.js entity.name.function.tagged-template.js variable.other.property.js",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -177,7 +177,7 @@
 	},
 	{
 		"c": "`",
-		"t": "source.js meta.var.expr.js punctuation.definition.string.template.begin.js string.template.js",
+		"t": "source.js punctuation.definition.string.template.begin.js string.template.js",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -188,7 +188,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js source.css.scss",
+		"t": "source.js source.css.scss",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -199,7 +199,7 @@
 	},
 	{
 		"c": "color",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
+		"t": "source.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
 			"light_plus": "support.type.property-name: #FF0000",
@@ -210,7 +210,7 @@
 	},
 	{
 		"c": ":",
-		"t": "source.js meta.var.expr.js source.css.scss punctuation.separator.key-value.scss",
+		"t": "source.js source.css.scss punctuation.separator.key-value.scss",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -221,7 +221,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js source.css.scss",
+		"t": "source.js source.css.scss",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -232,7 +232,7 @@
 	},
 	{
 		"c": "green",
-		"t": "source.js meta.var.expr.js source.css.scss meta.property-value.scss support.constant.color.w3c-standard-color-name.css",
+		"t": "source.js source.css.scss meta.property-value.scss support.constant.color.w3c-standard-color-name.css",
 		"r": {
 			"dark_plus": "support.constant.color: #CE9178",
 			"light_plus": "support.constant.color: #0451A5",
@@ -243,7 +243,7 @@
 	},
 	{
 		"c": ";",
-		"t": "source.js meta.var.expr.js source.css.scss punctuation.terminator.rule.scss",
+		"t": "source.js source.css.scss punctuation.terminator.rule.scss",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -254,7 +254,7 @@
 	},
 	{
 		"c": "`",
-		"t": "source.js meta.var.expr.js punctuation.definition.string.template.end.js string.template.js",
+		"t": "source.js punctuation.definition.string.template.end.js string.template.js",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
