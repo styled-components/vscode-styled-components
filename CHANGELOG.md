@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.3.0 (18-11-2020)
+
+- Added support for astroturf `stylesheet` (Thanks @mikestopcontinues) [245](https://github.com/styled-components/vscode-styled-components/pull/245)
+
 ## 1.2.0 (19-10-2020)
 
 - Addition of the color picker [239](https://github.com/styled-components/vscode-styled-components/pull/239)
