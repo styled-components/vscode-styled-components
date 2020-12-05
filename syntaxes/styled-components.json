@@ -4,7 +4,7 @@
   "patterns": [
     {
       "contentName": "source.css.scss",
-      "begin": "(?:([\\s\\S][sS][tT][yY][lL][eE][dD](?:<.+>(?=\\())?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\s*\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\s*\\((.+)\\))(?:\\s*<.+>)?)|(css|keyframes|injectGlobal|createGlobalStyle|stylesheet)(<.+>)?)\\s*(`)",
+      "begin": "(?:([\\s\\S][sS][tT][yY][lL][eE][dD](?:<.+>(?=\\())?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\s*\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\s*\\((.+)\\))(?:\\s*<.+>)?\\(?)|(css|keyframes|injectGlobal|createGlobalStyle|stylesheet)(<.+>)?)\\s*(\\([\\{\\}\\w,\\:\\s]+?\\)\\s*=>\\s*)?(`)",
       "beginCaptures": {
         "1": {
           "patterns": [
@@ -31,13 +31,23 @@
           ]
         },
         "5": {
+          "patterns": [
+            {
+              "include": "source.ts#expression"
+            }
+          ]
+        },
+        "6": {
           "name": "punctuation.definition.string.template.begin.js string.template.js"
         }
       },
-      "end": "`",
+      "end": "(`)(\\))?",
       "endCaptures": {
-        "0": {
+        "1": {
           "name": "punctuation.definition.string.template.end.js string.template.js"
+        },
+        "2": {
+          "name": "meta.brace.round.js source.js"
         }
       },
       "patterns": [
