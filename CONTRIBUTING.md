@@ -9,13 +9,13 @@ Start off forking, then cloning the project locally:
 
 ## Adding Syntax
 
-The syntax is regex based, tools I've been using have include a mix of https://regex101.com/ and https://regexr.com/.
-The later matches groupings back to the original regex.
+The syntax is regex based, tools I've been using have include a mix of [regex101.com](https://regex101.com/) and [regexr.com](https://regexr.com/). Note that VSCode does
+not use JavaScript Regex, but [oniguruma](https://github.com/kkos/oniguruma) instead. They are more compatible with the _PCRE_ flavor in these
+websites. The Regex in the JSON files are string encoded, so you need to decode/encode them when copying between these websites, you can use a [tool like this](https://www.freeformatter.com/json-escape.html#ad-output).
 
 It can take some time to get used to the regular expressions.
 
-To visually test your changes click on `Launch Extension` on the left panel and open a project of your choosing.
-Something I tend to do is copy (or symlink) the fixtures fodler (colorize-fixtures) and open that with the launched window
+To visually test your changes press `F5` while having this project open in VSCode, it will open another window with extension enabled. You can load the `colorize-fixture` folder in that window to see your changes.
 
 Refer to JS/TS tokens syntax at https://github.com/microsoft/vscode/tree/master/extensions under `<language>/syntaxes/<lang>.tmLanguage.json`.
 
