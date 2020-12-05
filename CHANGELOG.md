@@ -1,5 +1,11 @@
 # Release Notes
 
+## 1.4.0 (05-12-2020)
+
+- Updated CONTRIBUTING.md for how to use regexes and how to debug [251](https://github.com/styled-components/vscode-styled-components/pull/251)
+- Allow destructuring property arrow function [250](https://github.com/styled-components/vscode-styled-components/pull/250)
+- Updated color provider to better support colors in CSS [249](https://github.com/styled-components/vscode-styled-components/pull/249)
+
 ## 1.3.0 (18-11-2020)
 
 - Added support for astroturf `stylesheet` (Thanks @mikestopcontinues) [245](https://github.com/styled-components/vscode-styled-components/pull/245)
