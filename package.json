@@ -24,7 +24,7 @@
     "test": "node ./src/tests/runTests.js",
     "watch": "webpack --mode development --watch",
     "vscode:prepublish": "webpack --mode production",
-    "postinstall": "husky install"
+    "prepare": "husky install"
   },
   "activationEvents": [
     "onLanguage:typescriptreact",
