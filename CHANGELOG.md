@@ -1,5 +1,10 @@
 # Release Notes
 
+## 1.4.1 (10-12-2020)
+
+- Fixed color provider bug on matching wrong strings [260](https://github.com/styled-components/vscode-styled-components/pull/260)
+- npm script postinstall should use prepare [253](https://github.com/styled-components/vscode-styled-components/pull/253)
+
 ## 1.4.0 (05-12-2020)
 
 - Updated CONTRIBUTING.md for how to use regexes and how to debug [251](https://github.com/styled-components/vscode-styled-components/pull/251)
