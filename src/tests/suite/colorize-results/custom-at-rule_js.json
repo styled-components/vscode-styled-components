@@ -595,13 +595,13 @@
 	},
 	{
 		"c": "`",
-		"t": "source.js meta.var.expr.js punctuation.definition.string.template.end.js string.template.js",
+		"t": "source.js meta.var.expr.js",
 		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
 		}
 	}
 ]
