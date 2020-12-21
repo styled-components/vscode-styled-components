@@ -41,7 +41,7 @@
           "name": "punctuation.definition.string.template.begin.js string.template.js"
         }
       },
-      "end": "(`)(\\))?",
+      "end": "`",
       "endCaptures": {
         "1": {
           "name": "punctuation.definition.string.template.end.js string.template.js"
