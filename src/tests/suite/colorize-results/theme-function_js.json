@@ -418,7 +418,18 @@
 		}
 	},
 	{
-		"c": "`)",
+		"c": "`",
+		"t": "source.js meta.var.expr.js punctuation.definition.string.template.end.js string.template.js",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": ")",
 		"t": "source.js meta.var.expr.js",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
