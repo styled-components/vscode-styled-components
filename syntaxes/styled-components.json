@@ -41,13 +41,10 @@
           "name": "punctuation.definition.string.template.begin.js string.template.js"
         }
       },
-      "end": "(`)(\\))?",
+      "end": "`",
       "endCaptures": {
-        "1": {
+        "0": {
           "name": "punctuation.definition.string.template.end.js string.template.js"
-        },
-        "2": {
-          "name": "meta.brace.round.js source.js"
         }
       },
       "patterns": [
