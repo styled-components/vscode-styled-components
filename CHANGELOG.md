@@ -1,5 +1,10 @@
 # Release Notes
 
+## 1.5.0 (22-01-2021)
+
+- Added support for .svelte files [265](https://github.com/styled-components/vscode-styled-components/pull/265)
+- Added support for template string helper functions [262](https://github.com/styled-components/vscode-styled-components/pull/262)
+
 ## 1.4.1 (10-12-2020)
 
 - Fixed color provider bug on matching wrong strings [260](https://github.com/styled-components/vscode-styled-components/pull/260)
