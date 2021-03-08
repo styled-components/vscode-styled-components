@@ -1,5 +1,7 @@
 # vscode-styled-components
 
+![Discord](https://img.shields.io/discord/818449605409767454?logo=discord)
+
 Syntax highlighting and IntelliSense for [styled-components](https://github.com/styled-components/styled-components).
 
 ![Syntax highlighting in action](demo.png)
