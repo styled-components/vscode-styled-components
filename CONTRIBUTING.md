@@ -21,6 +21,14 @@ Refer to JS/TS tokens syntax at https://github.com/microsoft/vscode/tree/master/
 
 To check how tokens are being matched, select "Developer: Inspect Editor Tokens and Scope" under Command Palette.
 
+### "A line break seems to break the syntax highlighting"
+
+Many of the bugs raised are due to multiline regex not being available.
+Textmate grammar can [only match a single line](https://github.com/microsoft/vscode-textmate/issues/32). Unfortunately a lot of the regex we have tries to parse multiple lines at once (which won't work).
+This has caused bugs to be raised such as: https://github.com/styled-components/vscode-styled-components/issues/266 and https://github.com/styled-components/vscode-styled-components/issues/277
+
+The best fix is to look at the new line and create a new rule in https://github.com/styled-components/vscode-styled-components/blob/master/syntaxes/styled-components.json which will match that line as close as possible whilst still being generic. Regex101 helps with this.
+
 ## Intellisense issues
 
 Intellisense is handled by https://github.com/microsoft/typescript-styled-plugin.
