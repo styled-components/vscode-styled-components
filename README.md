@@ -20,6 +20,8 @@ It should be the top result.
 
 [[Source](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)]
 
+**Be sure to include `"emmet.triggerExpansionOnTab": true` in your VSCode settings to enable tab completion.** More settings and instructions can be found [here](https://code.visualstudio.com/docs/editor/emmet).
+
 ## Features
 
 - Syntax highlighting for styled components in JavaScript and TypeScript.
