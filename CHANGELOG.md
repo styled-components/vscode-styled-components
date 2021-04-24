@@ -1,5 +1,11 @@
 # Release Notes
 
+## 1.5.1 (22-01-2021)
+
+- Fixed multiline issue [281](https://github.com/styled-components/vscode-styled-components/pull/281)
+- Documentation updates [280](https://github.com/styled-components/vscode-styled-components/pull/280)
+- Fixed broken tests [272](https://github.com/styled-components/vscode-styled-components/pull/272)
+
 ## 1.5.0 (22-01-2021)
 
 - Added support for .svelte files [265](https://github.com/styled-components/vscode-styled-components/pull/265)
