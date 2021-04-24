@@ -1,6 +1,6 @@
 # Release Notes
 
-## 1.5.1 (22-01-2021)
+## 1.5.1 (24-04-2021)
 
 - Fixed multiline issue [281](https://github.com/styled-components/vscode-styled-components/pull/281)
 - Documentation updates [280](https://github.com/styled-components/vscode-styled-components/pull/280)
