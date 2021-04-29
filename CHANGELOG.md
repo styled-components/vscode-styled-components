@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.5.2 (29-04-2021)
+
+- Updated typescript-styled-plugin to v0.16
+
 ## 1.5.1 (24-04-2021)
 
 - Fixed multiline issue [281](https://github.com/styled-components/vscode-styled-components/pull/281)
