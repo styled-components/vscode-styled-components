@@ -1,6 +1,7 @@
 import { ExtensionContext, languages, DocumentSelector } from "vscode";
 import { colorProvider } from "./colorProvider";
 import { provideCompletionItems } from "./completionItemProvider";
+import { enterKeyEvent } from "./insertColonCommand";
 
 export const documentSelector: DocumentSelector = [
   { scheme: "file", language: "typescriptreact" },
@@ -19,6 +20,9 @@ function activate(context: ExtensionContext) {
   context.subscriptions.push(
     languages.registerColorProvider(documentSelector, colorProvider)
   );
+
+  // Handle auto Colon / SemiColon
+  context.subscriptions.push(enterKeyEvent);
 }
 
 module.exports = {
