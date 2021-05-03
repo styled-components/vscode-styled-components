@@ -28,7 +28,8 @@
   },
   "activationEvents": [
     "onLanguage:typescriptreact",
-    "onLanguage:javascriptreact"
+    "onLanguage:javascriptreact",
+    "onCommand:extension.insertColonOrSemiColon"
   ],
   "contributes": {
     "languages": [
@@ -69,11 +70,25 @@
         "name": "typescript-styled-plugin",
         "enableForWorkspaceTypeScriptVersions": true
       }
+    ],
+    "commands": [
+      {
+        "command": "extension.insertColonOrSemiColon",
+        "title": "Fix Colon and Semicolon"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.insertColonOrSemiColon",
+        "key": "enter",
+        "when": "suggestWidgetVisible && textInputFocus && editorLangId =~ /javascript|typescript|javascriptreact|typescriptreact/"
+      }
     ]
   },
   "dependencies": {
     "d3-color": "^2.0.0",
-    "typescript-styled-plugin": "0.16.0"
+    "typescript-styled-plugin": "0.16.0",
+    "vscode-css-languageservice": "^5.1.1"
   },
   "devDependencies": {
     "@types/d3-color": "^2.0.0",
