@@ -1,5 +1,13 @@
 # Release Notes
 
+## 1.6.0 (N/A)
+
+- Updated typescript-styled-plugin to v0.17
+- Added support for keyframes
+- Updated colorProvider to support alpha values on hex colors
+- Adds a colon or semicolon on Enter. Also moves the cursor to the middle of a () function [284](https://github.com/styled-components/vscode-styled-components/pull/284)
+- Updated documentation
+
 ## 1.5.2 (29-04-2021)
 
 - Updated typescript-styled-plugin to v0.16
