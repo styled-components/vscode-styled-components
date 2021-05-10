@@ -4,7 +4,7 @@
   "patterns": [
     {
       "contentName": "source.css.scss",
-      "begin": "(?:(?:([\\s\\S][sS][tT][yY][lL][eE][dD](?:<.+>(?=\\())?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\s*\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\s*\\((.+)\\))(?:\\s*<.+>)?\\(?)|(css|keyframes|injectGlobal|createGlobalStyle|stylesheet)(<.+>)?)\\s*(\\([\\{\\}\\w,\\:\\s]+?\\)\\s*=>\\s*)?(`))|}>(`)",
+      "begin": "(?:(?:([\\s\\S][sS][tT][yY][lL][eE][dD](?:<.+>(?=\\())?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\s*\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\s*\\((.+)\\))(?:\\s*<.+>)?\\(?)|(css|keyframes|injectGlobal|createGlobalStyle|stylesheet)(<.+>)?)\\s*(\\([\\{\\}\\w,\\:\\s]+?\\)\\s*=>\\s*)?(`))|(?:}>|\\)\\))(`)",
       "beginCaptures": {
         "1": {
           "patterns": [
