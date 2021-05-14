@@ -4,7 +4,7 @@
   "patterns": [
     {
       "contentName": "source.css.scss",
-      "begin": "(?:([\\s\\S][sS][tT][yY][lL][eE][dD](?:<.+>(?=\\())?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\s*\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\s*\\((.+)\\))(?:\\s*<.+>)?\\(?)|(css|keyframes|injectGlobal|createGlobalStyle(s?)|stylesheet)(<.+>)?)\\s*(\\([\\{\\}\\w,\\:\\s]+?\\)\\s*=>\\s*)?(`)",
+      "begin": "(?:(?:([\\s\\S][sS][tT][yY][lL][eE][dD](?:<.+>(?=\\())?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\s*\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\s*\\((.+)\\))(?:\\s*<.+>)?\\(?)|(css|keyframes|injectGlobal|createGlobalStyle(s?)|stylesheet)(<.+>)?)\\s*(\\([\\{\\}\\w,\\:\\s]+?\\)\\s*=>\\s*)?(`))|(?:}>|\\)\\))(`)",
       "beginCaptures": {
         "1": {
           "patterns": [
@@ -38,6 +38,9 @@
           ]
         },
         "6": {
+          "name": "punctuation.definition.string.template.begin.js string.template.js"
+        },
+        "7": {
           "name": "punctuation.definition.string.template.begin.js string.template.js"
         }
       },
@@ -225,6 +228,59 @@
       "patterns": [
         {
           "include": "source.css.styled"
+        }
+      ]
+    },
+    {
+      "contentName": "source.css.scss",
+      "begin": "(.+)?(\\.)?(keyframes)(`)",
+      "beginCaptures": {
+        "1": {
+          "patterns": [
+            {
+              "include": "source.ts#var-expr"
+            },
+            {
+              "include": "source.ts#object-literal"
+            },
+            {
+              "include": "source.ts#object-member"
+            }
+          ]
+        },
+        "2": {
+          "name": "punctuation.accessor.js"
+        },
+        "3": {
+          "name": "entity.name.function.tagged-template.js variable.other.property.js"
+        },
+        "4": {
+          "name": "punctuation.definition.string.template.begin.js string.template.js"
+        }
+      },
+      "end": "`",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.template.end.js string.template.js"
+        }
+      },
+      "patterns": [
+        {
+          "patterns": [
+            {
+              "match": "\\b(?:(?:100|[1-9]\\d|\\d)%|from|to)(?=\\s*{)",
+              "name": "entity.other.attribute-name.scss"
+            },
+            {
+              "include": "source.css.styled#interpolation"
+            },
+            {
+              "include": "source.css.styled#property_list"
+            },
+            {
+              "include": "source.css.styled#rules"
+            }
+          ]
         }
       ]
     }

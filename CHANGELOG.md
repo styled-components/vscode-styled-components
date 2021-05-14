@@ -1,5 +1,24 @@
 # Release Notes
 
+## 1.6.0 (N/A)
+
+- Updated typescript-styled-plugin to v0.17
+- Improved Syntax support
+- Added support for keyframes
+- Updated colorProvider to support alpha values on hex colors
+- Adds a colon or semicolon on Enter. Also moves the cursor to the middle of a () function [284](https://github.com/styled-components/vscode-styled-components/pull/284)
+- Updated documentation
+
+## 1.5.2 (29-04-2021)
+
+- Updated typescript-styled-plugin to v0.16
+
+## 1.5.1 (24-04-2021)
+
+- Fixed multiline issue [281](https://github.com/styled-components/vscode-styled-components/pull/281)
+- Documentation updates [280](https://github.com/styled-components/vscode-styled-components/pull/280)
+- Fixed broken tests [272](https://github.com/styled-components/vscode-styled-components/pull/272)
+
 ## 1.5.0 (22-01-2021)
 
 - Added support for .svelte files [265](https://github.com/styled-components/vscode-styled-components/pull/265)

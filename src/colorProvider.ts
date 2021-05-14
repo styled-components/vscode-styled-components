@@ -9,7 +9,7 @@ import {
 import { rgb, color as d3Color } from "d3-color";
 
 // #rrggbb or #rrggbbaa
-const colorMatch = /#([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})?/;
+const colorMatch = /#([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{1,2})?/;
 // rgb or rgba
 const colorMatchShort = /#([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})?/;
 // rgba(255, 0, 153, 1);
@@ -27,8 +27,15 @@ export const colorProvider = {
       color.blue * 255,
       color.alpha
     );
+
+    // formatHex doesn't support alpha so we need to add it on for now until https://github.com/d3/d3-color/issues/78 is done
+    // https://stackoverflow.com/questions/15852122/hex-transparency-in-colors
+    const alphaForHex =
+      color.alpha !== 1
+        ? (((color.alpha * 100 * 255) / 100) | 0).toString(16)
+        : "";
     return [
-      new ColorPresentation(parsedColor.formatHex()),
+      new ColorPresentation(parsedColor.formatHex() + alphaForHex),
       new ColorPresentation(parsedColor.formatRgb()),
       new ColorPresentation(parsedColor.formatHsl()),
     ];
