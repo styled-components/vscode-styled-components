@@ -1,6 +1,6 @@
 # vscode-styled-components
 
-![Discord](https://img.shields.io/discord/818449605409767454?logo=discord)
+<a href="https://discord.gg/hfGUrbrxaU">![Discord](https://img.shields.io/discord/818449605409767454?logo=discord)</a>
 
 Syntax highlighting and IntelliSense for [styled-components](https://github.com/styled-components/styled-components).
 
