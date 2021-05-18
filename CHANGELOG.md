@@ -1,6 +1,6 @@
 # Release Notes
 
-## 1.6.0 (N/A)
+## 1.6.0 (18-05-2021)
 
 - Updated typescript-styled-plugin to v0.17
 - Improved Syntax support

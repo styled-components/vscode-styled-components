@@ -4,7 +4,7 @@
 
 Syntax highlighting and IntelliSense for [styled-components](https://github.com/styled-components/styled-components).
 
-![Syntax highlighting in action](demo.png)
+![Syntax highlighting in action](styled-demo.gif)
 
 Uses a CSS grammar built on top of [language-sass](https://github.com/atom/language-sass) and [language-css](https://github.com/atom/language-css).
 
