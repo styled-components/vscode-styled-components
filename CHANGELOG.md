@@ -8,6 +8,7 @@
 - Updated colorProvider to support alpha values on hex colors
 - Adds a colon or semicolon on Enter. Also moves the cursor to the middle of a () function [284](https://github.com/styled-components/vscode-styled-components/pull/284)
 - Updated documentation
+- Improve support for Next style tags
 
 ## 1.5.2 (29-04-2021)
 

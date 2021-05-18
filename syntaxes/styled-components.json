@@ -283,6 +283,26 @@
           ]
         }
       ]
+    },
+    {
+      "contentName": "source.css.scss",
+      "begin": "(?<=<style\\sjsx\\>\\{)`",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.template.begin.js string.template.js"
+        }
+      },
+      "end": "`(?=\\}\\<\\/style\\>)",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.template.end.js string.template.js"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.css.styled"
+        }
+      ]
     }
   ],
   "scopeName": "styled"
