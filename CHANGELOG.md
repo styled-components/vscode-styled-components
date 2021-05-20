@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.6.2 (20-05-2021)
+
+- Remove cursor control until issue can be fixed
+
 ## 1.6.0 (18-05-2021)
 
 - Updated typescript-styled-plugin to v0.17

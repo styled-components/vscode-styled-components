@@ -30,8 +30,8 @@ export const enterKeyEvent = commands.registerCommand(
       });
     }
 
-    if (lastWordBeforeCursor[lastWordBeforeCursor.length - 2] === ")") {
-      commands.executeCommand("cursorLeft");
-    }
+    // if (lastWordBeforeCursor[lastWordBeforeCursor.length - 2] === ")") {
+    //   commands.executeCommand("cursorLeft");
+    // }
   }
 );
