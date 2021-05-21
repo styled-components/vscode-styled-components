@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.6.3 (21-05-2021)
+
+- Respect user's "acceptSuggestionOnEnter" configuration
+
 ## 1.6.2 (20-05-2021)
 
 - Remove cursor control until issue can be fixed
