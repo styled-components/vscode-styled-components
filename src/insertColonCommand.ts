@@ -1,5 +1,9 @@
-import { commands, window } from "vscode";
+import { commands, window, workspace } from "vscode";
 import { getDefaultCSSDataProvider } from "vscode-css-languageservice";
+
+const acceptSuggestionOnEnter = workspace
+  .getConfiguration("editor")
+  .get("acceptSuggestionOnEnter");
 
 const cssDataProvider = getDefaultCSSDataProvider();
 const properties = cssDataProvider.provideProperties();
@@ -7,6 +11,12 @@ const properties = cssDataProvider.provideProperties();
 export const enterKeyEvent = commands.registerCommand(
   "extension.insertColonOrSemiColon",
   async () => {
+    // Respect user's acceptSuggestionOnEnter configuration
+    if (acceptSuggestionOnEnter === "off") {
+      commands.executeCommand("cursorDown");
+      return;
+    }
+
     await commands.executeCommand("acceptSelectedSuggestion");
     const editor = window.activeTextEditor;
 
