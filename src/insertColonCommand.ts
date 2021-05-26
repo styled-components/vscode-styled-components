@@ -1,9 +1,5 @@
-import { commands, window, workspace } from "vscode";
+import { commands, window } from "vscode";
 import { getDefaultCSSDataProvider } from "vscode-css-languageservice";
-
-const acceptSuggestionOnEnter = workspace
-  .getConfiguration("editor")
-  .get("acceptSuggestionOnEnter");
 
 const cssDataProvider = getDefaultCSSDataProvider();
 const properties = cssDataProvider.provideProperties();
