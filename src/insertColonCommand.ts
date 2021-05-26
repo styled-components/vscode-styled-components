@@ -11,12 +11,6 @@ const properties = cssDataProvider.provideProperties();
 export const enterKeyEvent = commands.registerCommand(
   "extension.insertColonOrSemiColon",
   async () => {
-    // Respect user's acceptSuggestionOnEnter configuration
-    if (acceptSuggestionOnEnter === "off") {
-      commands.executeCommand("cursorDown");
-      return;
-    }
-
     await commands.executeCommand("acceptSelectedSuggestion");
     const editor = window.activeTextEditor;
 

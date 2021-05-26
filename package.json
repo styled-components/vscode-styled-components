@@ -81,7 +81,7 @@
       {
         "command": "extension.insertColonOrSemiColon",
         "key": "enter",
-        "when": "suggestWidgetVisible && textInputFocus && editorLangId =~ /javascript|typescript|javascriptreact|typescriptreact/"
+        "when": "suggestWidgetVisible && textInputFocus && editorLangId =~ /javascript|typescript|javascriptreact|typescriptreact/ && config.editor.acceptSuggestionOnEnter != 'off'"
       }
     ]
   },
