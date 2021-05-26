@@ -1,5 +1,10 @@
 # Release Notes
 
+## TBD
+
+- Guard insert colon with when clause. Thanks @phyllisstein! [297](https://github.com/styled-components/vscode-styled-components/pull/297)
+- Cursor control has returned but only with CSS Functions
+
 ## 1.6.3 (21-05-2021)
 
 - Respect user's "acceptSuggestionOnEnter" configuration
