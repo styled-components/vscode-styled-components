@@ -1,10 +1,11 @@
 # Release Notes
 
-## TBD
+## 1.6.4 (01-06-2021)
 
 - Guard insert colon with when clause. Thanks @phyllisstein! [297](https://github.com/styled-components/vscode-styled-components/pull/297)
 - Cursor control has returned but only with CSS Functions
 - Fix color matching issues, match multiple colors per-line and reduce false-positives on named color matches
+- Revert styled plugin back to v0.16 so keyframes errors are supressed
 
 ## 1.6.3 (21-05-2021)
 
