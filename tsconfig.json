@@ -13,6 +13,13 @@
     // "noImplicitReturns": true, /* Report error when not all code paths in function return a value. */
     // "noFallthroughCasesInSwitch": true, /* Report errors for fallthrough cases in switch statement. */
     // "noUnusedParameters": true,  /* Report errors on unused parameters. */
+
+    // uncomment the below when debugging the typescript styled plugin
+    // "plugins": [
+    //   {
+    //     "name": "../typescript-styled-plugin"
+    //   }
+    // ]
   },
   "exclude": ["node_modules", ".vscode-test", "src/tests"]
 }
