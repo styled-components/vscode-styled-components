@@ -2,9 +2,10 @@
 
 ## 1.6.5
 
-- Migrate to ESBuild (from Webpack)
+- Migrated to ESBuild (from Webpack)
 - Set an alert if vscode-styled-jsx is installed. See [#310](https://github.com/styled-components/vscode-styled-components/issues/310)
-- Migrate from vscode-test to @vscode/test-electron
+- Migrated from vscode-test to @vscode/test-electron
+- Upgraded to styled plugin 0.18
 
 ## 1.6.4 (01-06-2021)
 
