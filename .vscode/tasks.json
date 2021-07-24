@@ -8,19 +8,9 @@
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": [
-        {
-          "base": "$tsc-watch",
-          "background": {
-            "activeOnStart": true,
-            "beginsPattern": "webpack is watching the files.*",
-            "endsPattern": ".*\\[built\\].*"
-          }
-        }
-      ],
       "isBackground": true,
       "label": "npm: watch",
-      "detail": "webpack --mode development --watch"
+      "detail": "ESBuild watch mode"
     }
   ]
 }

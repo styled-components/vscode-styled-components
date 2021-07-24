@@ -1,5 +1,11 @@
 # Release Notes
 
+## 1.6.5
+
+- Migrate to ESBuild (from Webpack)
+- Set an alert if vscode-styled-jsx is installed. See [#310](https://github.com/styled-components/vscode-styled-components/issues/310)
+- Migrate from vscode-test to @vscode/test-electron
+
 ## 1.6.4 (01-06-2021)
 
 - Guard insert colon with when clause. Thanks @phyllisstein! [297](https://github.com/styled-components/vscode-styled-components/pull/297)
