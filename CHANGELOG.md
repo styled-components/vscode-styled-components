@@ -1,11 +1,12 @@
 # Release Notes
 
-## 1.6.5
+## 1.6.5 (25-07-2021)
 
 - Migrated to ESBuild (from Webpack)
 - Set an alert if vscode-styled-jsx is installed. See [#310](https://github.com/styled-components/vscode-styled-components/issues/310)
 - Migrated from vscode-test to @vscode/test-electron
 - Upgraded to styled plugin 0.18
+- Fixed "Expand Template String" which should automatically open up the backticks
 
 ## 1.6.4 (01-06-2021)
 

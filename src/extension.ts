@@ -17,9 +17,13 @@ export const documentSelector: DocumentSelector = [
 function activate(context: ExtensionContext) {
   // Handle Completions in this extension
   context.subscriptions.push(
-    languages.registerCompletionItemProvider(documentSelector, {
-      provideCompletionItems,
-    })
+    languages.registerCompletionItemProvider(
+      documentSelector,
+      {
+        provideCompletionItems,
+      },
+      "`"
+    )
   );
 
   // Handle colors

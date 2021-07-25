@@ -27,6 +27,7 @@ export const provideCompletionItems = (
     blockCompletionItemBetweenTicks.kind = CompletionItemKind.Snippet;
     blockCompletionItemBetweenTicks.documentation =
       "Creates a new CSS block with correct backticks \n`\n\t$0\n`";
+    blockCompletionItemBetweenTicks.sortText = "::A expand template string";
 
     return [blockCompletionItemBetweenTicks];
   }
@@ -41,16 +42,3 @@ export const provideCompletionItems = (
 
   return [blockCompletionItem];
 };
-
-// export const registerCompletionProvider = (context: ExtensionContext) => {
-//   // Only provide completions for files that match the language type
-
-//   const provider = languages.registerCompletionItemProvider(
-//     documentSelector,
-//     {
-//     },
-//     "`"
-//   );
-
-//   context.subscriptions.push(provider);
-// };
