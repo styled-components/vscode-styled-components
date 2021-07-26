@@ -1028,10 +1028,10 @@ to-regex-range@^5.0.1:
   resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.3.9.tgz#717b8f220cc0bb7b44e40514c22b2e8bbc70d8b9"
   integrity sha1-cXuPIgzAu3tE5AUUwisui7xw2Lk=
 
-typescript-styled-plugin@^0.18.0:
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/typescript-styled-plugin/-/typescript-styled-plugin-0.18.0.tgz#4e20e99bd7938f693ee37ad20682cc2401d06898"
-  integrity sha512-GopdOs3twyZkuLMU2ActiZQAtCgyibmwmQczULoe47qJ2URIaHSWxtUIDwuv6QhKPLBIrV6jSo/qp+184hlwLg==
+typescript-styled-plugin@0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/typescript-styled-plugin/-/typescript-styled-plugin-0.16.0.tgz#b1bde49e259c9dc312afbc3e683e9e7e413f24d0"
+  integrity sha512-I3UfkGzdy1js95EDtYMatBzDINOCWAW4E0+sE4+MG8gy3gaUyQOSi5NhvVNkF3zqWXY+z43g6MnmYy8QzqFhVQ==
   dependencies:
     typescript-template-language-service-decorator "^2.2.0"
     vscode-css-languageservice "^5.1.1"

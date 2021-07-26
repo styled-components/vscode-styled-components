@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.6.6 (26-07-2021)
+
+- Fixed regression on keyframes intellisense. [#317](https://github.com/styled-components/vscode-styled-components/issues/317)
+
 ## 1.6.5 (25-07-2021)
 
 - Migrated to ESBuild (from Webpack)
