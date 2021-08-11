@@ -4,7 +4,7 @@
   "patterns": [
     {
       "contentName": "source.css.scss",
-      "begin": "(?:(?:([\\s\\S][sS][tT][yY][lL][eE][dD](?:<.+>(?=\\())?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\s*\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\s*\\((.+)\\))(?:\\s*<.+>)?\\(?)|(css|keyframes|injectGlobal|createGlobalStyle|stylesheet)(<.+>)?)\\s*(\\([\\{\\}\\w,\\:\\s]+?\\)\\s*=>\\s*)?(`))|(?:}>|\\)\\))(`)",
+      "begin": "(?:(?:([\\s\\S][sS][tT][yY][lL][eE][dD](?:<.+>(?=\\())?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\s*\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\s*\\((.+)\\))(?:\\s*<.+>)?\\(?)|(css|keyframes|injectGlobal|createGlobalStyle|stylesheet)(<.+>)?)\\s*(\\([\\{\\}\\w,\\:\\s]+?\\)\\s*=>\\s*)?(`))|}>(`)",
       "beginCaptures": {
         "1": {
           "patterns": [
@@ -293,6 +293,32 @@
         }
       },
       "end": "`(?=\\}\\<\\/style\\>)",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.template.end.js string.template.js"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.css.styled"
+        }
+      ]
+    },
+    {
+      "contentName": "source.css.scss",
+      "begin": "^(?:(\\))(\\))(`))",
+      "beginCaptures": {
+        "1": {
+          "name": "meta.brace.round.ts"
+        },
+        "2": {
+          "name": "meta.brace.round.ts"
+        },
+        "3": {
+          "name": "punctuation.definition.string.template.begin.js string.template.js"
+        }
+      },
+      "end": "`",
       "endCaptures": {
         "0": {
           "name": "punctuation.definition.string.template.end.js string.template.js"
