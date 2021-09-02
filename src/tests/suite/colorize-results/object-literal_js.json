@@ -122,18 +122,18 @@
 	},
 	{
 		"c": "styled",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js entity.name.function.tagged-template.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js variable.other.readwrite.ts",
 		"r": {
-			"dark_plus": "entity.name.function: #DCDCAA",
-			"light_plus": "entity.name.function: #795E26",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "entity.name.function: #DCDCAA"
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
 		}
 	},
 	{
 		"c": "`",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js punctuation.definition.string.template.begin.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js punctuation.definition.string.template.begin.js string.template.js",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -143,41 +143,206 @@
 		}
 	},
 	{
-		"c": "        height: 12px;",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js",
+		"c": "        ",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss",
 		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
-		"c": "        color: #000000;",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js",
+		"c": "height",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
+			"dark_plus": "support.type.property-name: #9CDCFE",
+			"light_plus": "support.type.property-name: #FF0000",
+			"dark_vs": "support.type.property-name: #9CDCFE",
+			"light_vs": "support.type.property-name: #FF0000",
+			"hc_black": "support.type.property-name: #D4D4D4"
 		}
 	},
 	{
-		"c": "        font: ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js",
+		"c": ":",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss punctuation.separator.key-value.scss",
 		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "12",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss constant.numeric.css",
+		"r": {
+			"dark_plus": "constant.numeric: #B5CEA8",
+			"light_plus": "constant.numeric: #098658",
+			"dark_vs": "constant.numeric: #B5CEA8",
+			"light_vs": "constant.numeric: #098658",
+			"hc_black": "constant.numeric: #B5CEA8"
+		}
+	},
+	{
+		"c": "px",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss constant.numeric.css keyword.other.unit.px.css",
+		"r": {
+			"dark_plus": "keyword.other.unit: #B5CEA8",
+			"light_plus": "keyword.other.unit: #098658",
+			"dark_vs": "keyword.other.unit: #B5CEA8",
+			"light_vs": "keyword.other.unit: #098658",
+			"hc_black": "keyword.other.unit: #B5CEA8"
+		}
+	},
+	{
+		"c": ";",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss punctuation.terminator.rule.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "        ",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "color",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-name.scss support.type.property-name.css",
+		"r": {
+			"dark_plus": "support.type.property-name: #9CDCFE",
+			"light_plus": "support.type.property-name: #FF0000",
+			"dark_vs": "support.type.property-name: #9CDCFE",
+			"light_vs": "support.type.property-name: #FF0000",
+			"hc_black": "support.type.property-name: #D4D4D4"
+		}
+	},
+	{
+		"c": ":",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss punctuation.separator.key-value.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "#",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss constant.other.color.rgb-value.hex.css punctuation.definition.constant.css",
+		"r": {
+			"dark_plus": "constant.other.color.rgb-value: #CE9178",
+			"light_plus": "constant.other.color.rgb-value: #0451A5",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "constant.other.color.rgb-value: #0451A5",
+			"hc_black": "constant.other.color.rgb-value: #CE9178"
+		}
+	},
+	{
+		"c": "000000",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss constant.other.color.rgb-value.hex.css",
+		"r": {
+			"dark_plus": "constant.other.color.rgb-value: #CE9178",
+			"light_plus": "constant.other.color.rgb-value: #0451A5",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "constant.other.color.rgb-value: #0451A5",
+			"hc_black": "constant.other.color.rgb-value: #CE9178"
+		}
+	},
+	{
+		"c": ";",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss punctuation.terminator.rule.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "        ",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "font",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-name.scss support.type.property-name.css",
+		"r": {
+			"dark_plus": "support.type.property-name: #9CDCFE",
+			"light_plus": "support.type.property-name: #FF0000",
+			"dark_vs": "support.type.property-name: #9CDCFE",
+			"light_vs": "support.type.property-name: #FF0000",
+			"hc_black": "support.type.property-name: #D4D4D4"
+		}
+	},
+	{
+		"c": ":",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss punctuation.separator.key-value.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
 		"c": "${",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js punctuation.definition.template-expression.begin.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss variable.interpolation.scss punctuation.definition.interpolation.begin.bracket.curly.scss punctuation.definition.template-expression.begin.js",
 		"r": {
 			"dark_plus": "punctuation.definition.template-expression.begin: #569CD6",
 			"light_plus": "punctuation.definition.template-expression.begin: #0000FF",
@@ -188,7 +353,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js meta.arrow.js variable.parameter.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss variable.interpolation.scss meta.embedded.line.ts meta.arrow.ts variable.parameter.ts",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -199,7 +364,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js meta.arrow.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss variable.interpolation.scss meta.embedded.line.ts meta.arrow.ts",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -210,7 +375,7 @@
 	},
 	{
 		"c": "=>",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js meta.arrow.js storage.type.function.arrow.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss variable.interpolation.scss meta.embedded.line.ts meta.arrow.ts storage.type.function.arrow.ts",
 		"r": {
 			"dark_plus": "storage.type: #569CD6",
 			"light_plus": "storage.type: #0000FF",
@@ -221,7 +386,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js meta.arrow.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss variable.interpolation.scss meta.embedded.line.ts meta.arrow.ts",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -232,7 +397,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js string.quoted.double.js punctuation.definition.string.begin.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss variable.interpolation.scss meta.embedded.line.ts string.quoted.double.ts punctuation.definition.string.begin.ts",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -243,7 +408,7 @@
 	},
 	{
 		"c": "lol",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js string.quoted.double.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss variable.interpolation.scss meta.embedded.line.ts string.quoted.double.ts",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -254,7 +419,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js string.quoted.double.js punctuation.definition.string.end.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss variable.interpolation.scss meta.embedded.line.ts string.quoted.double.ts punctuation.definition.string.end.ts",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -265,7 +430,7 @@
 	},
 	{
 		"c": "}",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js punctuation.definition.template-expression.end.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss variable.interpolation.scss punctuation.definition.interpolation.end.bracket.curly.scss punctuation.definition.template-expression.end.js",
 		"r": {
 			"dark_plus": "punctuation.definition.template-expression.end: #569CD6",
 			"light_plus": "punctuation.definition.template-expression.end: #0000FF",
@@ -276,29 +441,29 @@
 	},
 	{
 		"c": ";",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss punctuation.terminator.rule.scss",
 		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
 		"c": "        ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss",
 		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
 		"c": "${",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js punctuation.definition.template-expression.begin.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss punctuation.definition.interpolation.begin.bracket.curly.scss punctuation.definition.template-expression.begin.js",
 		"r": {
 			"dark_plus": "punctuation.definition.template-expression.begin: #569CD6",
 			"light_plus": "punctuation.definition.template-expression.begin: #0000FF",
@@ -309,7 +474,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js meta.arrow.js variable.parameter.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss meta.embedded.line.ts meta.arrow.ts variable.parameter.ts",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -320,7 +485,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js meta.arrow.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss meta.embedded.line.ts meta.arrow.ts",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -331,7 +496,7 @@
 	},
 	{
 		"c": "=>",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js meta.arrow.js storage.type.function.arrow.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss meta.embedded.line.ts meta.arrow.ts storage.type.function.arrow.ts",
 		"r": {
 			"dark_plus": "storage.type: #569CD6",
 			"light_plus": "storage.type: #0000FF",
@@ -342,7 +507,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js meta.arrow.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss meta.embedded.line.ts meta.arrow.ts",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -353,7 +518,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js string.quoted.double.js punctuation.definition.string.begin.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss meta.embedded.line.ts string.quoted.double.ts punctuation.definition.string.begin.ts",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -364,7 +529,7 @@
 	},
 	{
 		"c": "padding: 5px",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js string.quoted.double.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss meta.embedded.line.ts string.quoted.double.ts",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -375,7 +540,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js string.quoted.double.js punctuation.definition.string.end.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss meta.embedded.line.ts string.quoted.double.ts punctuation.definition.string.end.ts",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -386,7 +551,7 @@
 	},
 	{
 		"c": "}",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js punctuation.definition.template-expression.end.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss punctuation.definition.interpolation.end.bracket.curly.scss punctuation.definition.template-expression.end.js",
 		"r": {
 			"dark_plus": "punctuation.definition.template-expression.end: #569CD6",
 			"light_plus": "punctuation.definition.template-expression.end: #0000FF",
@@ -397,18 +562,18 @@
 	},
 	{
 		"c": "        ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss",
 		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
 		"c": "${",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js punctuation.definition.template-expression.begin.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss punctuation.definition.interpolation.begin.bracket.curly.scss punctuation.definition.template-expression.begin.js",
 		"r": {
 			"dark_plus": "punctuation.definition.template-expression.begin: #569CD6",
 			"light_plus": "punctuation.definition.template-expression.begin: #0000FF",
@@ -419,7 +584,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js meta.arrow.js variable.parameter.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss meta.embedded.line.ts meta.arrow.ts variable.parameter.ts",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -430,7 +595,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js meta.arrow.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss meta.embedded.line.ts meta.arrow.ts",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -441,7 +606,7 @@
 	},
 	{
 		"c": "=>",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js meta.arrow.js storage.type.function.arrow.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss meta.embedded.line.ts meta.arrow.ts storage.type.function.arrow.ts",
 		"r": {
 			"dark_plus": "storage.type: #569CD6",
 			"light_plus": "storage.type: #0000FF",
@@ -452,7 +617,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js meta.arrow.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss meta.embedded.line.ts meta.arrow.ts",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -463,7 +628,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js string.quoted.double.js punctuation.definition.string.begin.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss meta.embedded.line.ts string.quoted.double.ts punctuation.definition.string.begin.ts",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -474,7 +639,7 @@
 	},
 	{
 		"c": "border",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js string.quoted.double.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss meta.embedded.line.ts string.quoted.double.ts",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -485,7 +650,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js meta.embedded.line.js string.quoted.double.js punctuation.definition.string.end.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss meta.embedded.line.ts string.quoted.double.ts punctuation.definition.string.end.ts",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -496,7 +661,7 @@
 	},
 	{
 		"c": "}",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js meta.template.expression.js punctuation.definition.template-expression.end.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss variable.interpolation.scss punctuation.definition.interpolation.end.bracket.curly.scss punctuation.definition.template-expression.end.js",
 		"r": {
 			"dark_plus": "punctuation.definition.template-expression.end: #569CD6",
 			"light_plus": "punctuation.definition.template-expression.end: #0000FF",
@@ -506,30 +671,129 @@
 		}
 	},
 	{
-		"c": ": 1px solid #000000;",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js",
+		"c": ":",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss punctuation.separator.key-value.scss",
 		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "1",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss constant.numeric.css",
+		"r": {
+			"dark_plus": "constant.numeric: #B5CEA8",
+			"light_plus": "constant.numeric: #098658",
+			"dark_vs": "constant.numeric: #B5CEA8",
+			"light_vs": "constant.numeric: #098658",
+			"hc_black": "constant.numeric: #B5CEA8"
+		}
+	},
+	{
+		"c": "px",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss constant.numeric.css keyword.other.unit.px.css",
+		"r": {
+			"dark_plus": "keyword.other.unit: #B5CEA8",
+			"light_plus": "keyword.other.unit: #098658",
+			"dark_vs": "keyword.other.unit: #B5CEA8",
+			"light_vs": "keyword.other.unit: #098658",
+			"hc_black": "keyword.other.unit: #B5CEA8"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "solid",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss support.constant.property-value.css",
+		"r": {
+			"dark_plus": "support.constant.property-value: #CE9178",
+			"light_plus": "support.constant.property-value: #0451A5",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "support.constant.property-value: #0451A5",
+			"hc_black": "support.constant.property-value: #CE9178"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "#",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss constant.other.color.rgb-value.hex.css punctuation.definition.constant.css",
+		"r": {
+			"dark_plus": "constant.other.color.rgb-value: #CE9178",
+			"light_plus": "constant.other.color.rgb-value: #0451A5",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "constant.other.color.rgb-value: #0451A5",
+			"hc_black": "constant.other.color.rgb-value: #CE9178"
+		}
+	},
+	{
+		"c": "000000",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss meta.property-value.scss constant.other.color.rgb-value.hex.css",
+		"r": {
+			"dark_plus": "constant.other.color.rgb-value: #CE9178",
+			"light_plus": "constant.other.color.rgb-value: #0451A5",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "constant.other.color.rgb-value: #0451A5",
+			"hc_black": "constant.other.color.rgb-value: #CE9178"
+		}
+	},
+	{
+		"c": ";",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss punctuation.terminator.rule.scss",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
 		"c": "    ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js source.css.scss",
 		"r": {
-			"dark_plus": "string: #CE9178",
-			"light_plus": "string: #A31515",
-			"dark_vs": "string: #CE9178",
-			"light_vs": "string: #A31515",
-			"hc_black": "string: #CE9178"
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
 		"c": "`",
-		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js string.template.js punctuation.definition.string.template.end.js",
+		"t": "source.js meta.var.expr.js meta.objectliteral.js meta.object.member.js punctuation.definition.string.template.end.js string.template.js",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
