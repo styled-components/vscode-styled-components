@@ -45,7 +45,7 @@
     },
     {
       "contentName": "source.css.scss",
-      "begin": "(css|keyframes|injectGlobal|createGlobalStyle|stylesheet)(<.+>)?(`)",
+      "begin": "(css|keyframes|injectGlobal|createGlobalStyles?|stylesheet)(<.+>)?(`)",
       "beginCaptures": {
         "1": {
           "name": "entity.name.function.tagged-template.js"
