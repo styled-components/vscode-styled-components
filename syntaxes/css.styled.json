@@ -691,6 +691,9 @@
               "include": "#property_values"
             }
           ]
+        },
+        {
+          "include": "source.css#url"
         }
       ]
     },
