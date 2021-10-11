@@ -44,7 +44,7 @@ I use VSCode's multi workspace for this. I have both `typescript-styled-plugin` 
 You can't run the typescript-styled-plugin directly, instead you need to load a debugger to listen on a port. The below shows you how to set this up so that you can debug both the extension and the plugin at the same time.
 
 - Make sure `typescript-styled-plugin` is yarn|npm linked into `vscode-styled-components`
-- In `vscode-styled-components/.vscode/launch.json`, `"TSS_DEBUG": "9229"` should be set. This allows the debugger to communicate with the typescript-styled-plugin.
+- In `vscode-styled-components/.vscode/launch.json`, `"TSS_DEBUG": "9229"` should be set (or `"TSS_REMOTE_DEBUG": "9229"` if using WSL). This allows the debugger to communicate with the typescript-styled-plugin.
 - [Debug Tab] Click "Launch extension"
 - [Debug Tab] Click "Debug Styled Plugin" - This will both build and start the debugger on the typescript-styled-plugin project.
 

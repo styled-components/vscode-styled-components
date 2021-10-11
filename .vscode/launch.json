@@ -14,7 +14,7 @@
       "outFiles": ["${workspaceFolder}/dist/**/*.js"],
       "sourceMaps": true,
       "preLaunchTask": "npm: watch",
-      "env": { "TSS_DEBUG": "9229" }
+      "env": { "TSS_DEBUG": "9229", "TSS_REMOTE_DEBUG": "9229" }
     },
     {
       "name": "Mocha: Extension Tests",
