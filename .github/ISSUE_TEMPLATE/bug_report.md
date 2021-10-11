@@ -15,6 +15,7 @@ Screenshots are alway useful!
 
 **To Reproduce**
 Steps to reproduce the issue, or JavaScript code that causes this failure.
+If you showed a screenshot, it will help a lot to paste accompanying code which matches
 
 
 **Expected behavior**

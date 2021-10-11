@@ -210,18 +210,18 @@
 	},
 	{
 		"c": "url",
-		"t": "source.js source.css.scss meta.property-list.scss meta.property-value.scss",
+		"t": "source.js source.css.scss meta.property-list.scss meta.property-value.scss meta.function.url.css support.function.url.css",
 		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
+			"dark_plus": "support.function: #DCDCAA",
+			"light_plus": "support.function: #795E26",
 			"dark_vs": "default: #D4D4D4",
 			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
+			"hc_black": "support.function: #DCDCAA"
 		}
 	},
 	{
 		"c": "(",
-		"t": "source.js source.css.scss meta.property-list.scss meta.property-value.scss punctuation.definition.begin.bracket.round.scss",
+		"t": "source.js source.css.scss meta.property-list.scss meta.property-value.scss meta.function.url.css punctuation.section.function.begin.bracket.round.css",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -232,7 +232,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js source.css.scss meta.property-list.scss meta.property-value.scss string.quoted.double.scss punctuation.definition.string.begin.scss",
+		"t": "source.js source.css.scss meta.property-list.scss meta.property-value.scss meta.function.url.css string.quoted.double.css punctuation.definition.string.begin.css",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -243,7 +243,7 @@
 	},
 	{
 		"c": "../fonts/Operator-Mono.ttf",
-		"t": "source.js source.css.scss meta.property-list.scss meta.property-value.scss string.quoted.double.scss",
+		"t": "source.js source.css.scss meta.property-list.scss meta.property-value.scss meta.function.url.css string.quoted.double.css",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -254,7 +254,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js source.css.scss meta.property-list.scss meta.property-value.scss string.quoted.double.scss punctuation.definition.string.end.scss",
+		"t": "source.js source.css.scss meta.property-list.scss meta.property-value.scss meta.function.url.css string.quoted.double.css punctuation.definition.string.end.css",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -265,7 +265,7 @@
 	},
 	{
 		"c": ")",
-		"t": "source.js source.css.scss meta.property-list.scss meta.property-value.scss punctuation.definition.end.bracket.round.scss",
+		"t": "source.js source.css.scss meta.property-list.scss meta.property-value.scss meta.function.url.css punctuation.section.function.end.bracket.round.css",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
