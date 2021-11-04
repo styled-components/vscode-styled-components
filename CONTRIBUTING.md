@@ -39,7 +39,7 @@ For most things `typescript-styled-plugin` is just a [pass-through](https://gith
 
 ### Setting up for development & debugging
 
-I use VSCode's multi workspace for this. I have this repo, `typescript-styled-plugin` and `vscode-styled-components` folders loaded.
+I use VSCode's multi workspace for this. I have `typescript-styled-plugin`, `vscode-styled-components`and `https://github.com/vscode-langservers/vscode-css-languageserver` (optional) folders loaded.
 
 You can't run the typescript-styled-plugin directly, instead you need to load a debugger to listen on a port. The below shows you how to set this up so that you can debug both the extension and the plugin at the same time.
 
