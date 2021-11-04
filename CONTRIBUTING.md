@@ -39,16 +39,19 @@ For most things `typescript-styled-plugin` is just a [pass-through](https://gith
 
 ### Setting up for development & debugging
 
-I use VSCode's multi workspace for this. I have both `typescript-styled-plugin` and `vscode-styled-components` folders loaded.
+I use VSCode's multi workspace for this. I have this repo, `typescript-styled-plugin` and `vscode-styled-components` folders loaded.
 
 You can't run the typescript-styled-plugin directly, instead you need to load a debugger to listen on a port. The below shows you how to set this up so that you can debug both the extension and the plugin at the same time.
 
 - Make sure `typescript-styled-plugin` is yarn|npm linked into `vscode-styled-components`
+- uncomment the plugin section in [tsconfig](https://github.com/styled-components/vscode-styled-components/blob/master/tsconfig.json#L18), make sure the path points to your local checkout of typescript styled plugin
 - In `vscode-styled-components/.vscode/launch.json`, `"TSS_DEBUG": "9229"` should be set (or `"TSS_REMOTE_DEBUG": "9229"` if using WSL). This allows the debugger to communicate with the typescript-styled-plugin.
 - [Debug Tab] Click "Launch extension"
 - [Debug Tab] Click "Debug Styled Plugin" - This will both build and start the debugger on the typescript-styled-plugin project.
 
-You should now be able to use styled-components in the guest window and set breakpoints on the plugin/extension in the main window.
+You should now be able to use styled-components in the guest window and set breakpoints on the both the plugin and extension in the main window.
+
+If you want to go even deeper and debug the css language server, you will need to yarn|npm link that into typescript plugin and then make sure typescript-plugin's [outfiles](https://github.com/microsoft/typescript-styled-plugin/blob/main/.vscode/launch.json#L9) are also pointing to the css language server's generated files on build.
 
 More Info:
 
