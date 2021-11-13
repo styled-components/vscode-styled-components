@@ -46,7 +46,7 @@ You can't run the typescript-styled-plugin directly, instead you need to load a 
 - Make sure `typescript-styled-plugin` is yarn|npm linked into `vscode-styled-components`
 - uncomment the plugin section in [tsconfig](https://github.com/styled-components/vscode-styled-components/blob/master/tsconfig.json#L18), make sure the path points to your local checkout of typescript styled plugin
 - In `vscode-styled-components/.vscode/launch.json`, `"TSS_DEBUG": "9229"` should be set (or `"TSS_REMOTE_DEBUG": "9229"` if using WSL). This allows the debugger to communicate with the typescript-styled-plugin.
-- [Debug Tab] Click "Launch extension"
+- [Debug Tab] Click "Launch extension" (you may get a prompt, select "debug anyway")
 - [Debug Tab] Click "Debug Styled Plugin" - This will both build and start the debugger on the typescript-styled-plugin project.
 
 You should now be able to use styled-components in the guest window and set breakpoints on the both the plugin and extension in the main window.
