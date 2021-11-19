@@ -7,6 +7,7 @@ require("esbuild")
     bundle: true,
     outdir: "dist",
     external: ["vscode"],
+    format: "cjs",
     sourcemap: !production,
     minify: production,
     target: ["node12"],

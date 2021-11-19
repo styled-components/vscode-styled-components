@@ -1,10 +1,11 @@
 # Release Notes
 
-## 1.7.0 (TBD)
+## 1.6.7 (19-11-2021)
 
 - Add support for globalStyles. [#320](https://github.com/styled-components/vscode-styled-components/pull/320)
 - Update typescript-styled-plugin. [#323](https://github.com/styled-components/vscode-styled-components/pull/323)
 - Fix URLS in css. [#323](https://github.com/styled-components/vscode-styled-components/pull/323)
+- Bump CSS Language Server [#333](https://github.com/styled-components/vscode-styled-components/pull/333)
 
 ## 1.6.6 (26-07-2021)
 
