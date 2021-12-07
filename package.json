@@ -2,7 +2,7 @@
   "name": "vscode-styled-components",
   "displayName": "vscode-styled-components",
   "description": "Syntax highlighting for styled-components",
-  "version": "1.6.7",
+  "version": "1.7.0",
   "publisher": "jpoissonnier",
   "icon": "logo.png",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "test": "node ./src/tests/runTests.js",
     "watch": "node ./build.js --watch",
     "vscode:prepublish": "node ./build.js --production",
-    "prepare": "yarn husky install"
+    "prepare": "husky install"
   },
   "activationEvents": [
     "onLanguage:typescriptreact",

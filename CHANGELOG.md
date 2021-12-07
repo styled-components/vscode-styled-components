@@ -5,7 +5,7 @@
 You will need at least v1.60 for this release.
 This release contains many bug fixes plus UX improvements.
 
-- Return to NPM.
+- Returned to NPM from yarn. This should remove barriers for contribution, plus NPM has improved.
 - Bumped minimum version to v1.60 for ES2020 usage.
 - [BUG] Autocomplete when writing % and then ; is broken. [#322](https://github.com/styled-components/vscode-styled-components/issues/322)
 - [BUG] Selecting Intellisense suggestion results in doubled content being typed [#325](https://github.com/styled-components/vscode-styled-components/issues/325)
