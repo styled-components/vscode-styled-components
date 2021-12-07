@@ -2,10 +2,10 @@
 
 Start off forking, then cloning the project locally:
 
-- `$ yarn` - Install dependencies
-- `$ yarn test` - Run tests (may be skechy on MacOS)
-- `$ yarn format` - Format any changes you've made with prettier
-- `$ yarn lint` - Check formatting with prettier
+- `$ npm ci` - Install dependencies
+- `$ npm test` - Run tests (may be skechy on MacOS)
+- `$ npm run format` - Format any changes you've made with prettier
+- `$ npm run lint` - Check formatting with prettier
 
 ## Adding Syntax
 
@@ -33,7 +33,7 @@ The best fix is to look at the new line and create a new rule in https://github.
 
 Intellisense is handled by https://github.com/microsoft/typescript-styled-plugin.
 
-The best way to debug issues with intellisense is to clone that repo, then use `yarn link` with this repository. That should allow you to inspect what's happening better. More detail below.
+The best way to debug issues with intellisense is to clone that repo, then use `npm link` with this repository. That should allow you to inspect what's happening better. More detail below.
 
 For most things `typescript-styled-plugin` is just a [pass-through](https://github.com/microsoft/typescript-styled-plugin/blob/master/src/_language-service.ts#L87-L95) to the CSS/SCSS language services. For example, looking at [getCompletionItems](https://github.com/microsoft/typescript-styled-plugin/blob/master/src/_language-service.ts#L215-L244) you can see it just calls the equivalent on the upstream language services. So if something works natively (CSS file), but not in styled-components its most likely because it's not passing the correct events through.
 
@@ -65,7 +65,7 @@ If you want logging, you can set `"typescript.tsserver.log": "verbose"` in your 
 
 ## Tests
 
-You can run tests simply by running `yarn test`.
+You can run tests simply by running `npm test`.
 This should spawn another instance of VSCode to run the end to end tests in.
 
 The syntax tests will generate tokens for [fixtures we have](./src/tests/suite/colorize-fixtures) which are then compared to the results (adjacent folder). If there are changes and the tests fail it will generate a new result (overwriting the previous one).

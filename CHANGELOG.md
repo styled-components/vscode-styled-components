@@ -1,5 +1,19 @@
 # Release Notes
 
+## 1.7.0 (07-12-2021)
+
+You will need at least v1.60 for this release.
+This release contains many bug fixes plus UX improvements.
+
+- Returned to npm from yarn. This should remove barriers for contribution, plus npm has improved.
+- Bumped minimum version to v1.60 for ES2020 usage.
+- [BUG] Autocomplete when writing % and then ; is broken. [#322](https://github.com/styled-components/vscode-styled-components/issues/322)
+- [BUG] Selecting Intellisense suggestion results in doubled content being typed [#325](https://github.com/styled-components/vscode-styled-components/issues/325)
+- [BUG] Suggestions broken on embedded languages [134328](https://github.com/microsoft/vscode/issues/134328)
+- [BUG] No code autocompletion for @media queries. [302](https://github.com/styled-components/vscode-styled-components/issues/302)
+- [BUG/PERF] Don't fetch completions on opening template tag, this stops (expensive) completions being fetched when opening backticks. This should also help fix [#276] below. [SP#157](https://github.com/microsoft/typescript-styled-plugin/pull/157)
+- [BUG] Pressing return after back-ticks does not jump to new line, selects first result of intellisense [#276](https://github.com/styled-components/vscode-styled-components/issues/276)
+
 ## 1.6.7 (19-11-2021)
 
 - Add support for globalStyles. [#320](https://github.com/styled-components/vscode-styled-components/pull/320)

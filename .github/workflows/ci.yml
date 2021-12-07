@@ -17,10 +17,10 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
-      - run: yarn install
+          node-version: 16.x
+      - run: npm ci
       - name: Checking Prettier
-        run: yarn lint
+        run: npm run lint
   build:
     name: Run Tests
     strategy:
@@ -33,9 +33,9 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
-      - run: yarn install
+          node-version: 16.x
+      - run: npm ci
       - name: Run tests
         uses: GabrielBB/xvfb-action@v1.4
         with:
-          run: yarn test --silent
+          run: npm test

@@ -15,10 +15,10 @@ jobs:
       - uses: actions/setup-node@v2-beta
         with:
           node-version: "12"
-      - run: yarn install
+      - run: npm ci
       - name: Install VSCE
-        run: yarn add vsce
+        run: npm i vsce
       - name: Publish
-        run: yarn vsce publish -p $VSCE_TOKEN
+        run: npx vsce publish -p $VSCE_TOKEN
         env:
           VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
