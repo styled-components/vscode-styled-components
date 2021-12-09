@@ -5,3 +5,7 @@ test/
 src/**
 **/*.map
 .github/**
+node_modules/**
+.nvmrc
+.editorConfig
+build.js

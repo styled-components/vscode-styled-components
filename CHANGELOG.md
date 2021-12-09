@@ -1,6 +1,9 @@
 # Release Notes
 
-## 1.7.0 (07-12-2021)
+## 1.7.0 (09-12-2021)
+
+PLEASE READ: Styled Components has moved! Make sure you're downloading it from here:
+https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components. The `jpoissonnier.vscode-styled-components` version will recieve no more updates. It will soon be unpublished.
 
 You will need at least v1.60 for this release.
 This release contains many bug fixes plus UX improvements.
