@@ -1,5 +1,9 @@
 # Release Notes
 
+## TBD
+
+- Support multiple percentages in keyframes
+
 ## 1.7.0 (09-12-2021)
 
 PLEASE READ: Styled Components has moved! Make sure you're downloading it from here:

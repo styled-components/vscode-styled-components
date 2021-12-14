@@ -303,21 +303,24 @@
       },
       "patterns": [
         {
-          "patterns": [
-            {
-              "match": "\\b(?:(?:100|[1-9]\\d|\\d)%|from|to)(?=\\s*{)",
+          "captures": {
+            "1": {
               "name": "entity.other.attribute-name.scss"
             },
-            {
-              "include": "source.css.styled#interpolation"
-            },
-            {
-              "include": "source.css.styled#property_list"
-            },
-            {
-              "include": "source.css.styled#rules"
+            "2": {
+              "name": "entity.other.attribute-name.scss"
             }
-          ]
+          },
+          "match": "(?xi)\n(?<![\\w-]) (from|to) (?![\\w-])         # Keywords for 0% | 100%\n|\n([-+]?(?:\\d+(?:\\.\\d+)?|\\.\\d+)%)     # Percentile value"
+        },
+        {
+          "include": "source.css.styled#interpolation"
+        },
+        {
+          "include": "source.css.styled#property_list"
+        },
+        {
+          "include": "source.css.styled#rules"
         }
       ]
     },
