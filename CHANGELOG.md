@@ -1,8 +1,12 @@
 # Release Notes
 
-## TBD
+## 1.7.3
 
-- Support multiple percentages in keyframes [#345](https://github.com/styled-components/vscode-styled-components/pull/345)
+- Support multiple percentages in keyframes. [#345](https://github.com/styled-components/vscode-styled-components/pull/345)
+
+## 1.7.2
+
+- Small fixes
 
 ## 1.7.0 (09-12-2021)
 
