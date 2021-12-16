@@ -11,7 +11,7 @@ Start off forking, then cloning the project locally:
 
 The syntax is regex based, tools I've been using have include a mix of [regex101.com](https://regex101.com/) and [regexr.com](https://regexr.com/). Note that VSCode does
 not use JavaScript Regex, but [oniguruma](https://github.com/kkos/oniguruma) instead. They are more compatible with the _PCRE_ flavor in these
-websites. The Regex in the JSON files are string encoded, so you need to decode/encode them when copying between these websites, you can use a [tool like this](https://www.freeformatter.com/json-escape.html#ad-output).
+websites. The Regex in the JSON files are string encoded, so you need to decode/encode them when copying between these websites, you can use a [tool like this](https://www.freeformatter.com/json-escape.html#ad-output). You can test your regex with the node version in a scratch pad to see which groups it matches (these may not always be what you expect) https://github.com/atom/node-oniguruma.
 
 It can take some time to get used to the regular expressions.
 

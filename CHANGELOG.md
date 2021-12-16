@@ -3,6 +3,7 @@
 ## 1.7.3
 
 - Support multiple percentages in keyframes. [#345](https://github.com/styled-components/vscode-styled-components/pull/345)
+- Support nextjs <style> tag attributes in highlighting. Thanks @Pika-Pool [#340](https://github.com/styled-components/vscode-styled-components/issues/340)
 
 ## 1.7.2
 
