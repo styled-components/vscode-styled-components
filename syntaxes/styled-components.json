@@ -326,7 +326,7 @@
     },
     {
       "contentName": "source.css.scss",
-      "begin": "(?<=<style\\sjsx\\>\\{)`",
+      "begin": "(?<=<style\\s(?:jsx|jsx\\s+global|global\\s+jsx)+\\>\\{)`",
       "beginCaptures": {
         "0": {
           "name": "punctuation.definition.string.template.begin.js string.template.js"
