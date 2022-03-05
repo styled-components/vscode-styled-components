@@ -1,5 +1,5 @@
-import { commands, window } from "vscode";
-import { getDefaultCSSDataProvider } from "vscode-css-languageservice";
+import {commands, window} from "vscode";
+import {getDefaultCSSDataProvider} from "vscode-css-languageservice";
 
 // Collect all CSS Functions, like matrix(), rotate() etc
 // There may be overlap so use Set to ensure unique values
@@ -44,9 +44,9 @@ export const enterKeyEvent = commands.registerCommand(
           editor.document.lineAt(cursorPosition.active).range.end,
           ": ;"
         );
-        commands.executeCommand("cursorLeft");
-        commands.executeCommand("editor.action.triggerSuggest");
       });
+      commands.executeCommand("cursorLeft");
+      commands.executeCommand("editor.action.triggerSuggest");
     }
 
     if (allCSSFunctions.has(lastWordBeforeCursor.slice(0, -1))) {
