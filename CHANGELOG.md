@@ -1,7 +1,10 @@
 # Release Notes
 
-## 1.7.3
+## 1.7.3 (09-03-2022)
 
+- Fix broken auto completion [#362](https://github.com/styled-components/vscode-styled-components/pull/362)
+- Update dependencies
+- Update test fixtures due to [high contrast](https://github.com/microsoft/vscode/pull/143398) change.
 - Support multiple percentages in keyframes. [#345](https://github.com/styled-components/vscode-styled-components/pull/345)
 - Support nextjs <style> tag attributes in highlighting. Thanks @Pika-Pool [#340](https://github.com/styled-components/vscode-styled-components/issues/340)
 
