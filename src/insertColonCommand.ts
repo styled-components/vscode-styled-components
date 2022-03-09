@@ -44,9 +44,9 @@ export const enterKeyEvent = commands.registerCommand(
           editor.document.lineAt(cursorPosition.active).range.end,
           ": ;"
         );
-        commands.executeCommand("cursorLeft");
-        commands.executeCommand("editor.action.triggerSuggest");
       });
+      commands.executeCommand("cursorLeft");
+      commands.executeCommand("editor.action.triggerSuggest");
     }
 
     if (allCSSFunctions.has(lastWordBeforeCursor.slice(0, -1))) {
