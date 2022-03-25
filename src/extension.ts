@@ -14,7 +14,7 @@ export const documentSelector: DocumentSelector = [
   { scheme: "file", language: "javascriptreact" },
 ];
 
-function activate(context: ExtensionContext) {
+export function activate(context: ExtensionContext) {
   // Handle Completions in this extension
   context.subscriptions.push(
     languages.registerCompletionItemProvider(
@@ -42,7 +42,3 @@ function activate(context: ExtensionContext) {
     );
   }
 }
-
-module.exports = {
-  activate,
-};

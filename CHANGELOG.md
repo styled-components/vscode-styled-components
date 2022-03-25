@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.7.4 (25-03-2022)
+
+- Fix colours not working after update.
+
 ## 1.7.3 (09-03-2022)
 
 - Fix broken auto completion [#362](https://github.com/styled-components/vscode-styled-components/pull/362)
