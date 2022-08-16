@@ -1,5 +1,6 @@
-import { commands, window } from "vscode";
+import { commands, Position, Range, window } from "vscode";
 import { getDefaultCSSDataProvider } from "vscode-css-languageservice";
+import { patterns } from "./patterns";
 
 // Collect all CSS Functions, like matrix(), rotate() etc
 // There may be overlap so use Set to ensure unique values
@@ -34,6 +35,36 @@ export const enterKeyEvent = commands.registerCommand(
     }
 
     const cursorPosition = editor.selection;
+    const textBeforeCursor = editor.document.getText(
+      new Range(new Position(0, 0), cursorPosition.active)
+    );
+    let insideAPattern = false;
+
+    // determine if the cursor is inside a pattern
+    patterns.forEach((pattern) => {
+      try {
+        /**
+         * this regex will match if the cursor is inside the pattern
+         * more specifically, we've encountered the beginning but not the corresponding ending
+         * that should indicate that we're inside css
+         */
+        const endRegex = new RegExp(
+          `(${pattern.begin})(?![\\S\\s]*(${pattern.end}))`
+        );
+
+        if (endRegex.test(textBeforeCursor)) {
+          insideAPattern = true;
+        }
+      } catch (e) {
+        // if the regex is invalid, skip it
+        console.warn("Failed to process regex:", e);
+      }
+    });
+
+    if (!insideAPattern) {
+      return;
+    }
+
     const lineText = editor.document.lineAt(cursorPosition.start.line).text;
     const lineTextList = lineText.trim().split(" ");
     const lastWordBeforeCursor = lineTextList[lineTextList.length - 1];
