@@ -1,4 +1,6 @@
-[
+// TODO import directly from the grammar file?
+
+export const patterns = [
   {
     begin:
       "([\\s\\S][sS][tT][yY][lL][eE][dD](?:<.+>(?=\\())?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\s*\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\s*\\((.+)\\))*(?:\\s*<.+>)?\\(?)\\s*(\\([\\{\\}\\w,\\:\\s]+?\\)\\s*=>\\s*)?(`)",
