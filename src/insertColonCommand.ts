@@ -1,6 +1,6 @@
 import { commands, Position, Range, window } from "vscode";
 import { getDefaultCSSDataProvider } from "vscode-css-languageservice";
-import { patterns } from "./patterns";
+import { normalizeRegex, patterns } from "./patterns";
 
 // Collect all CSS Functions, like matrix(), rotate() etc
 // There may be overlap so use Set to ensure unique values
@@ -23,12 +23,6 @@ const getCSSFunctions = () => {
 const cssDataProvider = getDefaultCSSDataProvider();
 const properties = cssDataProvider.provideProperties();
 const allCSSFunctions = getCSSFunctions();
-
-const normalizeRegex = (regex: string) => {
-  return regex
-    .replace(/\[_\$\[:alpha:]]\[_\$\[:alnum:]]/g, "[a-zA-Z0-9$_]")
-    .replace(/\[_\$\[:alpha:]]\[_\$\\\.\[:alnum:]]/g, "[a-zA-Z0-9$_.]");
-};
 
 export const enterKeyEvent = commands.registerCommand(
   "extension.insertColonOrSemiColon",
