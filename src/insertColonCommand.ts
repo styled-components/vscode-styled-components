@@ -24,6 +24,12 @@ const cssDataProvider = getDefaultCSSDataProvider();
 const properties = cssDataProvider.provideProperties();
 const allCSSFunctions = getCSSFunctions();
 
+const normalizeRegex = (regex: string) => {
+  return regex
+    .replace(/\[_\$\[:alpha:]]\[_\$\[:alnum:]]/g, "[a-zA-Z0-9$_]")
+    .replace(/\[_\$\[:alpha:]]\[_\$\\\.\[:alnum:]]/g, "[a-zA-Z0-9$_.]");
+};
+
 export const enterKeyEvent = commands.registerCommand(
   "extension.insertColonOrSemiColon",
   async () => {
@@ -49,7 +55,9 @@ export const enterKeyEvent = commands.registerCommand(
          * that should indicate that we're inside css
          */
         const endRegex = new RegExp(
-          `(${pattern.begin})(?![\\S\\s]*(${pattern.end}))`
+          `(${normalizeRegex(pattern.begin)})(?![\\S\\s]*(${normalizeRegex(
+            pattern.end
+          )}))`
         );
 
         if (endRegex.test(textBeforeCursor)) {
