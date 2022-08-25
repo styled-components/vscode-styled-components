@@ -34,9 +34,9 @@ export const enterKeyEvent = commands.registerCommand(
       return;
     }
 
-    const cursorPosition = editor.selection;
+    const selection = editor.selection;
     const textBeforeCursor = editor.document.getText(
-      new Range(new Position(0, 0), cursorPosition.active)
+      new Range(new Position(0, 0), selection.active)
     );
     let insideAPattern = false;
 
@@ -67,14 +67,14 @@ export const enterKeyEvent = commands.registerCommand(
       return;
     }
 
-    const lineText = editor.document.lineAt(cursorPosition.start.line).text;
+    const lineText = editor.document.lineAt(selection.start.line).text;
     const lineTextList = lineText.trim().split(" ");
     const lastWordBeforeCursor = lineTextList[lineTextList.length - 1];
 
     if (properties.find((value) => value.name === lastWordBeforeCursor)) {
       editor.edit((editBuilder) => {
         editBuilder.insert(
-          editor.document.lineAt(cursorPosition.active).range.end,
+          editor.document.lineAt(selection.active).range.end,
           ": ;"
         );
       });
