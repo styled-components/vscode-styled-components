@@ -39,10 +39,6 @@ export const normalizeRegex = (regex: string) => {
   // xdigit
   out = out.replace(/\[:xdigit:\]/g, "a-fA-F0-9");
 
-  // attrs/withConfig workaround
-  // replace (?<!\\G)(?<=`) with `
-  out = out.replace(/(?<!\\\\G)(?<=`)/g, "`");
-
   console.log("Converted regex:", regex);
   console.log("To:", out);
 
