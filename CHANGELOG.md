@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.7.5 (16-09-2022)
+
+- Only insert semicolons inside of CSS [#375](https://github.com/styled-components/vscode-styled-components/pull/375)
+
 ## 1.7.4 (25-03-2022)
 
 - Fix colours not working after update.
