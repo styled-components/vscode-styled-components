@@ -86,7 +86,7 @@
     ]
   },
   "dependencies": {
-    "d3-color": "^3.0.1",
+    "d3-color": "^3.1.0",
     "typescript-styled-plugin": "^0.18.2",
     "vscode-css-languageservice": "^5.1.13"
   },
