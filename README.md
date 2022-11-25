@@ -66,3 +66,9 @@ This is an upstream issue in VSCode unfortunately. The root cause is here: https
 Property look up comes from the [css language service](https://github.com/microsoft/vscode-css-languageservice) which in turn comes from [MDN Data](https://github.com/mdn/data). If its a custom property, or something that is not in MDN you can add your own property like so: https://github.com/microsoft/typescript-styled-plugin/issues/58#issuecomment-444733368
 
 If however you believe this property is standard and thus missing you can raise this issue with either one of the above projects; please check for any raised issue first.
+
+### Intellisense is not working!
+
+See these issues:
+- https://github.com/styled-components/vscode-styled-components/issues/357
+- https://github.com/styled-components/vscode-styled-components/issues/343
