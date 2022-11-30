@@ -904,9 +904,9 @@
 		"t": "source.js meta.var.expr.js meta.arrow.js meta.block.js meta.arrow.js source.css.scss meta.at-rule.media.scss meta.property-list.media-query.scss meta.property-name.media-query.scss support.type.property-name.media.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -2104,9 +2104,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -2176,9 +2176,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -2260,9 +2260,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -2392,9 +2392,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -2524,9 +2524,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -2692,9 +2692,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -3004,9 +3004,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -3148,9 +3148,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss variable.interpolation.scss meta.embedded.line.ts source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -3400,9 +3400,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss variable.interpolation.scss meta.embedded.line.ts source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -3616,9 +3616,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss variable.interpolation.scss meta.embedded.line.ts source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -4540,9 +4540,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -4612,9 +4612,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -4696,9 +4696,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -4828,9 +4828,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -4960,9 +4960,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -5128,9 +5128,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -6100,9 +6100,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -6172,9 +6172,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -6256,9 +6256,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -6388,9 +6388,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -6544,9 +6544,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss variable.interpolation.scss meta.embedded.line.ts source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -6796,9 +6796,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss variable.interpolation.scss meta.embedded.line.ts source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -7012,9 +7012,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss variable.interpolation.scss meta.embedded.line.ts source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -7180,9 +7180,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
@@ -7348,9 +7348,9 @@
 		"t": "source.js meta.var.expr.js source.css.scss meta.property-name.scss support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
-			"light_plus": "support.type.property-name: #FF0000",
+			"light_plus": "support.type.property-name: #E50000",
 			"dark_vs": "support.type.property-name: #9CDCFE",
-			"light_vs": "support.type.property-name: #FF0000",
+			"light_vs": "support.type.property-name: #E50000",
 			"hc_black": "support.type.property-name: #D4D4D4",
 			"hc_light": "support.type.property-name: #264F78"
 		}
