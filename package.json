@@ -2,7 +2,7 @@
   "name": "vscode-styled-components",
   "displayName": "vscode-styled-components",
   "description": "Syntax highlighting for styled-components",
-  "version": "1.7.5",
+  "version": "1.7.6",
   "publisher": "styled-components",
   "icon": "logo.png",
   "license": "MIT",
@@ -12,7 +12,7 @@
   },
   "main": "dist/extension.js",
   "engines": {
-    "vscode": "^1.63.0"
+    "vscode": "^1.70.0"
   },
   "categories": [
     "Programming Languages"
@@ -67,7 +67,7 @@
     ],
     "typescriptServerPlugins": [
       {
-        "name": "typescript-styled-plugin",
+        "name": "@styled/typescript-styled-plugin",
         "enableForWorkspaceTypeScriptVersions": true
       }
     ],
@@ -87,7 +87,7 @@
   },
   "dependencies": {
     "d3-color": "^3.1.0",
-    "typescript-styled-plugin": "^0.18.2",
+    "@styled/typescript-styled-plugin": "^0.19.0",
     "vscode-css-languageservice": "^6.2.1"
   },
   "devDependencies": {
