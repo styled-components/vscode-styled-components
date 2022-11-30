@@ -70,5 +70,6 @@ If however you believe this property is standard and thus missing you can raise 
 ### Intellisense is not working!
 
 See these issues:
+
 - https://github.com/styled-components/vscode-styled-components/issues/357
 - https://github.com/styled-components/vscode-styled-components/issues/343
