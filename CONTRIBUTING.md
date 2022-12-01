@@ -33,7 +33,7 @@ The best fix is to look at the new line and create a new rule in https://github.
 
 Intellisense is handled by https://github.com/microsoft/typescript-styled-plugin.
 
-For most things `typescript-styled-plugin` is just a [pass-through](https://github.com/microsoft/typescript-styled-plugin/blob/master/src/_language-service.ts#L87-L95) to the CSS/SCSS language services. For example, looking at [getCompletionItems](https://github.com/microsoft/typescript-styled-plugin/blob/master/src/_language-service.ts#L215-L244) you can see it just calls the equivalent on the upstream language services. So if something works natively (CSS file), but not in styled-components its most likely because it's not passing the correct events through.
+For most things `typescript-styled-plugin` is just a [pass-through](https://github.com/microsoft/typescript-styled-plugin/blob/master/src/_language-service.ts#L87-L95) to the CSS/SCSS language services. For example, looking at [getCompletionItems](https://github.com/styled-components/typescript-styled-plugin/blob/master/src/_language-service.ts#L215-L244) you can see it just calls the equivalent on the upstream language services. So if something works natively (CSS file), but not in styled-components its most likely because it's not passing the correct events through.
 
 ### Setting up
 
@@ -51,9 +51,9 @@ You can't run the typescript-styled-plugin directly, instead you need to load a 
 
 You should now be able to use styled-components in the guest window and set breakpoints on the both the plugin and extension in the main window.
 
-A good starting point is setting a breakpoint [here](https://github.com/microsoft/typescript-styled-plugin/blob/4f6ad2aae15098d74fd069d646a44ae368986af4/src/_language-service.ts#L254) then trying to use completions in the guest window.
+A good starting point is setting a breakpoint [here](https://github.com/styled-components/typescript-styled-plugin/blob/4f6ad2aae15098d74fd069d646a44ae368986af4/src/_language-service.ts#L254) then trying to use completions in the guest window.
 
-[Optional] - If you want to go even deeper and debug the css language server, you will need to yarn|npm link that into typescript plugin and then make sure typescript-plugin's [outfiles](https://github.com/microsoft/typescript-styled-plugin/blob/main/.vscode/launch.json#L9) are also pointing to the css language server's generated files on build.
+[Optional] - If you want to go even deeper and debug the css language server, you will need to yarn|npm link that into typescript plugin and then make sure typescript-plugin's [outfiles](https://github.com/styled-components/typescript-styled-plugin/blob/main/.vscode/launch.json#L9) are also pointing to the css language server's generated files on build.
 
 More Info:
 

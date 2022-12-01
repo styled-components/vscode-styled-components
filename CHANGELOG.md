@@ -1,5 +1,12 @@
 # Release Notes
 
+## 1.7.6 (30-11-2022)
+
+- Fixed fixtures and tests from upstream VSCode changes
+- Dependencies were updated
+- TypeScript Styled Plugin has been forked and updated to use the latest CSS Language Server
+- calc(), var(), hba() now supported in intellisense
+
 ## 1.7.5 (16-09-2022)
 
 - Only insert semicolons inside of CSS [#375](https://github.com/styled-components/vscode-styled-components/pull/375)
