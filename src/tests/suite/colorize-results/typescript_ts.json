@@ -73,7 +73,7 @@
 	},
 	{
 		"c": "styled",
-		"t": "source.ts meta.var.expr.ts meta.function-call.ts entity.name.function.ts",
+		"t": "source.ts meta.var.expr.ts entity.name.function.tagged-template.js",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -121,7 +121,7 @@
 	},
 	{
 		"c": "(",
-		"t": "source.ts meta.var.expr.ts meta.brace.round.ts",
+		"t": "source.ts meta.var.expr.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -133,7 +133,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.ts meta.var.expr.ts string.quoted.double.ts punctuation.definition.string.begin.ts",
+		"t": "source.ts meta.var.expr.ts string.quoted.double.js.jsx punctuation.definition.string.begin.js.jsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -145,7 +145,7 @@
 	},
 	{
 		"c": "div",
-		"t": "source.ts meta.var.expr.ts string.quoted.double.ts",
+		"t": "source.ts meta.var.expr.ts string.quoted.double.js.jsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -157,7 +157,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.ts meta.var.expr.ts string.quoted.double.ts punctuation.definition.string.end.ts",
+		"t": "source.ts meta.var.expr.ts string.quoted.double.js.jsx punctuation.definition.string.end.js.jsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -169,7 +169,7 @@
 	},
 	{
 		"c": ")",
-		"t": "source.ts meta.var.expr.ts meta.brace.round.ts",
+		"t": "source.ts meta.var.expr.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
