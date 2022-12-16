@@ -49,7 +49,7 @@
 	},
 	{
 		"c": "styled",
-		"t": "source.js meta.export.default.js meta.function-call.ts entity.name.function.ts",
+		"t": "source.js meta.export.default.js entity.name.function.tagged-template.js",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -61,7 +61,7 @@
 	},
 	{
 		"c": "(",
-		"t": "source.js meta.export.default.js meta.brace.round.ts",
+		"t": "source.js meta.export.default.js",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -73,7 +73,7 @@
 	},
 	{
 		"c": "ExportComponent",
-		"t": "source.js meta.export.default.js variable.other.readwrite.ts",
+		"t": "source.js meta.export.default.js variable.other.readwrite.js.jsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -85,7 +85,7 @@
 	},
 	{
 		"c": ")",
-		"t": "source.js meta.export.default.js meta.brace.round.ts",
+		"t": "source.js meta.export.default.js",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
