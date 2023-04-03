@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.7.7 (03-04-2023)
+
+- Bug fix, update typescript styled plugin to re-enable auto completion
+
 ## 1.7.6 (30-11-2022)
 
 - Fixed fixtures and tests from upstream VSCode changes
