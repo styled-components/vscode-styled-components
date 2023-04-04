@@ -3,6 +3,7 @@
 ## 1.7.7 (03-04-2023)
 
 - Bug fix, update typescript styled plugin to re-enable auto completion
+- Test fixtures needed to be updated to accommodate [theme update](https://github.com/microsoft/vscode/pull/167104)
 
 ## 1.7.6 (30-11-2022)
 
