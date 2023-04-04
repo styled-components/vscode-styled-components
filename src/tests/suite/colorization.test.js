@@ -79,6 +79,7 @@ suite("colorization", () => {
     fixturesFiles.forEach((fixturesFile) => {
       // define a test for each fixture
       test(fixturesFile, function(done) {
+        this.timeout(5000); // Needed to try and fix macos timeout issues
         assertUnchangedTokens(
           join(extensionColorizeFixturePath, fixturesFile),
           done
