@@ -3,7 +3,6 @@
 Styled Components has moved! Make sure you're downloading it from here:
 https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components. The `jpoissonnier.vscode-styled-components ` version will recieve no more updates.
 
-[![](https://vsmarketplacebadge.apphb.com/version-short/styled-components.vscode-styled-components.svg)](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
 <a href="https://discord.gg/hfGUrbrxaU">![Discord](https://img.shields.io/discord/818449605409767454?logo=discord)</a>
 
 Syntax highlighting and IntelliSense for [styled-components](https://github.com/styled-components/styled-components).
