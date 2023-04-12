@@ -68,7 +68,12 @@ If however you believe this property is standard and thus missing you can raise 
 
 ### Intellisense is not working!
 
-See these issues:
+#### It hasn't worked since updating to v1.7.8!
+This is due to a clash between TypeScript 5.0.0 and this extension. When VSCode released March 2023 that had TypeScript 5.X set by default which 1.7.8 supports but lower versions don't.
+So, if you're not getting intellisense its most likely because you've updated the extension but haven't updated your version of TypeScript yet. The quick option is to downgrade to v1.7.5, the long term option is to migrate to TypeScript 5.X
+See: https://github.com/styled-components/vscode-styled-components/issues/387
+
+If it's not the above, See these issues:
 
 - https://github.com/styled-components/vscode-styled-components/issues/357
 - https://github.com/styled-components/vscode-styled-components/issues/343
