@@ -50,7 +50,9 @@ Syntax Highlighting is specifically made to work with `styled` so make sure your
 
 See: https://github.com/styled-components/vscode-styled-components/issues/118#issuecomment-833007295
 
-Secondly make sure your file is set to the right language. It should be `typescriptreact` or `javascriptreact`. Using the correct extensions (jsx, tsx) should help with this.
+Secondly, make sure your file is set to the right language. It should be `typescriptreact` or `javascriptreact`. Using the correct extensions (jsx, tsx) should help with this.
+
+Thirdly, please ensure you are using the correct version of this extension corresponding to your TypeScript version. If you are using typescript@5.0.0 or greater, you may use the latest version of this extension. Otherwise, please use version 1.7.5 of this extension. You can install a specific **version** of an extension in VS Code by installing the latest, opening the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), and choosing the "Extensions: Install Specific Version of Extension..." option.
 
 ### Emmet tab completion isn't working
 
