@@ -2,7 +2,7 @@
   "name": "vscode-styled-components",
   "displayName": "vscode-styled-components",
   "description": "Syntax highlighting for styled-components",
-  "version": "1.7.8",
+  "version": "1.7.9",
   "publisher": "styled-components",
   "icon": "logo.png",
   "license": "MIT",
@@ -88,7 +88,7 @@
   "dependencies": {
     "d3-color": "^3.1.0",
     "@styled/typescript-styled-plugin": "^1.0.0",
-    "vscode-css-languageservice": "^6.2.1"
+    "vscode-css-languageservice": "^6.2.11"
   },
   "devDependencies": {
     "@types/d3-color": "^3.1.0",
