@@ -9,6 +9,14 @@
         "isDefault": true
       },
       "isBackground": true,
+      "problemMatcher": {
+        "base": "$tsc-watch",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "building...",
+          "endsPattern": "build finished"
+        }
+      },
       "label": "npm: watch",
       "detail": "ESBuild watch mode"
     }

@@ -15,21 +15,21 @@
     "vscode": "^1.73.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Visualization"
   ],
   "scripts": {
     "format": "prettier --write .",
     "lint": "prettier --check .",
-    "compile": "node ./build.js",
+    "compile": "node ./build.mjs",
     "test": "node ./src/tests/runTests.js",
-    "watch": "node ./build.js --watch",
-    "vscode:prepublish": "node ./build.js --production",
+    "watch": "node ./build.mjs --watch",
+    "vscode:prepublish": "node ./build.mjs --production",
     "prepare": "husky install"
   },
   "activationEvents": [
     "onLanguage:typescriptreact",
-    "onLanguage:javascriptreact",
-    "onCommand:extension.insertColonOrSemiColon"
+    "onLanguage:javascriptreact"
   ],
   "contributes": {
     "languages": [
@@ -97,7 +97,7 @@
     "@types/node": "^18.11.9",
     "@types/vscode": "^1.73.1",
     "@vscode/test-electron": "^2.2.0",
-    "esbuild": "^0.15.16",
+    "esbuild": "^0.19.9",
     "glob": "7.1.6",
     "husky": "^7.0.4",
     "mocha": "^9.2.1",
