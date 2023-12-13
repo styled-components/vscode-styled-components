@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.7.9 (11-12-2023)
+
+- Add support for `@container` queries
+
 ## 1.7.8 (03-04-2023)
 
 - Bug fix, update typescript styled plugin to re-enable auto completion
