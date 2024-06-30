@@ -1,3 +1,6 @@
+**NOTE**: _Sadly this repository is no longer supported or updated by the Styled Components team as of June 2024. If you wish to help develop this code please reach out on Discord or in the [issue](https://github.com/styled-components/vscode-styled-components/issues/275). We can unarchive this repo if we get contributors but until then it will remain the way it is._
+
+
 # vscode-styled-components
 
 Styled Components has moved! Make sure you're downloading it from here:
