@@ -8,9 +8,11 @@
 			"dark_vs": "comment: #6A9955",
 			"light_vs": "comment: #008000",
 			"hc_black": "comment: #7CA668",
-			"dark_plus_experimental": "comment: #6A9955",
+			"2026-dark": "punctuation.definition.comment: #8B949E",
+			"dark_modern": "comment: #6A9955",
+			"2026-light": "punctuation.definition.comment: #6E7781",
 			"hc_light": "comment: #515151",
-			"light_plus_experimental": "comment: #008000"
+			"light_modern": "comment: #008000"
 		}
 	},
 	{
@@ -22,9 +24,11 @@
 			"dark_vs": "comment: #6A9955",
 			"light_vs": "comment: #008000",
 			"hc_black": "comment: #7CA668",
-			"dark_plus_experimental": "comment: #6A9955",
+			"2026-dark": "comment: #8B949E",
+			"dark_modern": "comment: #6A9955",
+			"2026-light": "comment: #6E7781",
 			"hc_light": "comment: #515151",
-			"light_plus_experimental": "comment: #008000"
+			"light_modern": "comment: #008000"
 		}
 	},
 	{
@@ -36,9 +40,11 @@
 			"dark_vs": "comment: #6A9955",
 			"light_vs": "comment: #008000",
 			"hc_black": "comment: #7CA668",
-			"dark_plus_experimental": "comment: #6A9955",
+			"2026-dark": "punctuation.definition.comment: #8B949E",
+			"dark_modern": "comment: #6A9955",
+			"2026-light": "punctuation.definition.comment: #6E7781",
 			"hc_light": "comment: #515151",
-			"light_plus_experimental": "comment: #008000"
+			"light_modern": "comment: #008000"
 		}
 	},
 	{
@@ -50,9 +56,11 @@
 			"dark_vs": "comment: #6A9955",
 			"light_vs": "comment: #008000",
 			"hc_black": "comment: #7CA668",
-			"dark_plus_experimental": "comment: #6A9955",
+			"2026-dark": "comment: #8B949E",
+			"dark_modern": "comment: #6A9955",
+			"2026-light": "comment: #6E7781",
 			"hc_light": "comment: #515151",
-			"light_plus_experimental": "comment: #008000"
+			"light_modern": "comment: #008000"
 		}
 	},
 	{
@@ -64,9 +72,11 @@
 			"dark_vs": "comment: #6A9955",
 			"light_vs": "comment: #008000",
 			"hc_black": "comment: #7CA668",
-			"dark_plus_experimental": "comment: #6A9955",
+			"2026-dark": "punctuation.definition.comment: #8B949E",
+			"dark_modern": "comment: #6A9955",
+			"2026-light": "punctuation.definition.comment: #6E7781",
 			"hc_light": "comment: #515151",
-			"light_plus_experimental": "comment: #008000"
+			"light_modern": "comment: #008000"
 		}
 	},
 	{
@@ -78,9 +88,11 @@
 			"dark_vs": "comment: #6A9955",
 			"light_vs": "comment: #008000",
 			"hc_black": "comment: #7CA668",
-			"dark_plus_experimental": "comment: #6A9955",
+			"2026-dark": "comment: #8B949E",
+			"dark_modern": "comment: #6A9955",
+			"2026-light": "comment: #6E7781",
 			"hc_light": "comment: #515151",
-			"light_plus_experimental": "comment: #008000"
+			"light_modern": "comment: #008000"
 		}
 	},
 	{
@@ -92,9 +104,11 @@
 			"dark_vs": "comment: #6A9955",
 			"light_vs": "comment: #008000",
 			"hc_black": "comment: #7CA668",
-			"dark_plus_experimental": "comment: #6A9955",
+			"2026-dark": "punctuation.definition.comment: #8B949E",
+			"dark_modern": "comment: #6A9955",
+			"2026-light": "punctuation.definition.comment: #6E7781",
 			"hc_light": "comment: #515151",
-			"light_plus_experimental": "comment: #008000"
+			"light_modern": "comment: #008000"
 		}
 	},
 	{
@@ -106,9 +120,11 @@
 			"dark_vs": "comment: #6A9955",
 			"light_vs": "comment: #008000",
 			"hc_black": "comment: #7CA668",
-			"dark_plus_experimental": "comment: #6A9955",
+			"2026-dark": "comment: #8B949E",
+			"dark_modern": "comment: #6A9955",
+			"2026-light": "comment: #6E7781",
 			"hc_light": "comment: #515151",
-			"light_plus_experimental": "comment: #008000"
+			"light_modern": "comment: #008000"
 		}
 	}
 ]

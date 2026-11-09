@@ -1,0 +1,10 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@4.0.1/schema.json",
+  "baseBranch": "main",
+  "changelog": [
+    "@changesets/changelog-github",
+    { "repo": "styled-components/vscode-styled-components" }
+  ],
+  "commit": false,
+  "privatePackages": { "tag": true, "version": true }
+}
