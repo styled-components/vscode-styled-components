@@ -27,7 +27,7 @@
     "watch": "node ./build.mjs --watch",
     "vscode:prepublish": "node ./build.mjs --production",
     "prepare": "husky install",
-    "release": "git ls-remote --exit-code --tags origin \"v$npm_package_version\" >/dev/null || (vsce publish --oidc --skip-duplicate && changeset publish)"
+    "release": "gh release view \"v$npm_package_version\" >/dev/null 2>&1 || (vsce publish --oidc --skip-duplicate && changeset publish)"
   },
   "activationEvents": [
     "onLanguage:typescriptreact",
