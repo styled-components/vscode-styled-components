@@ -1,5 +1,11 @@
 # Release Notes
 
+## 1.7.9
+
+### Patch Changes
+
+- [#460](https://github.com/styled-components/vscode-styled-components/pull/460) [`c8d4f98`](https://github.com/styled-components/vscode-styled-components/commit/c8d4f984c900b6c3826bb3b1d81535b3c1f9d573) Thanks [@quantizor](https://github.com/quantizor)! - Rebuild with a current esbuild, drop the redundant `onCommand` activation event (VS Code infers it from the contributed commands), and stop shipping development-only files in the extension package.
+
 ## 1.7.8 (03-04-2023)
 
 - Bug fix, update typescript styled plugin to re-enable auto completion
