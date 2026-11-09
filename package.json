@@ -100,7 +100,7 @@
     "@types/mocha": "^9.0.0",
     "@types/node": "^18.11.9",
     "@types/vscode": "^1.73.1",
-    "@vscode/test-electron": "^2.2.0",
+    "@vscode/test-electron": "^3.1.0",
     "@vscode/vsce": "^4.1.0",
     "esbuild": "^0.19.9",
     "glob": "7.1.6",
