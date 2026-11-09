@@ -1,3 +1,5 @@
+const fs = require('fs');
+const os = require('os');
 const path = require('path');
 const runTests = require('@vscode/test-electron').runTests;
 
@@ -16,7 +18,9 @@ async function main() {
 
 		const launchArgs = [
 			// This disables all extensions except the one being tested
-			'--disable-extensions'
+			'--disable-extensions',
+			// The default user-data dir sits under the checkout, which pushes VS Code's IPC socket past macOS's 103-char limit (listen EINVAL).
+			`--user-data-dir=${fs.mkdtempSync(path.join(os.tmpdir(), 'vsc-'))}`,
 		];
 
 		// Download VS Code, unzip it and run the integration test
