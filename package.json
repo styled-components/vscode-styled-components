@@ -3,6 +3,7 @@
   "displayName": "vscode-styled-components",
   "description": "Syntax highlighting for styled-components",
   "version": "1.7.8",
+  "private": true,
   "publisher": "styled-components",
   "icon": "logo.png",
   "license": "MIT",
@@ -25,7 +26,8 @@
     "test": "node ./src/tests/runTests.js",
     "watch": "node ./build.mjs --watch",
     "vscode:prepublish": "node ./build.mjs --production",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "git ls-remote --exit-code --tags origin \"v$npm_package_version\" >/dev/null || (vsce publish --oidc --skip-duplicate && changeset publish)"
   },
   "activationEvents": [
     "onLanguage:typescriptreact",
@@ -86,17 +88,20 @@
     ]
   },
   "dependencies": {
-    "d3-color": "^3.1.0",
     "@styled/typescript-styled-plugin": "^1.0.0",
+    "d3-color": "^3.1.0",
     "vscode-css-languageservice": "^6.2.1"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^1.0.1",
+    "@changesets/cli": "^3.0.3",
     "@types/d3-color": "^3.1.0",
     "@types/glob": "^7.2.0",
     "@types/mocha": "^9.0.0",
     "@types/node": "^18.11.9",
     "@types/vscode": "^1.73.1",
     "@vscode/test-electron": "^2.2.0",
+    "@vscode/vsce": "^4.1.0",
     "esbuild": "^0.19.9",
     "glob": "7.1.6",
     "husky": "^7.0.4",

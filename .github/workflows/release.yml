@@ -1,24 +1,43 @@
+name: Release
 
-name: Publish Release
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Never cancel a publish mid-flight; the next run picks up anything a queued run would have done.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  release:
+    name: Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+      pull-requests: write
     steps:
-      - name: Git Checkout
-        uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: ${{ github.sha }}
-      - uses: actions/setup-node@v3
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: "18"
+          cache: npm
+          node-version-file: .nvmrc
+
       - run: npm ci
-      - name: Install VSCE
-        run: npm i vsce
-      - name: Publish
-        run: npx vsce publish -p $VSCE_TOKEN
-        env:
-          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
+
+      # With pending changesets this opens or updates the "Version Packages" PR; once that PR merges,
+      # `npm run release` publishes to the VS Code Marketplace via trusted publishing (OIDC) and tags vX.Y.Z.
+      # RELEASE_GITHUB_TOKEN (a PAT) lets CI run on the version PR; the job token works but triggers no checks.
+      - name: Version or publish
+        uses: changesets/action@ae32849d5ba541f9ae29e40e22a623bc13562f51 # v2.1.2
+        with:
+          github-token: ${{ secrets.RELEASE_GITHUB_TOKEN || github.token }}
+          publish-script: npm run release

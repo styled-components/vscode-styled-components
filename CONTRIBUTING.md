@@ -6,6 +6,7 @@ Start off forking, then cloning the project locally:
 - `$ npm test` - Run tests
 - `$ npm run format` - Format any changes you've made with prettier
 - `$ npm run lint` - Check formatting with prettier
+- `$ npx changeset` - Describe a user-facing change for the changelog (see [Releasing](#releasing))
 
 ## Syntax
 
@@ -71,6 +72,12 @@ If you want logging, you can set `"typescript.tsserver.log": "verbose"` in your 
 You can run tests simply by running `npm test`.
 This should spawn another instance of VSCode to run the end to end tests in.
 
-The syntax tests will generate tokens for [fixtures we have](./src/tests/suite/colorize-fixtures) which are then compared to the results (adjacent folder). If there are changes and the tests fail it will generate a new result (overwriting the previous one).
+The syntax tests will generate tokens for [fixtures we have](./src/tests/suite/colorize-fixtures) which are then compared to the results (adjacent folder). If there are changes and the tests fail it will generate a new result (overwriting the previous one). A failing CI run uploads the regenerated results as a `colorize-results-<os>` artifact.
+
+The tests run against the VS Code version pinned in [runTests.js](./src/tests/runTests.js), because built-in themes and grammars change between releases. To move to a newer VS Code, bump the pin, run the tests, review the regenerated results, and commit them together.
 
 When making syntax changes you should update the test suite.
+
+## Releasing
+
+Every PR with a user-facing change includes a changeset (`npx changeset`, choose patch, minor, or major, and describe the change for users). On merge to `main`, the Release workflow opens or updates a "Version Packages" PR that bumps the version and writes `CHANGELOG.md`. Merging that PR publishes the extension to the VS Code Marketplace through trusted publishing (no stored token), tags `vX.Y.Z`, and creates the GitHub release.

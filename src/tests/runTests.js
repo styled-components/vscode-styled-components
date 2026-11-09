@@ -1,6 +1,8 @@
 const path = require('path');
 const runTests = require('@vscode/test-electron').runTests;
 
+// Built-in themes and grammars change between VS Code releases, so colorize-results only match the version they were captured with. Bump deliberately and regenerate.
+const vscodeVersion = '1.145.2';
 
 async function main() {
 	try {
@@ -22,9 +24,10 @@ async function main() {
 			extensionDevelopmentPath,
 			extensionTestsPath,
 			launchArgs,
+			version: vscodeVersion,
 		});
 	} catch (err) {
-		console.error('Failed to run tests');
+		console.error('Failed to run tests', err);
 		process.exit(1);
 	}
 }
