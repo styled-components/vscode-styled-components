@@ -24,7 +24,7 @@ const namedColor =
 
 const totalRegex = new RegExp(
   `${colorMatch.source}|${colorMatchShort.source}|${rgbaMatch.source}|${hslMatch.source}|${namedColor.source}`,
-  "ig"
+  "ig",
 );
 
 export const colorProvider = {
@@ -33,7 +33,7 @@ export const colorProvider = {
       color.red * 255,
       color.green * 255,
       color.blue * 255,
-      color.alpha
+      color.alpha,
     );
 
     // formatHex doesn't support alpha so we need to add it on for now until https://github.com/d3/d3-color/issues/78 is done
@@ -59,8 +59,8 @@ export const colorProvider = {
           colors.push(
             new ColorInformation(
               new Range(i, match.index, i, match.index + match[0].length),
-              color
-            )
+              color,
+            ),
           );
         }
       }
@@ -76,7 +76,7 @@ const colorFromString = (str: string): Color | undefined => {
       (color?.rgb().r as number) / 255,
       (color?.rgb().g as number) / 255,
       (color?.rgb().b as number) / 255,
-      color?.rgb().opacity as number
+      color?.rgb().opacity as number,
     );
   }
 

@@ -28,7 +28,7 @@ export const normalizeRegex = (regex: string) => {
   // punct
   out = out.replace(
     /\[:punct:\]/g,
-    "!\"\\#$%&'()*+,\\-./:;<=>?@\\[\\\\\\]^_‘{|}~"
+    "!\"\\#$%&'()*+,\\-./:;<=>?@\\[\\\\\\]^_‘{|}~",
   );
   // space
   out = out.replace(/\[:space:\]/g, " \\t\\r\\n\\v\\f");

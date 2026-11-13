@@ -5,6 +5,7 @@
     "outDir": "dist",
     "rootDir": ".",
     "lib": ["ES2021"],
+    "types": ["node"],
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,

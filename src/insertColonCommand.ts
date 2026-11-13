@@ -36,7 +36,7 @@ export const enterKeyEvent = commands.registerCommand(
 
     const selection = editor.selection;
     const textBeforeCursor = editor.document.getText(
-      new Range(new Position(0, 0), selection.active)
+      new Range(new Position(0, 0), selection.active),
     );
     let insideAPattern = false;
 
@@ -50,8 +50,8 @@ export const enterKeyEvent = commands.registerCommand(
          */
         const endRegex = new RegExp(
           `(${normalizeRegex(pattern.begin)})(?![\\S\\s]*(${normalizeRegex(
-            pattern.end
-          )}))`
+            pattern.end,
+          )}))`,
         );
 
         if (endRegex.test(textBeforeCursor)) {
@@ -75,7 +75,7 @@ export const enterKeyEvent = commands.registerCommand(
       editor.edit((editBuilder) => {
         editBuilder.insert(
           editor.document.lineAt(selection.active).range.end,
-          ": ;"
+          ": ;",
         );
       });
       commands.executeCommand("cursorLeft");
@@ -85,5 +85,5 @@ export const enterKeyEvent = commands.registerCommand(
     if (allCSSFunctions.has(lastWordBeforeCursor.slice(0, -1))) {
       commands.executeCommand("cursorLeft");
     }
-  }
+  },
 );

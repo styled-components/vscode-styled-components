@@ -9,7 +9,7 @@ import {
 
 export const provideCompletionItems = (
   document: TextDocument,
-  position: Position
+  position: Position,
 ) => {
   // First decide if we're between two `` or next to one
   const nextCharacterPosition = position.with({
@@ -20,7 +20,7 @@ export const provideCompletionItems = (
   if (document.getText(range) === "`") {
     // To be used when the cursor is sitting in between 2 back ticks
     const blockCompletionItemBetweenTicks = new CompletionItem(
-      "expand template string"
+      "expand template string",
     );
 
     blockCompletionItemBetweenTicks.insertText = new SnippetString("\n\t$0\n");
