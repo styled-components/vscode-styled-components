@@ -12,6 +12,7 @@ const context = await esbuild
     sourcemap: !production,
     minify: production,
     platform: "node",
+    mainFields: ["module", "main"],
     target: "ES2022",
     plugins: [
       {
