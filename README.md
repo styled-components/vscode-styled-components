@@ -1,8 +1,5 @@
 # vscode-styled-components
 
-Styled Components has moved! Make sure you're downloading it from here:
-https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components. The `jpoissonnier.vscode-styled-components ` version will recieve no more updates.
-
 <a href="https://discord.gg/hfGUrbrxaU">![Discord](https://img.shields.io/discord/818449605409767454?logo=discord)</a>
 
 Syntax highlighting and IntelliSense for [styled-components](https://github.com/styled-components/styled-components).
@@ -21,7 +18,7 @@ ext install vscode-styled-components
 
 It should be the top result.
 
-[[Source](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)]
+[[Source](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)]
 
 ## Features
 
@@ -68,13 +65,7 @@ If however you believe this property is standard and thus missing you can raise 
 
 ### Intellisense is not working!
 
-#### It hasn't worked since updating to v1.7.8!
-
-This is due to a clash between TypeScript 5.0.0 and this extension. When VSCode released March 2023 that had TypeScript 5.X set by default which 1.7.8 supports but lower versions don't.
-So, if you're not getting intellisense its most likely because you've updated the extension but haven't updated your version of TypeScript yet. The quick option is to downgrade to v1.7.5, the long term option is to migrate to TypeScript 5.X
-See: https://github.com/styled-components/vscode-styled-components/issues/387
-
-If it's not the above, See these issues:
+See these issues:
 
 - https://github.com/styled-components/vscode-styled-components/issues/357
 - https://github.com/styled-components/vscode-styled-components/issues/343
