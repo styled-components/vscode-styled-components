@@ -10,7 +10,7 @@ This file is the index for agents working in this repo. It holds only one-line r
 - `npm run lint` / `npm run format`: Prettier check / write (the pre-commit hook and CI run the check)
 - `npm run watch`: rebuild on change; press F5 in VS Code to launch the extension against the colorize fixtures
 - `npx changeset`: describe a user-facing change
-- `zizmor .github/workflows`: audit workflows (CI runs it on every `.github/` change)
+- Workflow audit: the "Workflow Security" CI job (`.github/workflows/zizmor.yml`) runs zizmor on every `.github/` change. To run it locally, [install zizmor](https://docs.zizmor.sh/installation/), then `zizmor .github/workflows`
 
 ## Map
 

@@ -1,6 +1,6 @@
 # GitHub Actions baseline
 
-Checked 2026-11-18 against actions/checkout v7.0.1, actions/setup-node v7.1.0, actions/upload-artifact v7.0.2, changesets/action v2.1.2, zizmor 1.32 (zizmor-action v0.8.1). `zizmor .github/workflows` enforces most of this; CI runs it on every `.github/` change.
+Checked 2026-11-18 against actions/checkout v7.0.1, actions/setup-node v7.1.0, actions/upload-artifact v7.0.2, changesets/action v2.1.2, zizmor 1.32 (zizmor-action v0.8.1). The "Workflow Security" CI job (`.github/workflows/zizmor.yml`) enforces most of this with zizmor on every `.github/` change.
 
 ## Every workflow
 
