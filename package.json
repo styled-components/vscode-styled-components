@@ -23,6 +23,7 @@
     "format": "prettier --write .",
     "lint": "prettier --check .",
     "compile": "node ./build.mjs",
+    "pretest": "npm run compile",
     "test": "node ./src/tests/runTests.js",
     "watch": "node ./build.mjs --watch",
     "vscode:prepublish": "node ./build.mjs --production",
