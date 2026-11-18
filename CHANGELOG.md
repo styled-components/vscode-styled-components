@@ -1,5 +1,13 @@
 # Release Notes
 
+## 1.7.10
+
+### Patch Changes
+
+- [#458](https://github.com/styled-components/vscode-styled-components/pull/458) [`76c6318`](https://github.com/styled-components/vscode-styled-components/commit/76c63187d5ea8e9687bcce203c73b057554ee5e1) Thanks [@Mad-Kat](https://github.com/Mad-Kat)! - Update dependencies: fewer false errors and better completions in styled templates
+
+- [#463](https://github.com/styled-components/vscode-styled-components/pull/463) [`2eb2288`](https://github.com/styled-components/vscode-styled-components/commit/2eb22888ca6b670cd125afde8ad9f019cc441cd6) Thanks [@Mad-Kat](https://github.com/Mad-Kat)! - Fixed the issue where the extension wouldn't start anymore
+
 ## 1.7.9
 
 ### Patch Changes
