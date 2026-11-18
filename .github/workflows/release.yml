@@ -11,25 +11,36 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
+permissions: {}
+
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: write
       id-token: write
       pull-requests: write
     steps:
+      # Fails a mistaken manual run on another branch; it does not stop a branch that edits this file.
+      - name: Require main
+        if: github.ref != 'refs/heads/main'
+        run: |
+          echo "::error::Release runs only from main; this run targeted ${GITHUB_REF}. Dispatch it from main."
+          exit 1
+
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
 
+      # No dependency cache: a poisoned cache entry would run with this job's publish identity.
       - name: Setup Node.js
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          cache: npm
           node-version-file: .nvmrc
+          package-manager-cache: false
 
       - run: npm ci
 
