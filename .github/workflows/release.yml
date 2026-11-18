@@ -11,10 +11,15 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
+permissions: {}
+
 jobs:
   release:
     name: Release
+    # A manual run can target any branch; publishing only from main keeps unreviewed code off the Marketplace.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: write
       id-token: write
@@ -25,11 +30,12 @@ jobs:
         with:
           persist-credentials: false
 
+      # No dependency cache: a poisoned cache entry would run with this job's publish identity.
       - name: Setup Node.js
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          cache: npm
           node-version-file: .nvmrc
+          package-manager-cache: false
 
       - run: npm ci
 
