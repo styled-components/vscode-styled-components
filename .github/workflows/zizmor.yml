@@ -1,0 +1,38 @@
+name: Workflow Security
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/**
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/**
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions: {}
+
+jobs:
+  zizmor:
+    name: zizmor
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # Findings fail the job instead of uploading to code scanning, so fork PRs (read-only token) get the same check.
+      - name: Audit workflows
+        uses: zizmorcore/zizmor-action@45d7276c9ca790aabd705e31ca99c6185c3e76dd # v0.8.1
+        with:
+          advanced-security: false

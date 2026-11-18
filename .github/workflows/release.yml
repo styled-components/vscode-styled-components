@@ -16,8 +16,6 @@ permissions: {}
 jobs:
   release:
     name: Release
-    # A manual run can target any branch; publishing only from main keeps unreviewed code off the Marketplace.
-    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
@@ -25,6 +23,13 @@ jobs:
       id-token: write
       pull-requests: write
     steps:
+      # Fails a mistaken manual run on another branch; it does not stop a branch that edits this file.
+      - name: Require main
+        if: github.ref != 'refs/heads/main'
+        run: |
+          echo "::error::Release runs only from main; this run targeted ${GITHUB_REF}. Dispatch it from main."
+          exit 1
+
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
