@@ -6,6 +6,8 @@ import Mocha from "mocha";
 // Runs inside the bundle in .integration-test/, which holds every *.test.js next to this file.
 export async function run() {
   const mocha = new Mocha({
+    // A test's first editor action in a fresh VS Code also loads grammars and starts the extension, which can take seconds on a shared CI runner.
+    timeout: 10_000,
     ui: "tdd",
   });
 

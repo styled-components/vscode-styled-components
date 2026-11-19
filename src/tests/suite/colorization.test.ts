@@ -198,9 +198,7 @@ suite("colorization", () => {
   }
 
   fixturesFiles.forEach((fixturesFile) => {
-    test(fixturesFile, async function () {
-      // The first capture in a fresh VS Code includes loading the grammars.
-      this.timeout(5000);
+    test(fixturesFile, async () => {
       await assertUnchangedTokens(
         join(extensionColorizeFixturePath, fixturesFile),
       );
