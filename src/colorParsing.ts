@@ -18,7 +18,7 @@ import {
 
 export type FoundColor = { start: number; end: number; color: Color };
 
-// upstream vscode-css-languageservice has #9370d8/#d87093; CSS Color 4 values; remove when upstream fixes
+// upstream vscode-css-languageservice has #9370d8/#d87093; CSS Color 4 values; remove when microsoft/vscode-css-languageservice#549 is fixed
 const namedColors: Record<string, string> = {
   ...colors,
   mediumpurple: "#9370db",
