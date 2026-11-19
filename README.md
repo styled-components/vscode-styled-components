@@ -47,7 +47,7 @@ Syntax Highlighting is specifically made to work with `styled` so make sure your
 
 See: https://github.com/styled-components/vscode-styled-components/issues/118#issuecomment-833007295
 
-Highlighting applies to JavaScript, TypeScript, JSX, TSX, Vue, and Svelte documents whatever their language. The extension itself activates when a `typescriptreact` or `javascriptreact` document opens, and color swatches and the backtick snippet serve only saved files in those two languages (the `.tsx` and `.jsx` extensions set them).
+Highlighting works in files whose language mode is JavaScript, TypeScript, JavaScript React, TypeScript React, Vue, or Svelte (shown in the status bar). Color swatches and the backtick snippet work only in saved files in the two React modes (`javascriptreact` and `typescriptreact`, which the `.jsx` and `.tsx` extensions set).
 
 ### Emmet tab completion isn't working
 
