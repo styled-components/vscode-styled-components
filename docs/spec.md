@@ -5,7 +5,7 @@ This spec is the source of truth for what the extension does; the code implement
 ## Scope and hosts
 
 - Editor: VS Code, from the minimum version in `package.json` `engines.vscode`. Published to the VS Code Marketplace only (Open VSX is requested in #368).
-- Activation: opening a `javascriptreact` or `typescriptreact` document.
+- Activation: opening a `javascriptreact` or `typescriptreact` document, or running the Enter command (VS Code 1.74 and later, the minimum in `engines.vscode`, activates an extension for its own commands).
 - The syntax grammar injects into JavaScript, TypeScript, JSX, TSX, Vue, and Svelte documents, everywhere except inside comments and strings.
 - The color swatches and the backtick snippet serve documents on disk (`file` scheme) whose language is `javascriptreact` or `typescriptreact`. Untitled documents and plain `.js`/`.ts` files get neither.
 - The Enter command's keybinding applies where [Enter command](#enter-command) says.
