@@ -25,7 +25,8 @@ async function openTsx(lines: string[]) {
 
 async function closeFixture({ dir }: { dir: string }) {
   await vscode.commands.executeCommand("workbench.action.closeAllEditors");
-  fs.rmSync(dir, { recursive: true, force: true });
+  // Windows keeps the folder locked for a moment after its editor closes (EPERM); rmSync retries with backoff.
+  fs.rmSync(dir, { force: true, maxRetries: 10, recursive: true });
 }
 
 function endOf(document: vscode.TextDocument, lineIndex: number) {
