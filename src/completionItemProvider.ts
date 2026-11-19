@@ -26,7 +26,11 @@ export const provideCompletionItems = (
   const textBeforeCursor = document.getText(
     new Range(new Position(0, 0), position),
   );
-  if (!isInsideStyledTemplate(textBeforeCursor)) {
+  // The typed backtick must open the template: an escaped backtick inside one leaves the scan inside both before and after it.
+  const opensStyledTemplate =
+    isInsideStyledTemplate(textBeforeCursor) &&
+    !isInsideStyledTemplate(textBeforeCursor.slice(0, -1));
+  if (!opensStyledTemplate) {
     return undefined;
   }
 

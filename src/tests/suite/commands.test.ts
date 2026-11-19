@@ -24,6 +24,8 @@ async function openTsx(lines: string[]) {
 }
 
 async function closeFixture({ dir }: { dir: string }) {
+  // A test that edits its fixture leaves it unsaved; closing it then could stop on a save prompt.
+  await vscode.commands.executeCommand("workbench.action.files.revert");
   await vscode.commands.executeCommand("workbench.action.closeAllEditors");
   // Windows keeps the folder locked for a moment after its editor closes (EPERM); rmSync retries with backoff.
   fs.rmSync(dir, { force: true, maxRetries: 10, recursive: true });
@@ -145,6 +147,16 @@ suite("commands", () => {
 
     test("is not offered after a backtick that opens a plain template", async () => {
       const labels = await snippetLabels(["const s = `"], atEnd, "`");
+
+      assert.deepStrictEqual(labels, []);
+    });
+
+    test("is not offered after an escaped backtick inside a styled template", async () => {
+      const labels = await snippetLabels(
+        ["const A = styled.div`", '  content: "\\`'],
+        atEnd,
+        "`",
+      );
 
       assert.deepStrictEqual(labels, []);
     });
