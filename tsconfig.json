@@ -1,26 +1,18 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "ES2021",
-    "outDir": "dist",
-    "rootDir": ".",
-    "lib": ["ES2021"],
-    "types": ["node"],
-    "sourceMap": true,
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
+    "lib": ["ES2022"],
+    "module": "esnext",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "noEmit": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "strict": true /* enable all strict type-checking options */
-    /* Additional Checks */
-    // "noImplicitReturns": true, /* Report error when not all code paths in function return a value. */
-    // "noFallthroughCasesInSwitch": true, /* Report errors for fallthrough cases in switch statement. */
-    // "noUnusedParameters": true,  /* Report errors on unused parameters. */
-
-    // uncomment the below when debugging the typescript styled plugin
-    // "plugins": [
-    //   {
-    //     "name": "../typescript-styled-plugin"
-    //   }
-    // ]
+    "strict": true,
+    "target": "ES2022",
+    "types": ["node", "mocha"],
+    "verbatimModuleSyntax": true
   },
-  "exclude": ["node_modules", ".vscode-test", "src/tests"]
+  "include": ["build.mts", "scripts", "src", "syntaxes"],
+  "exclude": ["node_modules", "src/tests/suite/colorize-fixtures"]
 }

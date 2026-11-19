@@ -2,5 +2,9 @@ package-lock.json
 .github
 node_modules
 .vscode-test
-src/tests
+.integration-test/
+src/tests/suite/colorize-fixtures
+src/tests/suite/colorize-results
 dist
+.claude/
+syntaxes/src/css.tmLanguage.json
