@@ -19,6 +19,13 @@
       },
       "label": "npm: watch",
       "detail": "ESBuild watch mode"
+    },
+    {
+      "type": "npm",
+      "script": "pretest",
+      "problemMatcher": [],
+      "label": "npm: pretest",
+      "detail": "Build the extension and bundle the integration tests"
     }
   ]
 }

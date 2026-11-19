@@ -3,3 +3,4 @@ const GlobalStyles = createGlobalStyle`
     color: 'red';
   }
 `;
+const sentinel = 1;

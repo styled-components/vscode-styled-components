@@ -1,7 +1,6 @@
-"use strict";
+import assert from "node:assert";
 
-const assert = require("assert");
-const vscode = require("vscode");
+import * as vscode from "vscode";
 
 const EXTENSION_ID = "styled-components.vscode-styled-components";
 

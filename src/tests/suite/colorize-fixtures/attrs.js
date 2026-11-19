@@ -3,3 +3,4 @@ const Link = styled.a.attrs({
 })`
   color: red;
 `;
+const sentinel = 1;

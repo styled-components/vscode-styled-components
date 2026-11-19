@@ -8,3 +8,4 @@ injectGlobal`
     margin: 0;
   }
 `;
+const sentinel = 1;

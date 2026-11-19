@@ -3,3 +3,4 @@ const styles = stylesheet`
     color: 'red';
   }
 `;
+const sentinel = 1;

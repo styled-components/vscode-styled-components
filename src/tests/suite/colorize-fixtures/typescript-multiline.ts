@@ -3,3 +3,4 @@ const StyledBroken = styled.div<{
 }>`
     background: red;
 `;
+const sentinel = 1;

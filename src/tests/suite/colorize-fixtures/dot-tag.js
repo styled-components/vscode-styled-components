@@ -4,3 +4,4 @@ const DotTag = styled.div`
   font-family: Helvetica;
   ${mixin};
 `;
+const sentinel = 1;

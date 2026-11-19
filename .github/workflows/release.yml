@@ -44,11 +44,13 @@ jobs:
 
       - run: npm ci
 
-      # With pending changesets this opens or updates the "Version Packages" PR; once that PR merges,
+      # With pending changesets this opens or updates the "chore: version packages" PR; once that PR merges,
       # `npm run release` publishes to the VS Code Marketplace via trusted publishing (OIDC) and tags vX.Y.Z.
       # RELEASE_GITHUB_TOKEN (a PAT) lets CI run on the version PR; the job token works but triggers no checks.
       - name: Version or publish
         uses: changesets/action@ae32849d5ba541f9ae29e40e22a623bc13562f51 # v2.1.2
         with:
+          commit-message: "chore: version packages"
           github-token: ${{ secrets.RELEASE_GITHUB_TOKEN || github.token }}
+          pr-title: "chore: version packages"
           publish-script: npm run release

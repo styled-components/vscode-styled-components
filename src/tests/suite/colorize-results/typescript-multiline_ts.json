@@ -97,7 +97,7 @@
 	},
 	{
 		"c": "styled",
-		"t": "source.ts meta.var.expr.ts meta.function-call.ts variable.other.object.ts",
+		"t": "source.ts meta.var.expr.ts variable.other.object.ts",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -113,7 +113,7 @@
 	},
 	{
 		"c": ".",
-		"t": "source.ts meta.var.expr.ts meta.function-call.ts punctuation.accessor.ts",
+		"t": "source.ts meta.var.expr.ts punctuation.accessor.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -129,18 +129,18 @@
 	},
 	{
 		"c": "div",
-		"t": "source.ts meta.var.expr.ts meta.function-call.ts entity.name.function.ts",
+		"t": "source.ts meta.var.expr.ts variable.other.property.ts",
 		"r": {
-			"dark_plus": "entity.name.function: #DCDCAA",
-			"light_plus": "entity.name.function: #795E26",
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
 			"dark_vs": "default: #D4D4D4",
 			"light_vs": "default: #000000",
-			"hc_black": "entity.name.function: #DCDCAA",
-			"2026-dark": "entity.name.function: #D2A8FF",
-			"dark_modern": "entity.name.function: #DCDCAA",
-			"2026-light": "entity.name.function: #8250DF",
-			"hc_light": "entity.name.function: #5E2CBC",
-			"light_modern": "entity.name.function: #795E26"
+			"hc_black": "variable: #9CDCFE",
+			"2026-dark": "variable.other: #C9D1D9",
+			"dark_modern": "variable: #9CDCFE",
+			"2026-light": "variable.other: #1F2328",
+			"hc_light": "variable: #001080",
+			"light_modern": "variable: #001080"
 		}
 	},
 	{
@@ -272,8 +272,24 @@
 		}
 	},
 	{
-		"c": "}>",
-		"t": "source.ts meta.var.expr.ts meta.type.parameters.ts meta.object.type.ts",
+		"c": "}",
+		"t": "source.ts meta.var.expr.ts meta.type.parameters.ts meta.object.type.ts punctuation.definition.block.ts",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF",
+			"2026-dark": "default: #BBBEBF",
+			"dark_modern": "default: #CCCCCC",
+			"2026-light": "default: #202020",
+			"hc_light": "default: #292929",
+			"light_modern": "default: #3B3B3B"
+		}
+	},
+	{
+		"c": ">",
+		"t": "source.ts meta.var.expr.ts meta.type.parameters.ts punctuation.definition.typeparameters.end.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -289,7 +305,7 @@
 	},
 	{
 		"c": "`",
-		"t": "source.ts meta.var.expr.ts meta.type.parameters.ts meta.object.type.ts punctuation.definition.string.template.begin.js string.template.js",
+		"t": "source.ts meta.var.expr.ts punctuation.definition.string.template.begin.js string.template.js",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -305,7 +321,7 @@
 	},
 	{
 		"c": "    ",
-		"t": "source.ts meta.var.expr.ts meta.type.parameters.ts meta.object.type.ts source.css.scss",
+		"t": "source.ts meta.var.expr.ts source.css.scss",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -321,7 +337,7 @@
 	},
 	{
 		"c": "background",
-		"t": "source.ts meta.var.expr.ts meta.type.parameters.ts meta.object.type.ts source.css.scss meta.property-name.scss meta.property-name.css support.type.property-name.css",
+		"t": "source.ts meta.var.expr.ts source.css.scss meta.property-name.scss meta.property-name.css support.type.property-name.css",
 		"r": {
 			"dark_plus": "support.type.property-name: #9CDCFE",
 			"light_plus": "support.type.property-name: #E50000",
@@ -337,7 +353,7 @@
 	},
 	{
 		"c": ":",
-		"t": "source.ts meta.var.expr.ts meta.type.parameters.ts meta.object.type.ts source.css.scss punctuation.separator.key-value.scss",
+		"t": "source.ts meta.var.expr.ts source.css.scss punctuation.separator.key-value.scss",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -353,7 +369,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.ts meta.var.expr.ts meta.type.parameters.ts meta.object.type.ts source.css.scss",
+		"t": "source.ts meta.var.expr.ts source.css.scss",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -369,7 +385,7 @@
 	},
 	{
 		"c": "red",
-		"t": "source.ts meta.var.expr.ts meta.type.parameters.ts meta.object.type.ts source.css.scss meta.property-value.scss support.constant.color.w3c-standard-color-name.css",
+		"t": "source.ts meta.var.expr.ts source.css.scss meta.property-value.scss support.constant.color.w3c-standard-color-name.css",
 		"r": {
 			"dark_plus": "support.constant.color: #CE9178",
 			"light_plus": "support.constant.color: #0451A5",
@@ -385,7 +401,7 @@
 	},
 	{
 		"c": ";",
-		"t": "source.ts meta.var.expr.ts meta.type.parameters.ts meta.object.type.ts source.css.scss punctuation.terminator.rule.scss",
+		"t": "source.ts meta.var.expr.ts source.css.scss punctuation.terminator.rule.scss",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -401,7 +417,7 @@
 	},
 	{
 		"c": "`",
-		"t": "source.ts meta.var.expr.ts meta.type.parameters.ts meta.object.type.ts punctuation.definition.string.template.end.js string.template.js",
+		"t": "source.ts meta.var.expr.ts punctuation.definition.string.template.begin.js string.template.js",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -417,7 +433,135 @@
 	},
 	{
 		"c": ";",
-		"t": "source.ts meta.var.expr.ts meta.type.parameters.ts meta.object.type.ts punctuation.terminator.statement.ts",
+		"t": "source.ts punctuation.terminator.statement.ts",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF",
+			"2026-dark": "default: #BBBEBF",
+			"dark_modern": "default: #CCCCCC",
+			"2026-light": "default: #202020",
+			"hc_light": "default: #292929",
+			"light_modern": "default: #3B3B3B"
+		}
+	},
+	{
+		"c": "const",
+		"t": "source.ts meta.var.expr.ts storage.type.ts",
+		"r": {
+			"dark_plus": "storage.type: #569CD6",
+			"light_plus": "storage.type: #0000FF",
+			"dark_vs": "storage.type: #569CD6",
+			"light_vs": "storage.type: #0000FF",
+			"hc_black": "storage.type: #569CD6",
+			"2026-dark": "storage.type: #FF7B72",
+			"dark_modern": "storage.type: #569CD6",
+			"2026-light": "storage.type: #CF222E",
+			"hc_light": "storage.type: #0F4A85",
+			"light_modern": "storage.type: #0000FF"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.ts meta.var.expr.ts",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF",
+			"2026-dark": "default: #BBBEBF",
+			"dark_modern": "default: #CCCCCC",
+			"2026-light": "default: #202020",
+			"hc_light": "default: #292929",
+			"light_modern": "default: #3B3B3B"
+		}
+	},
+	{
+		"c": "sentinel",
+		"t": "source.ts meta.var.expr.ts meta.var-single-variable.expr.ts meta.definition.variable.ts variable.other.constant.ts",
+		"r": {
+			"dark_plus": "variable.other.constant: #4FC1FF",
+			"light_plus": "variable.other.constant: #0070C1",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE",
+			"2026-dark": "variable.other.constant: #79C0FF",
+			"dark_modern": "variable.other.constant: #4FC1FF",
+			"2026-light": "variable.other.constant: #0550AE",
+			"hc_light": "variable.other.constant: #02715D",
+			"light_modern": "variable.other.constant: #0070C1"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.ts meta.var.expr.ts meta.var-single-variable.expr.ts",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF",
+			"2026-dark": "default: #BBBEBF",
+			"dark_modern": "default: #CCCCCC",
+			"2026-light": "default: #202020",
+			"hc_light": "default: #292929",
+			"light_modern": "default: #3B3B3B"
+		}
+	},
+	{
+		"c": "=",
+		"t": "source.ts meta.var.expr.ts keyword.operator.assignment.ts",
+		"r": {
+			"dark_plus": "keyword.operator: #D4D4D4",
+			"light_plus": "keyword.operator: #000000",
+			"dark_vs": "keyword.operator: #D4D4D4",
+			"light_vs": "keyword.operator: #000000",
+			"hc_black": "keyword.operator: #D4D4D4",
+			"2026-dark": "keyword.operator: #D4D4D4",
+			"dark_modern": "keyword.operator: #D4D4D4",
+			"2026-light": "keyword.operator: #000000",
+			"hc_light": "keyword.operator: #000000",
+			"light_modern": "keyword.operator: #000000"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.ts meta.var.expr.ts",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF",
+			"2026-dark": "default: #BBBEBF",
+			"dark_modern": "default: #CCCCCC",
+			"2026-light": "default: #202020",
+			"hc_light": "default: #292929",
+			"light_modern": "default: #3B3B3B"
+		}
+	},
+	{
+		"c": "1",
+		"t": "source.ts meta.var.expr.ts constant.numeric.decimal.ts",
+		"r": {
+			"dark_plus": "constant.numeric: #B5CEA8",
+			"light_plus": "constant.numeric: #098658",
+			"dark_vs": "constant.numeric: #B5CEA8",
+			"light_vs": "constant.numeric: #098658",
+			"hc_black": "constant.numeric: #B5CEA8",
+			"2026-dark": "constant.numeric: #B5CEA8",
+			"dark_modern": "constant.numeric: #B5CEA8",
+			"2026-light": "constant.numeric: #098658",
+			"hc_light": "constant.numeric: #096D48",
+			"light_modern": "constant.numeric: #098658"
+		}
+	},
+	{
+		"c": ";",
+		"t": "source.ts punctuation.terminator.statement.ts",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",

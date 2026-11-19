@@ -1,0 +1,32 @@
+const A = styled.div.attrs((p) => `color: red;`)`color: blue;`;
+const sentinel = 1;
+const B = styled.div.withConfig((p) => `color: red;`)`color: blue;`;
+const sentinel = 1;
+const C = styled(Button).attrs((p) => `color: red;`)`color: blue;`;
+const sentinel = 1;
+const D = styled(Button).withConfig((p) => `color: red;`)`color: blue;`;
+const sentinel = 1;
+const E = Button.extend.attrs((p) => `color: red;`)`color: blue;`;
+const sentinel = 1;
+const F = Button.extend.withConfig((p) => `color: red;`)`color: blue;`;
+const sentinel = 1;
+const G = foo().styled.div.attrs((p) => `color: red;`)`color: blue;`;
+const sentinel = 1;
+const H = foo().styled.div.withConfig((p) => `color: red;`)`color: blue;`;
+const sentinel = 1;
+const I = styled.div.attrs((p) =>
+  `color: red;`)`color: blue;`;
+const sentinel = 1;
+const J = styled.div.attrs((p) => `color: red;`)
+`color: blue;`;
+const sentinel = 1;
+const K = styled.div.attrs({ title: (p) => `x` })`color: blue;`;
+const sentinel = 1;
+const L = styled.div.withConfig({ displayName: (p) => `x` })`color: blue;`;
+const sentinel = 1;
+const M = styled(Button).attrs({ title: (p) => `x` })`color: blue;`;
+const sentinel = 1;
+const N = styled.div.attrs({ a: 1 })((p) => `color: red;`);
+const sentinel = 1;
+const O = styled.div.attrs((p) => `x`).attrs((q) => `y`)`color: blue;`;
+const sentinel = 1;
