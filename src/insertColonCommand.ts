@@ -1,89 +1,63 @@
-import { commands, Position, Range, window } from "vscode";
+import { commands, Position, Range, Selection, window } from "vscode";
 import { getDefaultCSSDataProvider } from "vscode-css-languageservice";
-import { normalizeRegex, patterns } from "./patterns";
+import { isInsideStyledTemplate } from "./templateScanner";
 
-// Collect all CSS Functions, like matrix(), rotate() etc
-// There may be overlap so use Set to ensure unique values
-const getCSSFunctions = () => {
-  return properties.reduce((acc, val) => {
-    if (!val?.values) {
-      return acc;
+// CSS functions (`matrix()`, `rotate()`, ...) appear under many properties, so a Set keeps each name once.
+const propertyNames = new Set<string>();
+const cssFunctions = new Set<string>();
+
+for (const property of getDefaultCSSDataProvider().provideProperties()) {
+  propertyNames.add(property.name);
+
+  for (const value of property.values ?? []) {
+    if (value.name.endsWith(")")) {
+      cssFunctions.add(value.name);
     }
+  }
+}
 
-    val.values?.forEach((v) => {
-      if (v.name.slice(v.name.length - 1) === ")") {
-        acc.add(v.name);
-      }
+export const insertColonOrSemiColon = async () => {
+  await commands.executeCommand("acceptSelectedSuggestion");
+  const editor = window.activeTextEditor;
+
+  if (!editor) {
+    return;
+  }
+
+  const selection = editor.selection;
+  const lineText = editor.document.lineAt(selection.start.line).text.trim();
+  const lastWordBeforeCursor = lineText.slice(lineText.lastIndexOf(" ") + 1);
+  const isProperty = propertyNames.has(lastWordBeforeCursor);
+  const isFunction = cssFunctions.has(lastWordBeforeCursor.slice(0, -1));
+
+  // The template scan reads the whole document before the cursor, so it runs only once the word matches.
+  if (!isProperty && !isFunction) {
+    return;
+  }
+
+  const textBeforeCursor = editor.document.getText(
+    new Range(new Position(0, 0), selection.active),
+  );
+
+  if (!isInsideStyledTemplate(textBeforeCursor)) {
+    return;
+  }
+
+  // The cursor moves through the editor API: the `cursorLeft` command acts on the focused editor, which may not be this one.
+  if (isProperty) {
+    await editor.edit((editBuilder) => {
+      editBuilder.insert(
+        editor.document.lineAt(selection.active).range.end,
+        ": ;",
+      );
     });
+    const beforeSemicolon = editor.selection.active.translate(0, -1);
+    editor.selection = new Selection(beforeSemicolon, beforeSemicolon);
+    await commands.executeCommand("editor.action.triggerSuggest");
+  }
 
-    return acc;
-  }, new Set());
+  if (isFunction) {
+    const insideParens = editor.selection.active.translate(0, -1);
+    editor.selection = new Selection(insideParens, insideParens);
+  }
 };
-
-const cssDataProvider = getDefaultCSSDataProvider();
-const properties = cssDataProvider.provideProperties();
-const allCSSFunctions = getCSSFunctions();
-
-export const enterKeyEvent = commands.registerCommand(
-  "extension.insertColonOrSemiColon",
-  async () => {
-    await commands.executeCommand("acceptSelectedSuggestion");
-    const editor = window.activeTextEditor;
-
-    if (!editor) {
-      return;
-    }
-
-    const selection = editor.selection;
-    const textBeforeCursor = editor.document.getText(
-      new Range(new Position(0, 0), selection.active),
-    );
-    let insideAPattern = false;
-
-    // determine if the cursor is inside a pattern
-    patterns.forEach((pattern) => {
-      try {
-        /**
-         * this regex will match if the cursor is inside the pattern
-         * more specifically, we've encountered the beginning but not the corresponding ending
-         * that should indicate that we're inside css
-         */
-        const endRegex = new RegExp(
-          `(${normalizeRegex(pattern.begin)})(?![\\S\\s]*(${normalizeRegex(
-            pattern.end,
-          )}))`,
-        );
-
-        if (endRegex.test(textBeforeCursor)) {
-          insideAPattern = true;
-        }
-      } catch (e) {
-        // if the regex is invalid, skip it
-        console.warn("Failed to process regex:", e);
-      }
-    });
-
-    if (!insideAPattern) {
-      return;
-    }
-
-    const lineText = editor.document.lineAt(selection.start.line).text;
-    const lineTextList = lineText.trim().split(" ");
-    const lastWordBeforeCursor = lineTextList[lineTextList.length - 1];
-
-    if (properties.find((value) => value.name === lastWordBeforeCursor)) {
-      editor.edit((editBuilder) => {
-        editBuilder.insert(
-          editor.document.lineAt(selection.active).range.end,
-          ": ;",
-        );
-      });
-      commands.executeCommand("cursorLeft");
-      commands.executeCommand("editor.action.triggerSuggest");
-    }
-
-    if (allCSSFunctions.has(lastWordBeforeCursor.slice(0, -1))) {
-      commands.executeCommand("cursorLeft");
-    }
-  },
-);
