@@ -1889,7 +1889,7 @@
 	},
 	{
 		"c": ".",
-		"t": "source.js meta.var.expr.js meta.function-call.ts punctuation.accessor.ts",
+		"t": "source.js meta.var.expr.js meta.function-call.tsx punctuation.accessor.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -1905,7 +1905,7 @@
 	},
 	{
 		"c": "attrs",
-		"t": "source.js meta.var.expr.js meta.function-call.ts entity.name.function.ts",
+		"t": "source.js meta.var.expr.js meta.function-call.tsx entity.name.function.tsx",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -1921,7 +1921,7 @@
 	},
 	{
 		"c": "(",
-		"t": "source.js meta.var.expr.js meta.brace.round.ts",
+		"t": "source.js meta.var.expr.js meta.brace.round.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -1937,7 +1937,7 @@
 	},
 	{
 		"c": "{",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.definition.block.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.definition.block.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -1953,7 +1953,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.whitespace.comment.leading.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.whitespace.comment.leading.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -1969,7 +1969,7 @@
 	},
 	{
 		"c": "//",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts comment.line.double-slash.ts punctuation.definition.comment.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx comment.line.double-slash.tsx punctuation.definition.comment.tsx",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1985,7 +1985,7 @@
 	},
 	{
 		"c": " we can define static props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts comment.line.double-slash.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx comment.line.double-slash.tsx",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -2001,7 +2001,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2017,7 +2017,7 @@
 	},
 	{
 		"c": "type",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx",
 		"r": {
 			"dark_plus": "meta.object-literal.key: #9CDCFE",
 			"light_plus": "meta.object-literal.key: #001080",
@@ -2033,7 +2033,7 @@
 	},
 	{
 		"c": ":",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts punctuation.separator.key-value.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx punctuation.separator.key-value.tsx",
 		"r": {
 			"dark_plus": "meta.object-literal.key: #9CDCFE",
 			"light_plus": "meta.object-literal.key: #001080",
@@ -2049,7 +2049,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2065,7 +2065,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.begin.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.begin.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -2081,7 +2081,7 @@
 	},
 	{
 		"c": "password",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -2097,7 +2097,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.end.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.end.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -2113,7 +2113,7 @@
 	},
 	{
 		"c": ",",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.separator.comma.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.separator.comma.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2129,7 +2129,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.whitespace.comment.leading.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.whitespace.comment.leading.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2145,7 +2145,7 @@
 	},
 	{
 		"c": "//",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts comment.line.double-slash.ts punctuation.definition.comment.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx comment.line.double-slash.tsx punctuation.definition.comment.tsx",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -2161,7 +2161,7 @@
 	},
 	{
 		"c": " or we can define dynamic ones",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts comment.line.double-slash.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx comment.line.double-slash.tsx",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -2177,7 +2177,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2193,7 +2193,7 @@
 	},
 	{
 		"c": "margin",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts entity.name.function.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx entity.name.function.tsx",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -2209,7 +2209,7 @@
 	},
 	{
 		"c": ":",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts punctuation.separator.key-value.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx punctuation.separator.key-value.tsx",
 		"r": {
 			"dark_plus": "meta.object-literal.key: #9CDCFE",
 			"light_plus": "meta.object-literal.key: #001080",
@@ -2225,7 +2225,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2241,7 +2241,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts variable.parameter.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx variable.parameter.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -2257,7 +2257,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2273,7 +2273,7 @@
 	},
 	{
 		"c": "=>",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts storage.type.function.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx storage.type.function.arrow.tsx",
 		"r": {
 			"dark_plus": "storage.type: #569CD6",
 			"light_plus": "storage.type: #0000FF",
@@ -2289,7 +2289,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2305,7 +2305,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts variable.other.object.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx variable.other.object.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -2321,7 +2321,7 @@
 	},
 	{
 		"c": ".",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts punctuation.accessor.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx punctuation.accessor.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2337,7 +2337,7 @@
 	},
 	{
 		"c": "size",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts variable.other.property.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx variable.other.property.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -2353,7 +2353,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2369,7 +2369,7 @@
 	},
 	{
 		"c": "||",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts keyword.operator.logical.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx keyword.operator.logical.tsx",
 		"r": {
 			"dark_plus": "keyword.operator: #D4D4D4",
 			"light_plus": "keyword.operator: #000000",
@@ -2385,7 +2385,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2401,7 +2401,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.begin.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.begin.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -2417,7 +2417,7 @@
 	},
 	{
 		"c": "1em",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -2433,7 +2433,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.end.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.end.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -2449,7 +2449,7 @@
 	},
 	{
 		"c": ",",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.separator.comma.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.separator.comma.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2465,7 +2465,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2481,7 +2481,7 @@
 	},
 	{
 		"c": "padding",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts entity.name.function.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx entity.name.function.tsx",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -2497,7 +2497,7 @@
 	},
 	{
 		"c": ":",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts punctuation.separator.key-value.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx punctuation.separator.key-value.tsx",
 		"r": {
 			"dark_plus": "meta.object-literal.key: #9CDCFE",
 			"light_plus": "meta.object-literal.key: #001080",
@@ -2513,7 +2513,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2529,7 +2529,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts variable.parameter.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx variable.parameter.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -2545,7 +2545,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2561,7 +2561,7 @@
 	},
 	{
 		"c": "=>",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts storage.type.function.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx storage.type.function.arrow.tsx",
 		"r": {
 			"dark_plus": "storage.type: #569CD6",
 			"light_plus": "storage.type: #0000FF",
@@ -2577,7 +2577,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2593,7 +2593,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts variable.other.object.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx variable.other.object.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -2609,7 +2609,7 @@
 	},
 	{
 		"c": ".",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts punctuation.accessor.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx punctuation.accessor.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2625,7 +2625,7 @@
 	},
 	{
 		"c": "size",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts variable.other.property.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx variable.other.property.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -2641,7 +2641,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2657,7 +2657,7 @@
 	},
 	{
 		"c": "||",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts keyword.operator.logical.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx keyword.operator.logical.tsx",
 		"r": {
 			"dark_plus": "keyword.operator: #D4D4D4",
 			"light_plus": "keyword.operator: #000000",
@@ -2673,7 +2673,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2689,7 +2689,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.begin.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.begin.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -2705,7 +2705,7 @@
 	},
 	{
 		"c": "1em",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -2721,7 +2721,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.end.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.end.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -2737,7 +2737,7 @@
 	},
 	{
 		"c": "}",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.definition.block.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.definition.block.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2753,7 +2753,7 @@
 	},
 	{
 		"c": ")",
-		"t": "source.js meta.var.expr.js meta.brace.round.ts",
+		"t": "source.js meta.var.expr.js meta.brace.round.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5137,7 +5137,7 @@
 	},
 	{
 		"c": ".",
-		"t": "source.js meta.var.expr.js meta.function-call.ts punctuation.accessor.ts",
+		"t": "source.js meta.var.expr.js meta.function-call.tsx punctuation.accessor.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5153,7 +5153,7 @@
 	},
 	{
 		"c": "attrs",
-		"t": "source.js meta.var.expr.js meta.function-call.ts entity.name.function.ts",
+		"t": "source.js meta.var.expr.js meta.function-call.tsx entity.name.function.tsx",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -5169,7 +5169,7 @@
 	},
 	{
 		"c": "(",
-		"t": "source.js meta.var.expr.js meta.brace.round.ts",
+		"t": "source.js meta.var.expr.js meta.brace.round.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5185,7 +5185,7 @@
 	},
 	{
 		"c": "{",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.definition.block.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.definition.block.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5201,7 +5201,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.whitespace.comment.leading.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.whitespace.comment.leading.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5217,7 +5217,7 @@
 	},
 	{
 		"c": "//",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts comment.line.double-slash.ts punctuation.definition.comment.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx comment.line.double-slash.tsx punctuation.definition.comment.tsx",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -5233,7 +5233,7 @@
 	},
 	{
 		"c": " we can define static props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts comment.line.double-slash.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx comment.line.double-slash.tsx",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -5249,7 +5249,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5265,7 +5265,7 @@
 	},
 	{
 		"c": "type",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx",
 		"r": {
 			"dark_plus": "meta.object-literal.key: #9CDCFE",
 			"light_plus": "meta.object-literal.key: #001080",
@@ -5281,7 +5281,7 @@
 	},
 	{
 		"c": ":",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts punctuation.separator.key-value.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx punctuation.separator.key-value.tsx",
 		"r": {
 			"dark_plus": "meta.object-literal.key: #9CDCFE",
 			"light_plus": "meta.object-literal.key: #001080",
@@ -5297,7 +5297,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5313,7 +5313,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.begin.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.begin.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -5329,7 +5329,7 @@
 	},
 	{
 		"c": "password",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -5345,7 +5345,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.end.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.end.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -5361,7 +5361,7 @@
 	},
 	{
 		"c": ",",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.separator.comma.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.separator.comma.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5377,7 +5377,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.whitespace.comment.leading.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.whitespace.comment.leading.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5393,7 +5393,7 @@
 	},
 	{
 		"c": "//",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts comment.line.double-slash.ts punctuation.definition.comment.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx comment.line.double-slash.tsx punctuation.definition.comment.tsx",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -5409,7 +5409,7 @@
 	},
 	{
 		"c": " or we can define dynamic ones",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts comment.line.double-slash.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx comment.line.double-slash.tsx",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -5425,7 +5425,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5441,7 +5441,7 @@
 	},
 	{
 		"c": "margin",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts entity.name.function.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx entity.name.function.tsx",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -5457,7 +5457,7 @@
 	},
 	{
 		"c": ":",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts punctuation.separator.key-value.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx punctuation.separator.key-value.tsx",
 		"r": {
 			"dark_plus": "meta.object-literal.key: #9CDCFE",
 			"light_plus": "meta.object-literal.key: #001080",
@@ -5473,7 +5473,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5489,7 +5489,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts variable.parameter.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx variable.parameter.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -5505,7 +5505,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5521,7 +5521,7 @@
 	},
 	{
 		"c": "=>",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts storage.type.function.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx storage.type.function.arrow.tsx",
 		"r": {
 			"dark_plus": "storage.type: #569CD6",
 			"light_plus": "storage.type: #0000FF",
@@ -5537,7 +5537,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5553,7 +5553,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts variable.other.object.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx variable.other.object.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -5569,7 +5569,7 @@
 	},
 	{
 		"c": ".",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts punctuation.accessor.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx punctuation.accessor.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5585,7 +5585,7 @@
 	},
 	{
 		"c": "size",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts variable.other.property.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx variable.other.property.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -5601,7 +5601,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5617,7 +5617,7 @@
 	},
 	{
 		"c": "||",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts keyword.operator.logical.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx keyword.operator.logical.tsx",
 		"r": {
 			"dark_plus": "keyword.operator: #D4D4D4",
 			"light_plus": "keyword.operator: #000000",
@@ -5633,7 +5633,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5649,7 +5649,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.begin.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.begin.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -5665,7 +5665,7 @@
 	},
 	{
 		"c": "1em",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -5681,7 +5681,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.end.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.end.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -5697,7 +5697,7 @@
 	},
 	{
 		"c": ",",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.separator.comma.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.separator.comma.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5713,7 +5713,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5729,7 +5729,7 @@
 	},
 	{
 		"c": "padding",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts entity.name.function.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx entity.name.function.tsx",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -5745,7 +5745,7 @@
 	},
 	{
 		"c": ":",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts punctuation.separator.key-value.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx punctuation.separator.key-value.tsx",
 		"r": {
 			"dark_plus": "meta.object-literal.key: #9CDCFE",
 			"light_plus": "meta.object-literal.key: #001080",
@@ -5761,7 +5761,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5777,7 +5777,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts variable.parameter.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx variable.parameter.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -5793,7 +5793,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5809,7 +5809,7 @@
 	},
 	{
 		"c": "=>",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts storage.type.function.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx storage.type.function.arrow.tsx",
 		"r": {
 			"dark_plus": "storage.type: #569CD6",
 			"light_plus": "storage.type: #0000FF",
@@ -5825,7 +5825,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5841,7 +5841,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts variable.other.object.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx variable.other.object.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -5857,7 +5857,7 @@
 	},
 	{
 		"c": ".",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts punctuation.accessor.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx punctuation.accessor.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5873,7 +5873,7 @@
 	},
 	{
 		"c": "size",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts variable.other.property.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx variable.other.property.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -5889,7 +5889,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5905,7 +5905,7 @@
 	},
 	{
 		"c": "||",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts keyword.operator.logical.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx keyword.operator.logical.tsx",
 		"r": {
 			"dark_plus": "keyword.operator: #D4D4D4",
 			"light_plus": "keyword.operator: #000000",
@@ -5921,7 +5921,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5937,7 +5937,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.begin.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.begin.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -5953,7 +5953,7 @@
 	},
 	{
 		"c": "1em",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -5969,7 +5969,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.end.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.end.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -5985,7 +5985,7 @@
 	},
 	{
 		"c": "}",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.definition.block.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.definition.block.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -6001,7 +6001,7 @@
 	},
 	{
 		"c": ")",
-		"t": "source.js meta.var.expr.js meta.brace.round.ts",
+		"t": "source.js meta.var.expr.js meta.brace.round.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7217,7 +7217,7 @@
 	},
 	{
 		"c": ".",
-		"t": "source.js meta.var.expr.js meta.function-call.ts punctuation.accessor.ts",
+		"t": "source.js meta.var.expr.js meta.function-call.tsx punctuation.accessor.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7233,7 +7233,7 @@
 	},
 	{
 		"c": "attrs",
-		"t": "source.js meta.var.expr.js meta.function-call.ts entity.name.function.ts",
+		"t": "source.js meta.var.expr.js meta.function-call.tsx entity.name.function.tsx",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -7249,7 +7249,7 @@
 	},
 	{
 		"c": "(",
-		"t": "source.js meta.var.expr.js meta.brace.round.ts",
+		"t": "source.js meta.var.expr.js meta.brace.round.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7265,7 +7265,7 @@
 	},
 	{
 		"c": "{",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.definition.block.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.definition.block.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7281,7 +7281,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.whitespace.comment.leading.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.whitespace.comment.leading.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7297,7 +7297,7 @@
 	},
 	{
 		"c": "//",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts comment.line.double-slash.ts punctuation.definition.comment.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx comment.line.double-slash.tsx punctuation.definition.comment.tsx",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -7313,7 +7313,7 @@
 	},
 	{
 		"c": " we can define static props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts comment.line.double-slash.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx comment.line.double-slash.tsx",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -7329,7 +7329,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7345,7 +7345,7 @@
 	},
 	{
 		"c": "type",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx",
 		"r": {
 			"dark_plus": "meta.object-literal.key: #9CDCFE",
 			"light_plus": "meta.object-literal.key: #001080",
@@ -7361,7 +7361,7 @@
 	},
 	{
 		"c": ":",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts punctuation.separator.key-value.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx punctuation.separator.key-value.tsx",
 		"r": {
 			"dark_plus": "meta.object-literal.key: #9CDCFE",
 			"light_plus": "meta.object-literal.key: #001080",
@@ -7377,7 +7377,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7393,7 +7393,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.begin.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.begin.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -7409,7 +7409,7 @@
 	},
 	{
 		"c": "password",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -7425,7 +7425,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.end.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.end.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -7441,7 +7441,7 @@
 	},
 	{
 		"c": ",",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.separator.comma.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.separator.comma.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7457,7 +7457,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.whitespace.comment.leading.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.whitespace.comment.leading.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7473,7 +7473,7 @@
 	},
 	{
 		"c": "//",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts comment.line.double-slash.ts punctuation.definition.comment.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx comment.line.double-slash.tsx punctuation.definition.comment.tsx",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -7489,7 +7489,7 @@
 	},
 	{
 		"c": " or we can define dynamic ones",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts comment.line.double-slash.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx comment.line.double-slash.tsx",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -7505,7 +7505,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7521,7 +7521,7 @@
 	},
 	{
 		"c": "margin",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts entity.name.function.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx entity.name.function.tsx",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -7537,7 +7537,7 @@
 	},
 	{
 		"c": ":",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts punctuation.separator.key-value.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx punctuation.separator.key-value.tsx",
 		"r": {
 			"dark_plus": "meta.object-literal.key: #9CDCFE",
 			"light_plus": "meta.object-literal.key: #001080",
@@ -7553,7 +7553,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7569,7 +7569,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts variable.parameter.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx variable.parameter.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -7585,7 +7585,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7601,7 +7601,7 @@
 	},
 	{
 		"c": "=>",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts storage.type.function.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx storage.type.function.arrow.tsx",
 		"r": {
 			"dark_plus": "storage.type: #569CD6",
 			"light_plus": "storage.type: #0000FF",
@@ -7617,7 +7617,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7633,7 +7633,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts variable.other.object.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx variable.other.object.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -7649,7 +7649,7 @@
 	},
 	{
 		"c": ".",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts punctuation.accessor.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx punctuation.accessor.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7665,7 +7665,7 @@
 	},
 	{
 		"c": "size",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts variable.other.property.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx variable.other.property.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -7681,7 +7681,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7697,7 +7697,7 @@
 	},
 	{
 		"c": "||",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts keyword.operator.logical.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx keyword.operator.logical.tsx",
 		"r": {
 			"dark_plus": "keyword.operator: #D4D4D4",
 			"light_plus": "keyword.operator: #000000",
@@ -7713,7 +7713,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7729,7 +7729,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.begin.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.begin.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -7745,7 +7745,7 @@
 	},
 	{
 		"c": "1em",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -7761,7 +7761,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.end.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.end.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -7777,7 +7777,7 @@
 	},
 	{
 		"c": ",",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.separator.comma.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.separator.comma.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7793,7 +7793,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7809,7 +7809,7 @@
 	},
 	{
 		"c": "padding",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts entity.name.function.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx entity.name.function.tsx",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -7825,7 +7825,7 @@
 	},
 	{
 		"c": ":",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts punctuation.separator.key-value.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx punctuation.separator.key-value.tsx",
 		"r": {
 			"dark_plus": "meta.object-literal.key: #9CDCFE",
 			"light_plus": "meta.object-literal.key: #001080",
@@ -7841,7 +7841,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7857,7 +7857,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts variable.parameter.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx variable.parameter.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -7873,7 +7873,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7889,7 +7889,7 @@
 	},
 	{
 		"c": "=>",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts storage.type.function.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx storage.type.function.arrow.tsx",
 		"r": {
 			"dark_plus": "storage.type: #569CD6",
 			"light_plus": "storage.type: #0000FF",
@@ -7905,7 +7905,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts meta.arrow.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx meta.arrow.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7921,7 +7921,7 @@
 	},
 	{
 		"c": "props",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts variable.other.object.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx variable.other.object.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -7937,7 +7937,7 @@
 	},
 	{
 		"c": ".",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts punctuation.accessor.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx punctuation.accessor.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7953,7 +7953,7 @@
 	},
 	{
 		"c": "size",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts variable.other.property.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx variable.other.property.tsx",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -7969,7 +7969,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7985,7 +7985,7 @@
 	},
 	{
 		"c": "||",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts keyword.operator.logical.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx keyword.operator.logical.tsx",
 		"r": {
 			"dark_plus": "keyword.operator: #D4D4D4",
 			"light_plus": "keyword.operator: #000000",
@@ -8001,7 +8001,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -8017,7 +8017,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.begin.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.begin.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -8033,7 +8033,7 @@
 	},
 	{
 		"c": "1em",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -8049,7 +8049,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts meta.object.member.ts string.quoted.double.ts punctuation.definition.string.end.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx meta.object.member.tsx string.quoted.double.tsx punctuation.definition.string.end.tsx",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -8065,7 +8065,7 @@
 	},
 	{
 		"c": "}",
-		"t": "source.js meta.var.expr.js meta.objectliteral.ts punctuation.definition.block.ts",
+		"t": "source.js meta.var.expr.js meta.objectliteral.tsx punctuation.definition.block.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -8081,7 +8081,7 @@
 	},
 	{
 		"c": ")",
-		"t": "source.js meta.var.expr.js meta.brace.round.ts",
+		"t": "source.js meta.var.expr.js meta.brace.round.tsx",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -10013,6 +10013,134 @@
 			"2026-light": "string: #0A3069",
 			"hc_light": "string: #0F4A85",
 			"light_modern": "string: #A31515"
+		}
+	},
+	{
+		"c": ";",
+		"t": "source.js punctuation.terminator.statement.js",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF",
+			"2026-dark": "default: #BBBEBF",
+			"dark_modern": "default: #CCCCCC",
+			"2026-light": "default: #202020",
+			"hc_light": "default: #292929",
+			"light_modern": "default: #3B3B3B"
+		}
+	},
+	{
+		"c": "const",
+		"t": "source.js meta.var.expr.js storage.type.js",
+		"r": {
+			"dark_plus": "storage.type: #569CD6",
+			"light_plus": "storage.type: #0000FF",
+			"dark_vs": "storage.type: #569CD6",
+			"light_vs": "storage.type: #0000FF",
+			"hc_black": "storage.type: #569CD6",
+			"2026-dark": "storage.type: #FF7B72",
+			"dark_modern": "storage.type: #569CD6",
+			"2026-light": "storage.type: #CF222E",
+			"hc_light": "storage.type: #0F4A85",
+			"light_modern": "storage.type: #0000FF"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.js meta.var.expr.js",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF",
+			"2026-dark": "default: #BBBEBF",
+			"dark_modern": "default: #CCCCCC",
+			"2026-light": "default: #202020",
+			"hc_light": "default: #292929",
+			"light_modern": "default: #3B3B3B"
+		}
+	},
+	{
+		"c": "sentinel",
+		"t": "source.js meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.constant.js",
+		"r": {
+			"dark_plus": "variable.other.constant: #4FC1FF",
+			"light_plus": "variable.other.constant: #0070C1",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE",
+			"2026-dark": "variable.other.constant: #79C0FF",
+			"dark_modern": "variable.other.constant: #4FC1FF",
+			"2026-light": "variable.other.constant: #0550AE",
+			"hc_light": "variable.other.constant: #02715D",
+			"light_modern": "variable.other.constant: #0070C1"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.js meta.var.expr.js meta.var-single-variable.expr.js",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF",
+			"2026-dark": "default: #BBBEBF",
+			"dark_modern": "default: #CCCCCC",
+			"2026-light": "default: #202020",
+			"hc_light": "default: #292929",
+			"light_modern": "default: #3B3B3B"
+		}
+	},
+	{
+		"c": "=",
+		"t": "source.js meta.var.expr.js keyword.operator.assignment.js",
+		"r": {
+			"dark_plus": "keyword.operator: #D4D4D4",
+			"light_plus": "keyword.operator: #000000",
+			"dark_vs": "keyword.operator: #D4D4D4",
+			"light_vs": "keyword.operator: #000000",
+			"hc_black": "keyword.operator: #D4D4D4",
+			"2026-dark": "keyword.operator: #D4D4D4",
+			"dark_modern": "keyword.operator: #D4D4D4",
+			"2026-light": "keyword.operator: #000000",
+			"hc_light": "keyword.operator: #000000",
+			"light_modern": "keyword.operator: #000000"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.js meta.var.expr.js",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF",
+			"2026-dark": "default: #BBBEBF",
+			"dark_modern": "default: #CCCCCC",
+			"2026-light": "default: #202020",
+			"hc_light": "default: #292929",
+			"light_modern": "default: #3B3B3B"
+		}
+	},
+	{
+		"c": "1",
+		"t": "source.js meta.var.expr.js constant.numeric.decimal.js",
+		"r": {
+			"dark_plus": "constant.numeric: #B5CEA8",
+			"light_plus": "constant.numeric: #098658",
+			"dark_vs": "constant.numeric: #B5CEA8",
+			"light_vs": "constant.numeric: #098658",
+			"hc_black": "constant.numeric: #B5CEA8",
+			"2026-dark": "constant.numeric: #B5CEA8",
+			"dark_modern": "constant.numeric: #B5CEA8",
+			"2026-light": "constant.numeric: #098658",
+			"hc_light": "constant.numeric: #096D48",
+			"light_modern": "constant.numeric: #098658"
 		}
 	},
 	{

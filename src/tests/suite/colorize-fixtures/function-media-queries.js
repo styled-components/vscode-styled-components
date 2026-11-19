@@ -88,3 +88,4 @@ const Input = styled.input.attrs({
   margin: ${props => props.margin};
   padding: ${props => props.padding};
 `;
+const sentinel = 1;

@@ -10,3 +10,4 @@ const rotate360 = keyframes`
 const something = keyframes`
     68%, 72% { left: 50px; }
 `;
+const sentinel = 1;

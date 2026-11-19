@@ -12,3 +12,4 @@ const customAtRule = styled.div`
     background-color: red;
   }
 `
+const sentinel = 1;

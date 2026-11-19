@@ -5,3 +5,4 @@ class InsideMethod extends React.Component {
     `;
   }
 }
+const sentinel = 1;

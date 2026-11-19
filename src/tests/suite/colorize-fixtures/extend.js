@@ -15,3 +15,4 @@ const foo = {
 const Half = getFull().extend`
   max-width: 100%;
 `
+const sentinel = 1;

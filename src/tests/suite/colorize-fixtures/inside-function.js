@@ -3,3 +3,4 @@ function insideFunction() {
     height: 15px;
   `;
 }
+const sentinel = 1;

@@ -13,3 +13,4 @@ const NewCompWithStringOneLine = CompWithComponent.withComponent(
 const NewCompWithComponent = CompWithComponent.withComponent(OtherComp)`
   color: green;
 `;
+const sentinel = 1;

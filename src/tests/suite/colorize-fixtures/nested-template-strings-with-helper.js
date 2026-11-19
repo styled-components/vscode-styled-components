@@ -51,3 +51,4 @@ export default {
   box1,
   box2,
 };
+const sentinel = 1;
