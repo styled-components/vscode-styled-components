@@ -94,6 +94,40 @@ suite("commands", () => {
       }
     });
 
+    test("keeps every cursor when moving them between the parentheses of CSS functions", async () => {
+      const lines = [
+        "const A = styled.div`",
+        "  transform: rotate();",
+        "  filter: blur();",
+        "`;",
+      ];
+      const fixture = await openTsx(lines);
+      try {
+        const cursors = [
+          new vscode.Position(1, "  transform: rotate()".length),
+          new vscode.Position(2, "  filter: blur()".length),
+        ];
+        fixture.editor.selections = cursors.map(
+          (cursor) => new vscode.Selection(cursor, cursor),
+        );
+
+        await vscode.commands.executeCommand(COMMAND_ID);
+
+        assert.deepStrictEqual(
+          fixture.editor.selections.map(({ active }) => [
+            active.line,
+            active.character,
+          ]),
+          [
+            [1, "  transform: rotate(".length],
+            [2, "  filter: blur(".length],
+          ],
+        );
+      } finally {
+        await closeFixture(fixture);
+      }
+    });
+
     test("leaves a plain template unchanged", async () => {
       const lines = ["const s = `", "  color", "`;"];
       const fixture = await openTsx(lines);

@@ -43,7 +43,15 @@ export const insertColonOrSemiColon = async () => {
     return;
   }
 
-  // The cursor moves through the editor API: the `cursorLeft` command acts on the focused editor, which may not be this one.
+  // The cursors move through the editor API: the `cursorLeft` command acts on the focused editor, which may not be this one.
+  const moveCursorsLeft = () => {
+    editor.selections = editor.selections.map(({ active }) => {
+      const left = active.character > 0 ? active.translate(0, -1) : active;
+
+      return new Selection(left, left);
+    });
+  };
+
   if (isProperty) {
     await editor.edit((editBuilder) => {
       editBuilder.insert(
@@ -51,13 +59,11 @@ export const insertColonOrSemiColon = async () => {
         ": ;",
       );
     });
-    const beforeSemicolon = editor.selection.active.translate(0, -1);
-    editor.selection = new Selection(beforeSemicolon, beforeSemicolon);
+    moveCursorsLeft();
     await commands.executeCommand("editor.action.triggerSuggest");
   }
 
   if (isFunction) {
-    const insideParens = editor.selection.active.translate(0, -1);
-    editor.selection = new Selection(insideParens, insideParens);
+    moveCursorsLeft();
   }
 };
