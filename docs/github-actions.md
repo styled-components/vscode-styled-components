@@ -16,7 +16,7 @@ Checked 2026-11-18 against actions/checkout v7.0.1, actions/setup-node v7.1.0, a
 - Publishing uses VS Code Marketplace trusted publishing: `id-token: write` plus `vsce publish --oidc`, no stored token. Never reintroduce a long-lived publish secret.
 - No dependency cache in the release job (`package-manager-cache: false`, no `cache:` input, no `actions/cache`). A poisoned cache entry would run with the publish identity; the cold install is the accepted cost.
 - A manual run on a ref other than `main` fails at its first step. That guards against a mistaken dispatch only: a branch can edit the workflow itself, so the Marketplace trusted-publisher binding is the real control.
-- Events created with the job's `GITHUB_TOKEN` (the Version Packages PR) start no workflows, so required checks never run on that PR. Setting a `RELEASE_GITHUB_TOKEN` secret (a PAT or GitHub App token) fixes this; `release.yml` already prefers it.
+- Events created with the job's `GITHUB_TOKEN` (the version PR) start no workflows, so required checks never run on that PR. Setting a `RELEASE_GITHUB_TOKEN` secret (a PAT or GitHub App token) fixes this; `release.yml` already prefers it.
 
 ## Repository settings this baseline assumes
 

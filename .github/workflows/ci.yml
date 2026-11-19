@@ -37,6 +37,12 @@ jobs:
       - name: Check formatting
         run: npm run lint
 
+      - name: Typecheck
+        run: npx tsc --noEmit -p .
+
+      - name: Unit tests
+        run: npm run test:unit
+
   test:
     name: Test (${{ matrix.os }})
     strategy:
