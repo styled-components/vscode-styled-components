@@ -1,5 +1,33 @@
 # Release Notes
 
+## 1.8.0
+
+### Minor Changes
+
+- [#465](https://github.com/styled-components/vscode-styled-components/pull/465) [`004e515`](https://github.com/styled-components/vscode-styled-components/commit/004e515f6f64be253b293d54eaf2b06e32945127) Thanks [@quantizor](https://github.com/quantizor)! - Modern CSS functions such as `oklch()`, `color-mix()`, `clamp()`, and `light-dark()` now highlight as functions inside styled templates, and `light-dark()` no longer breaks apart at the hyphen.
+
+- [#465](https://github.com/styled-components/vscode-styled-components/pull/465) [`004e515`](https://github.com/styled-components/vscode-styled-components/commit/004e515f6f64be253b293d54eaf2b06e32945127) Thanks [@quantizor](https://github.com/quantizor)! - CSS highlighting now works in more of the ways you write styled components: a tag chain, on one line or split across lines by Prettier (`styled.div` or `Button.extend`, then any number of `.attrs()` and `.withConfig()` calls), a comment between `styled.div` and its backtick, a tag reached through an object (`theme.styled.div`, `$styled.div`, `theme.css`) or through a call or index (`getTheme().styled.div`, `items[0].styled.div`), type arguments that span several lines, including on `theme.keyframes`, and an arrow function whose parameter starts with `$` or has no parentheses, like `styled.div(($props) => ...)` or `styled.div(p => ...)`.
+
+- [#465](https://github.com/styled-components/vscode-styled-components/pull/465) [`004e515`](https://github.com/styled-components/vscode-styled-components/commit/004e515f6f64be253b293d54eaf2b06e32945127) Thanks [@quantizor](https://github.com/quantizor)! - `hwb()`, `lab()`, `lch()`, `oklab()`, and `oklch()` colors now show a color swatch, and the color picker can write any color in these five formats.
+
+### Patch Changes
+
+- [#465](https://github.com/styled-components/vscode-styled-components/pull/465) [`004e515`](https://github.com/styled-components/vscode-styled-components/commit/004e515f6f64be253b293d54eaf2b06e32945127) Thanks [@quantizor](https://github.com/quantizor)! - Typing a backtick no longer offers to expand it into a multi-line template everywhere. The "expand template string" suggestion now appears only when the backtick opens a styled template ([#386](https://github.com/styled-components/vscode-styled-components/issues/386)).
+
+- [#465](https://github.com/styled-components/vscode-styled-components/pull/465) [`004e515`](https://github.com/styled-components/vscode-styled-components/commit/004e515f6f64be253b293d54eaf2b06e32945127) Thanks [@quantizor](https://github.com/quantizor)! - The color picker now writes the same values VS Code's picker writes in `.css` files. A semi-transparent hex color always gets a valid two-digit alpha (`#ff00000d` rather than `#ff0000c`), and `hsl()` values use whole numbers.
+
+- [#465](https://github.com/styled-components/vscode-styled-components/pull/465) [`004e515`](https://github.com/styled-components/vscode-styled-components/commit/004e515f6f64be253b293d54eaf2b06e32945127) Thanks [@quantizor](https://github.com/quantizor)! - Picking a CSS property from the suggestion list and pressing Enter fills in `: ;` again when the template holds a nested template string inside `${}` ([#437](https://github.com/styled-components/vscode-styled-components/issues/437)). It also works when the styled tag is spread across several lines.
+
+- [#465](https://github.com/styled-components/vscode-styled-components/pull/465) [`004e515`](https://github.com/styled-components/vscode-styled-components/commit/004e515f6f64be253b293d54eaf2b06e32945127) Thanks [@quantizor](https://github.com/quantizor)! - Syntax highlighting is about 8% faster on average, measured over about 5,800 lines of styled-components code in JavaScript and TSX, both the first time the editor highlights a file and after. Files with very long single lines gained the most, highlighting about 65% faster on average.
+
+- [#465](https://github.com/styled-components/vscode-styled-components/pull/465) [`004e515`](https://github.com/styled-components/vscode-styled-components/commit/004e515f6f64be253b293d54eaf2b06e32945127) Thanks [@quantizor](https://github.com/quantizor)! - Syntax highlighting no longer breaks for the rest of the file after certain styled components. These now highlight correctly, along with the code below them: a template right after a call whose arrow function returns an object or JSX, like `foo(() => ({ ... }))` or MUI's `styled(({ className, ...props }) => (...))` pattern ([#383](https://github.com/styled-components/vscode-styled-components/issues/383)); `.attrs()` that uses props, even across several lines ([#292](https://github.com/styled-components/vscode-styled-components/issues/292)); a props type written over several lines, like `styled.div<{ color: string }>` broken onto new lines ([#358](https://github.com/styled-components/vscode-styled-components/issues/358)); TypeScript type parameters after `styled.div` ([#442](https://github.com/styled-components/vscode-styled-components/issues/442)); a styled component passed into a function such as `React.memo` ([#196](https://github.com/styled-components/vscode-styled-components/issues/196)); and templates after `Comp.extend`, `keyframes`, and `.withComponent()`.
+
+- [#465](https://github.com/styled-components/vscode-styled-components/pull/465) [`004e515`](https://github.com/styled-components/vscode-styled-components/commit/004e515f6f64be253b293d54eaf2b06e32945127) Thanks [@quantizor](https://github.com/quantizor)! - Keyframe selectors with decimals, like `33.3%`, now highlight as one selector inside an `@keyframes` block, the same as they already did in a `keyframes` template.
+
+- [#465](https://github.com/styled-components/vscode-styled-components/pull/465) [`004e515`](https://github.com/styled-components/vscode-styled-components/commit/004e515f6f64be253b293d54eaf2b06e32945127) Thanks [@quantizor](https://github.com/quantizor)! - The extension now needs VS Code 1.74 or later, so VS Code starts it for the Enter-key `: ;` command in any JavaScript or TypeScript file, not only after a JSX or TSX file opens.
+
+- [#465](https://github.com/styled-components/vscode-styled-components/pull/465) [`004e515`](https://github.com/styled-components/vscode-styled-components/commit/004e515f6f64be253b293d54eaf2b06e32945127) Thanks [@quantizor](https://github.com/quantizor)! - Space-separated `rgb()` and `hsl()` colors now show a color swatch and open the color picker, with or without a `/ alpha` value, like `hsl(220 30% 95%)` and `rgb(255 0 153 / 50%)` ([#455](https://github.com/styled-components/vscode-styled-components/issues/455)).
+
 ## 1.7.10
 
 ### Patch Changes
